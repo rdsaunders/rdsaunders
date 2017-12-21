@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="page">
+
+    <header class="page__header">
+        <h1 class="page__title">{{ page.title }}</h1>
+    </header>
+
+    <div class="page__body">
+        {% if page.excerpt %}
+        <div class="item__excerpt">
+            {{ page.excerpt }}
+        </div>
+        {% endif %} {% if page.meta %}
+        <aside class="meta" role="complementary">
+            <h2 class="screen-reader-only">Information about {{ page.title }}</h2>
+            <dl class="meta__values">
+                {% if page.path contains "_talks" %}
+                <dt class="meta__title">Presented</dt>
+                <dd class="meta__value">
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%e %B %Y" }}</time>
+                </dd>
+                {% endif %} {% for item in page.meta %} {% capture meta__value %}{{ item[1] }}{% endcapture %}
+                <dt class="meta__title">{{ item[0] | capitalize }}</dt>
+                <dd class="meta__value">{{ meta__value | markdownify | improve }}</dd>
+                {% endfor %}
+            </dl>
+        </aside>
+        {% endif %} {% if page.embed %} {% include embed.html url=page.link id=page.embed.id ratio=page.embed.ratio title=page.title
+        %} {% endif %} {{ content }}
+    </div>
+
+</section>

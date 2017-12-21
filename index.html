@@ -1,0 +1,25 @@
+--- 
+layout: default 
+--- 
+{% for item in site.data.contentful.spaces.rdsaunders.blogPost %}
+<article class="item item--article">
+  <h2 class="item__title">
+    <a class="item__link" href="{{ site.baseurl }}{{ item.title | datapage_url: 'posts' }}">{{ item.title }}</a>
+  </h2>
+
+  <p class="item__meta">
+    <ul class="meta-category">
+      {% for tags in item.tags %}
+      <li>{{ tags }}</li>
+      {% endfor %}
+    </ul> /
+    <time class="meta-date" datetime="{{ item.published | date_to_xmlschema }}">{{ item.published | date: "%d %B, %Y" }}</time>
+  </p>
+
+  <div class="item__excerpt">
+    {{ item.description }}
+  </div>
+
+  </div>
+</article>
+{% endfor %}

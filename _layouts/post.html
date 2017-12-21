@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="page">
+    <header class="page__header">
+        <h1 class="page__title">{{ page.title }}</h1>
+        <p class="page__meta">
+            <ul class="meta-category">
+                {% for tags in page.tags %}
+                <li>{{ tags }}</li>
+                {% endfor %}
+            </ul>
+            <time class="meta-date" datetime="{{ page.published | date_to_xmlschema }}">{{ page.published | date: "%d %B, %Y" }}</time>
+        </p>
+    </header>
+
+    <div class="page__body">
+
+        {% if page.description %}
+        <div class="page__excerpt">
+            {{ page.description | markdownify | improve }}
+        </div>
+        {% endif %} 
+        
+        {{ page.article | markdownify}}
+    </div>
+
+</article>
