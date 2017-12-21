@@ -73,7 +73,6 @@ DEPENDENCIES
   jekyll (~> 3.6.2)
   jekyll-contentful-data-import
   jekyll-feed (~> 0.6)
-  tzinfo-data
 
 BUNDLED WITH
    1.16.0.pre.3
