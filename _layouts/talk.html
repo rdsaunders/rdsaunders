@@ -20,7 +20,7 @@ layout: default
                 {% if page.path contains "_talks" %}
                 <dt class="meta__title">Presented</dt>
                 <dd class="meta__value">
-                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%e %B %Y" }}</time>
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
                 </dd>
                 {% endif %} {% for item in page.meta %} {% capture meta__value %}{{ item[1] }}{% endcapture %}
                 <dt class="meta__title">{{ item[0] | capitalize }}</dt>
