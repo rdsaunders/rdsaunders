@@ -47,8 +47,8 @@
 // @import 'tachyons/background-size';
 // @import 'tachyons/background-position';
 // @import 'tachyons/outlines';
-// @import 'tachyons/borders';
-// @import 'tachyons/border-colors';
+@import 'tachyons/borders';
+@import 'tachyons/border-colors';
 // @import 'tachyons/border-radius';
 // @import 'tachyons/border-style';
 // @import 'tachyons/border-widths';
@@ -83,7 +83,7 @@
 @import 'tachyons/text-align';
 // @import 'tachyons/text-transform';
 @import 'tachyons/type-scale';
-// @import 'tachyons/typography';
+@import 'tachyons/typography';
 @import 'tachyons/utilities';
 // @import 'tachyons/visibility';
 // @import 'tachyons/white-space';
@@ -91,4 +91,4 @@
 @import 'tachyons/hovers';
 // @import 'tachyons/z-index';
 // @import 'tachyons/nested';
-// @import 'tachyons/styles';
+@import 'tachyons/styles';

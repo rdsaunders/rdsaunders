@@ -13,3 +13,28 @@
 
 */
 
+a:link,
+a:visited {
+  @extend .dark-blue;
+}
+
+.logo {
+ align-items: flex-start;
+  white-space: nowrap;
+  
+    svg {
+    vertical-align: text-bottom;
+    }
+  
+  
+    &:hover {
+    color: currentColor;
+      svg {transform: rotate(10deg);}
+    }
+  
+  }
+
+  img {
+    @extend .mw-100;
+    height: auto;
+  }

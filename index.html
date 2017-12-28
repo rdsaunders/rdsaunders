@@ -1,10 +1,13 @@
 --- 
 layout: default 
---- 
-{% for item in site.data.contentful.spaces.rdsaunders.blogPost %}
-<article class="item pv4 mw7 center">
-  <h2 class="f2 lh-solid mt0 mb2">
-    <a class="link near-black underline-hover" href="{{ site.baseurl }}{{ item.title | datapage_url: 'posts' }}">{{ item.title }}</a>
+---
+
+{% assign sorted = site.data.contentful.spaces.rdsaunders.blogPost | sort: 'published' | reverse %}
+
+{% for item in sorted %}
+<article class="item pv4 bb bw1 b--light-gray">
+  <h2 class="f3 f2-m f2-l lh-solid mt0 mb2">
+    <a class="link underline dim" href="{{ site.baseurl }}{{ item.title | datapage_url: 'posts' }}">{{ item.title }}</a>
   </h2>
 
   <div class="item__meta mb2">
@@ -19,7 +22,7 @@ layout: default
     {% endif %}
   </div>
 
-  <div class="item__excerpt lh-copy">
+  <div class="item__excerpt lh-copy measure-wide-m measure-wide-l">
     {{ item.description }}
   </div>
 
