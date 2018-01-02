@@ -1,20 +1,16 @@
 ---
 layout: default
 ---
-<article class="page pt5">
-    <header class="page__header">
+<article class="page">
+    <header class="page__header bb bw1 pb3 b--moon-gray">
         <h1 class="f2 f1-l lh-title mt0 mb2">{{ page.title }}</h1>
         <div class="page__meta mb2">
-            <time class="meta-date light-silver" datetime="{{ page.published | date_to_xmlschema }}">{{ page.published | date_to_long_string }}</time>
-
             {% if page.tags %}
-            /
-            <ul class="meta-category">
-                {% for tags in page.tags %}
-                <li>{{ tags }}</li>
-                {% endfor %}
-            </ul>
+                <p class="mt0 mb2">Posted in {{ page.tags | array_to_sentence_string }}</p>
             {% endif %}
+
+            <time class="meta-date light-silver db" datetime="{{ page.published | date_to_xmlschema }}">{{ page.published | date_to_long_string }}</time>
+
         </div>
     </header>
 

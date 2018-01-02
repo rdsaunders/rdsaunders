@@ -5,21 +5,16 @@ layout: default
 {% assign sorted = site.data.contentful.spaces.rdsaunders.blogPost | sort: 'published' | reverse %}
 
 {% for item in sorted %}
-<article class="item pv4 bb bw1 b--light-gray">
+<article class="item pv4 bb bw1 b--moon-gray">
   <h2 class="f3 f2-m f2-l lh-solid mt0 mb2">
     <a class="link underline dim" href="{{ site.baseurl }}{{ item.title | datapage_url: 'posts' }}">{{ item.title }}</a>
   </h2>
 
   <div class="item__meta mb2">
-    <time class="meta-date light-silver" datetime="{{ item.published | date_to_xmlschema }}">{{ item.published | date_to_long_string }}</time>
     {% if item.tags %}
-    / 
-    <ul class="meta-category list pl0">
-        {% for tags in item.tags %}
-        <li>{{ tags }}</li>
-        {% endfor %}
-    </ul>
+      <p class="mb2">Posted in {{ item.tags | array_to_sentence_string }}</p>
     {% endif %}
+    <time class="meta-date light-silver db" datetime="{{ item.published | date_to_xmlschema }}">{{ item.published | date_to_long_string }}</time>
   </div>
 
   <div class="item__excerpt lh-copy measure-wide-m measure-wide-l">
