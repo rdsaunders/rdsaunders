@@ -1,5 +1,5 @@
 ---
-title: Documenting your product aids the iterative
+title: Documenting your product aids the iterative process
 excerpt: Do you take the time to document your product? Are you missing out on valuable
   improvements by spending time with your product in the way you expect your users
   use it?
