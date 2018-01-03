@@ -1,0 +1,15 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title for the post
+- type: text
+  name: link
+  label: Link
+  description: URL to the article
+- type: textarea
+  name: excerpt
+  label: Excerpt
+  description: Short excerpt detailing the link
