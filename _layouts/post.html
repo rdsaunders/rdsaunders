@@ -5,17 +5,15 @@ layout: default
     <header class="page__header bb bw1 pb3 b--moon-gray">
         <h1 class="f2 f1-l lh-title mt0 mb2">{{ page.title }}</h1>
         <div class="page__meta mb2">
-            {% if page.tags %}
-                <p class="mt0 mb2">Posted in {{ page.tags | array_to_sentence_string }}</p>
-            {% endif %}
 
-            <time class="meta-date light-silver db" datetime="{{ page.published | date_to_xmlschema }}">{{ page.published | date_to_long_string }}</time>
+            <time class="meta-date light-silver db" datetime="{{ page.published | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
 
         </div>
     </header>
 
     <div class="lh-copy measure-wide-m measure-wide-l">
-        {{ page.article | markdownify}}
+        {{ page.content | markdownify}}
     </div>
 
 </article>
+

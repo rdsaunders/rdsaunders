@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "NPM Builder runner for Netlify",
   "scripts": {
-    "prebuild": "jekyll contentful",    
     "build": "jekyll build"
   },
   "author": "Richard Saunders"
