@@ -1,6 +1,9 @@
 ---
 title: SVN for Atom Editor
-category: note
+categories: []
+date: 2016-02-13 00:00:00 +0000
+excerpt: ''
+layout: post
 ---
 I've become a recent convert to Atom Editor from Sublime Text and I really appreciate the highlighting in the treeview of a project when items have been added, edited or deleted since a recent commit to a GitHub repo.
 
