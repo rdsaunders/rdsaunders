@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-{% for item in site.posts %}
+{% for item in paginator.posts %}
 <article class="item pv4 bb bw1 b--moon-gray">
   <h2 class="f3 f2-m f2-l lh-solid mt0 mb2">
     <a class="link underline dim" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
@@ -20,3 +20,5 @@ layout: default
 
 </article>
 {% endfor %}
+
+{% include item-pagination.html %}
