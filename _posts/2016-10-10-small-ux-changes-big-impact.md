@@ -1,6 +1,9 @@
 ---
 title: Small UX changes big impact
-category: article
+categories: []
+date: 2016-10-10 00:00:00 +0000
+excerpt: ''
+layout: post
 ---
 
 I was in London last week speaking at the Contensis Autumn user groups. As the groups came to a close, we ended the afternoon with some 3 minute lightning talks.
