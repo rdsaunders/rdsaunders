@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/contensis-10-1-released.md
 hide_body: false
 fields:
 - type: text
