@@ -1,7 +1,9 @@
 ---
 title: What makes a successful local government intranet?
 excerpt: Is there a recipe for the perfect local government intranet?
-category: article
+categories: []
+date: 2013-09-23 00:00:00 +0000
+layout: post
 ---
 
 Apologies if you've arrived in search of a recipe for the perfect local government intranet; I don't think one exists. I'm not saying that intranets don't have a place in local government or any other type of organisation; but the ones I've experienced often fall short of delivering what staff really want or need.
