@@ -1,15 +1,15 @@
-<nav class="post-navigation flex bt bb b--moon-gray pv3">
+<nav class="flex bt bb b--moon-gray pv3">
 
   {% if page.previous.url %}
-    <a class="post-navigation__previous no-underline" href="{{page.previous.url}}">&laquo; Previous</a>
+    <a class="no-underline" href="{{page.previous.url}}">&laquo; Previous</a>
   {% else %}
-    <span class="post-navigation__previous silver">Previous</span>
+    <span class="silver">Previous</span>
   {% endif %}
 
   {% if page.next.url %}
-    <a class="post-navigation__next no-underline ml-auto" href="{{page.next.url}}">Next &raquo;</a>
+    <a class="no-underline ml-auto" href="{{page.next.url}}">Next &raquo;</a>
   {% else %}
-    <span class="post-navigation__next ml-auto silver">Next</span>
+    <span class="ml-auto silver">Next</span>
   {% endif %}
   
 </nav>
