@@ -1,7 +1,9 @@
 ---
 title: Farewell Handheld Conference
 excerpt: My highlights from this years Handheld Conf
-category: article
+categories: []
+date: 2013-12-06 00:00:00 +0000
+layout: post
 ---
 
 My head is still buzzing from last weeks conference in Cardiff, another sterling event curated by Craig Lockwood. Held in the beautiful Wales Millennium Centre, Handheld upped its game from a small conference room in St Davids Hotel in its inaugural year to an amazing venue with 1200+ web professionals in attendance. It’s the largest web conference Wales has seen and one that didn't disappoint.
