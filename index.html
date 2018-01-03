@@ -6,7 +6,7 @@ layout: default
 {% for item in paginator.posts %}
 <article class="item pv4 bb bw1 b--moon-gray">
   <h2 class="f3 f2-m f2-l lh-solid mt0 mb2">
-    <a class="link underline dim" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+    <a class="link underline dim" href="{% if item.external %}{{ item.link }}{% else %}{{ item.url }}{% endif %}">{{ item.title }}</a>
   </h2>
 
   <div class="item__meta mb2">
