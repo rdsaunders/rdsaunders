@@ -14,6 +14,14 @@ fields:
   label: Date
   description: The date the article was published
 - type: text
+  name: publication
+  label: Publication
+- type: text
   name: link
   label: Link
   description: URL to the article
+- type: boolean
+  name: external
+  label: External
+  hidden: true
+  default: true
