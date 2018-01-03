@@ -1,7 +1,11 @@
 ---
-title: Documenting your product aids the iterative process
-excerpt: Do you take the time to document your product? Are you missing out on valuable improvements by spending time with your product in the way you expect your users use it?
-category: article
+title: Documenting your product aids the iterative
+excerpt: Do you take the time to document your product? Are you missing out on valuable
+  improvements by spending time with your product in the way you expect your users
+  use it?
+categories: []
+date: 2016-11-22 00:00:00 +0000
+layout: post
 ---
 When developing a product iteratively against a prioritised backlog, it's common for developers to want to move on to the next user story as soon as possible.
 
