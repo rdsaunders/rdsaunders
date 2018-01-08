@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Book review: Left to their own devices'
-date: 2018-01-08 00:00:00 +0000
+date: 2017-12-17 20:32:22 +0000
 excerpt: ''
 categories: []
 ---
