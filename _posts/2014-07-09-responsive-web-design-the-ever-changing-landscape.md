@@ -3,7 +3,6 @@ title: Responsive web design the ever changing landscape
 excerpt: We are not designing for mobiles, tablets or desktops but a medium that is
   volatile. Richard Saunders looks at the elements that make up a responsible responsive
   design project in an ever changing landscape.
-categories: []
 date: 2014-07-09 00:00:00 +0000
 layout: post
 ---

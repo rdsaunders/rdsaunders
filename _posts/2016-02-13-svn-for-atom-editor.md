@@ -1,6 +1,5 @@
 ---
-title: SVN for Atom Editor
-categories: []
+title: SVN for Atom editor
 date: 2016-02-13 00:00:00 +0000
 excerpt: ''
 layout: post

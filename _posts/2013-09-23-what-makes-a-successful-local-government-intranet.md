@@ -1,7 +1,6 @@
 ---
 title: What makes a successful local government intranet?
 excerpt: Is there a recipe for the perfect local government intranet?
-categories: []
 date: 2013-09-23 00:00:00 +0000
 layout: post
 ---

@@ -1,7 +1,6 @@
 ---
-title: Farewell Handheld Conference
+title: Farewell handheld conference
 excerpt: My highlights from this years Handheld Conf
-categories: []
 date: 2013-12-06 00:00:00 +0000
 layout: post
 ---

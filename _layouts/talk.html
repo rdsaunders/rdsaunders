@@ -2,43 +2,40 @@
 layout: default
 ---
 
-<section class="page">
+<section>
 
-    <header class="page__header">
+    <header>
         <h1 class="f1 lh-title">{{ page.title }}</h1>
     </header>
 
-    <div class="page__body">
-        {% if page.excerpt %}
-        <div class="item__excerpt">
-            {{ page.excerpt }}
-        </div>
-        {% endif %} 
+
+    {% if page.excerpt %}
+        {{ page.excerpt }}
+    {% endif %} 
+    
+    {% if page.embed %} {% include embed.html url=page.link id=page.embed.id ratio=page.embed.ratio title=page.title
+        %} {% endif %} 
         
-        {% if page.embed %} {% include embed.html url=page.link id=page.embed.id ratio=page.embed.ratio title=page.title
-            %} {% endif %} 
-            
-        {{ content }}
+    {{ content }}
 
-        {% if page.meta %}
-        <aside class="meta" role="complementary">
-            <h2 class="clip">Information about {{ page.title }}</h2>
-                {% if page.path contains "_talks" %}
-                <dl class="ma0">
-                    <dt class="db b">Presented</dt>
-                    <dd class="db ma0 mb2">
-                        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
-                    </dd>
-                </dl>
-                {% endif %} {% for item in page.meta %} {% capture meta__value %}{{ item[1] }}{% endcapture %}
-                <dl class="ma0">
-                    <dt class="db b">{{ item[0] | capitalize }}</dt>
-                    <dd class="db ma0 mb2">{{ meta__value | markdownify | improve }}</dd>
-                </dl>
-                {% endfor %}
+    {% if page.meta %}
+    <aside class="meta" role="complementary">
+        <h2 class="clip">Information about {{ page.title }}</h2>
+            {% if page.path contains "_talks" %}
+            <dl class="ma0">
+                <dt class="db b">Presented</dt>
+                <dd class="db ma0 mb2">
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+                </dd>
+            </dl>
+            {% endif %} {% for item in page.meta %} {% capture meta__value %}{{ item[1] }}{% endcapture %}
+            <dl class="ma0">
+                <dt class="db b">{{ item[0] | capitalize }}</dt>
+                <dd class="db ma0 mb2">{{ meta__value | markdownify | improve }}</dd>
+            </dl>
+            {% endfor %}
 
-        </aside>
-        {% endif %} 
-    </div>
+    </aside>
+    {% endif %} 
 
 </section>

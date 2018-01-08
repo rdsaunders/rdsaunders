@@ -4,7 +4,6 @@ excerpt: A busy day ends with a frantic rush through the rat runs below the big 
   Satisfying moments of cool air pass through the maze of intermingled tunnels. The
   body craves those moments as your crammed amongst the multitude who are passing
   through the same place.
-categories: []
 date: 2015-11-05 00:00:00 +0000
 layout: post
 ---

@@ -4,19 +4,22 @@ layout: default
 
 
 {% for item in paginator.posts %}
-<article class="item pv4 bb bw1 b--moon-gray">
+<article class="pv4 bb bw1 b--light-gray">
   <h2 class="f3 f2-m f2-l lh-solid mt0 mb2">
-    <a class="link underline dim" href="{% if item.external %}{{ item.link }}{% else %}{{ item.url }}{% endif %}">{{ item.title }}</a>
+    <a class="link underline dim" href="{% if item.external %}{{ item.link }}{% else %}{{ item.url }}{% endif %}" target="{% if item.external %}_blank{% else %}_self{% endif %}">{{ item.title }}</a>
   </h2>
 
-  <div class="item__meta mb2">
-
+  <div class="mb2">
     <time class="meta-date mid-gray db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date_to_long_string }}</time>
   </div>
 
-  <div class="item__excerpt lh-copy measure-wide-m measure-wide-l">
+  <div class="lh-copy measure-wide-m measure-wide-l">
     {{ item.excerpt }}
   </div>
+
+  {% if item.external %}
+    <p>Article originally written for <span class="br-pill bw2 pv1 ph2 bg-silver white dib">{{ item.publication }}</span></p>
+  {% endif %} 
 
 </article>
 {% endfor %}
