@@ -10,7 +10,7 @@ fields:
 - type: textarea
   name: excerpt
   label: Excerpt
-  description: Short excerpt detailing the link
+  description: Short excerpt of the article.
 - type: datetime
   name: date
   label: Date
