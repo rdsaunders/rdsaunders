@@ -26,6 +26,9 @@ fields:
   type: datetime
   hidden: false
   default: ''
+- type: tag_list
+  name: tags
+  label: Tags
 - name: layout
   label: Layout
   type: text
