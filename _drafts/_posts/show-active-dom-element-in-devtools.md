@@ -8,5 +8,7 @@ publication: ''
 link: ''
 external: false
 ---
-Sometimes 
+Sometimes
+
+
 ![](/assets/uploads/2018/01/11/devtools-active-element.png)
