@@ -28,9 +28,6 @@ fields:
   name: link
   label: Link
   description: URL to the article
-- type: tag_list
-  name: tags
-  label: Tags
 - type: boolean
   name: external
   label: External
