@@ -21,11 +21,6 @@ fields:
   type: textarea
   hidden: false
   default: ''
-- name: tags
-  label: Tags
-  type: tag_list
-  hidden: false
-  default: ''
 - name: date
   label: Date
   type: datetime
