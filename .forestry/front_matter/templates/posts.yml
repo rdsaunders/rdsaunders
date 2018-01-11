@@ -21,8 +21,8 @@ fields:
   type: textarea
   hidden: false
   default: ''
-- name: categories
-  label: Categories
+- name: tags
+  label: Tags
   type: tag_list
   hidden: false
   default: ''
