@@ -7,53 +7,65 @@ tags: []
 ---
 This is a quick
 
-    .br-pill {
-      border-radius: 9999px;
-    }
-    
-    .dib {
-      display: inline-block;
-    }
-    
-    .w1 {
-      width: 1em;
-    }
-    
-    .h1 {
-      height: 1em;
-    }
-    
-    .bg-primary {
-      background-color: $primary;
-    }
+## Basic utility classes
 
-    .ind {
-      @extend .br-pill;
-      @extend .dib;
-      @extend .w1;
-      @extend .h1;
-    }
-    
-    .ind--primary {
-      @extend .bg-primary;
-    }
+```
+.br-pill {
+  border-radius: 9999px;
+}
 
-    .br-pill, .ind {
-      border-radius: 9999px;
-    }
-    
-    .dib, .ind {
-      display: inline-block;
-    }
-    
-    .w1, .ind {
-      width: 1em;
-    }
-    
-    .h1, .ind {
-      height: 1em;
-    }
-    
-    .bg-primary, ind--primary {
-      background-color: #59a33f;
-    }
+.dib {
+  display: inline-block;
+}
+
+.w1 {
+  width: 1em;
+}
+
+.h1 {
+  height: 1em;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+```
+
+## Simple component using `@extend`
+
+```
+.ind {
+  @extend .br-pill;
+  @extend .dib;
+  @extend .w1;
+  @extend .h1;
+}
+
+.ind--primary {
+  @extend .bg-primary;
+}
+```
+
+## Rendered CSS
+
+```
+.br-pill, .ind {
+  border-radius: 9999px;
+}
+
+.dib, .ind {
+  display: inline-block;
+}
+
+.w1, .ind {
+  width: 1em;
+}
+
+.h1, .ind {
+  height: 1em;
+}
+
+.bg-primary, ind--primary {
+  background-color: #59a33f;
+}
+```
