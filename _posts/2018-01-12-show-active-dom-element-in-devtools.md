@@ -10,7 +10,7 @@ publication: ''
 link: ''
 external: false
 ---
-Sometimes you find yourself trying to identify I weird bug in a piece of UI and often DevTools comes to the rescue to help you out. 
+Sometimes you find yourself trying to identify a weird bug in a piece of UI and often DevTools comes to the rescue to help you out.
 
 I was experiencing an issue this week where a UI element wouldn't click and get focus without pressing it twice, it only occurred in a particular scenario and it was getting frustrating.
 
