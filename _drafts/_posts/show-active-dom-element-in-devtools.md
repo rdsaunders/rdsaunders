@@ -4,7 +4,7 @@ tags:
 - til
 - DevTools
 - JavaScript
-date: 2018-01-11 00:00:00 +0000
+date: 2018-01-11 10:46:28 +0000
 excerpt: How to show the currently active DOM element in the console of Chrome DevTools.
 publication: ''
 link: ''
