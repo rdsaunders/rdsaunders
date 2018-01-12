@@ -13,3 +13,5 @@ external: false
 Sometimes
 
 ![A screenshot of a website with Chrome developers tools open with the console showing.](/assets/uploads/2018/01/11/devtools-active-element.png "An example of the the document.activeElement in use")
+
+    document.activeElement
