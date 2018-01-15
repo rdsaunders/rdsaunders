@@ -15,6 +15,15 @@ layout: default
         {{ page.content | markdownify}}
     </div>
 
+    {% if page.tags %}
+    <footer>
+        <div class="mb3">
+          Tagged: {{ page.tags | array_to_sentence_string }}
+        </div>
+    </footer>
+    {% endif %} 
+
+
     {% include post-navigation.html %}
 
 </article>

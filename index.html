@@ -21,6 +21,12 @@ layout: default
     <p>Article originally written for <span class="br-pill bw2 pv1 ph2 bg-silver white dib">{{ item.publication }}</span></p>
   {% endif %} 
 
+  {% if item.tags %}
+  <div class="mt3">
+    {{ item.tags | array_to_sentence_string }}
+  </div>
+  {% endif %} 
+
 </article>
 {% endfor %}
 
