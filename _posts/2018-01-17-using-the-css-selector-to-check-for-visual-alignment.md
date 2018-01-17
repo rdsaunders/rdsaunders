@@ -11,7 +11,7 @@ excerpt: Sometimes it's helpful to check the visual alignment of an element in y
 ---
 Sometimes it's helpful to check the visual alignment of an element or how much space its taking up in the flow of you page against other elements.
 
-A simple way you can check this is to use the `\*` CSS selector along with a background colour with an alpha channel.
+A simple way you can check this is to use the `*` CSS selector along with a background colour with an alpha channel.
 
 By inserting the following css into the inspector stylesheet you can easily visualise the makeup of the components on the page.
 
