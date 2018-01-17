@@ -14,6 +14,8 @@ When building an application, you can't always put you finger to why something f
 
 Using the filter CSS property can provide a way to create a quick acid test to see which elements of your site or application may be getting more attention.
 
-    html {
-    		filter: blur(5px) grayscale(1);
-    }
+```css
+html {
+  filter: blur(5px) grayscale(1);
+}
+```

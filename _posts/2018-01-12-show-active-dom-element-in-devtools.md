@@ -19,7 +19,9 @@ Using DevTools and particularly the console I was able to track down the element
 1. Open the DevTools console by pressing `Cmd+Opt+J` Mac or `Ctrl+Shift+J` Windows / Linux
 2. Typing the following property in the console will return the current active DOM element.
 
-       document.activeElement 
+```js
+document.activeElement
+```
 
 ![A screenshot of a website with Chrome developers tools open with the console showing.](/assets/uploads/2018/01/17/devtools-active-element.png "An example of the the document.activeElement in use")
 

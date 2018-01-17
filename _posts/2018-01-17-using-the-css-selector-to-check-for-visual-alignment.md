@@ -17,6 +17,8 @@ A simple way you can check this is to use the `\\\*` CSS selector along with a b
 
 By inserting the following css into the inspector stylesheet you can easily visualise the makeup of the components on the page.
 
-    * {
-    background-color: rgba(255, 0, 0, 0.10)!important;
-    }
+```css
+ * {
+background-color: rgba(255, 0, 0, 0.10)!important;
+}
+```
