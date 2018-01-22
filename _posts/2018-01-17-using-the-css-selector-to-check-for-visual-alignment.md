@@ -7,7 +7,8 @@ tags:
 - Design
 - CSS
 excerpt: Sometimes it's helpful to check the visual alignment of an element in your
-  front end code, this * CSS selector can help you out.
+  front end code, the * CSS selector can help you out.
+image: assets/uploads/2018/01/17/visual-alignment-1.png
 ---
 ![](/assets/uploads/2018/01/17/visual-alignment-1.png)
 
