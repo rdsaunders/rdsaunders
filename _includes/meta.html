@@ -1,5 +1,10 @@
 <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
+
+{% if page.excerpt %}
+<meta name="description" content="{{ page.excerpt }}">
+{% else %}
 <meta name="description" content="{{ site.description }}">
+{% endif %}
 
 {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
