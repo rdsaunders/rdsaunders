@@ -19,9 +19,10 @@ layout: compress
     <meta name="application-name" content="{{ site.title }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    {% include meta.html %}
+
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
 
   </head>
 
