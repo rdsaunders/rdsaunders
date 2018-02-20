@@ -31,7 +31,7 @@ instagram_username: richardsaunders
 markdown: kramdown
 plugins:
   - jekyll-feed
-
+  - jekyll-sitemap
 
 collections:
   notes:
