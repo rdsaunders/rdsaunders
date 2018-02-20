@@ -54,8 +54,5 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-paginate
 
-RUBY VERSION
-   ruby 2.4.1p111
-
 BUNDLED WITH
    1.16.1
