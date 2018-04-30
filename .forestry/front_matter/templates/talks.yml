@@ -11,6 +11,7 @@ pages:
 - _talks/2015-06-04-rocket-conference-2015.md
 - _talks/2014-05-22-design-systems-in-website-and-apps.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
