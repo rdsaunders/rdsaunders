@@ -1,9 +1,9 @@
 ---
-title: Coffee shops and coffee culture in the UK
+title: Coffee shops and coffee culture in Newport
 tags:
 - coffee
 date: 2017-08-24
-excerpt: ''
+excerpt: 'Coffee'
 layout: post
 ---
 
