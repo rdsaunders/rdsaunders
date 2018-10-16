@@ -1,9 +1,27 @@
 ---
-upload_path: "/assets/uploads/:year:/:month:/:day:"
-frontmatter_file_url_template: "/assets/uploads/:year:/:month:/:day:"
-body_file_url_template: "/assets/uploads/:year:/:month:/:day:"
 new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-collections: 
+sections:
+- type: jekyll-posts
+  label: Posts
+  create: all
+- type: jekyll-pages
+  label: Pages
+  create: all
+- type: directory
+  path: _notes
+  label: Notes
+  create: all
+  match: "**/*"
+- type: directory
+  path: _talks
+  label: Talks
+  create: all
+  match: "**/*"
+upload_dir: assets/uploads
+public_path: "/assets/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":year:/:month:/:day:/:filename:"

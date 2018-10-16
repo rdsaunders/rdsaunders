@@ -1,12 +1,5 @@
 ---
-pages:
-- _posts/2018-01-03-from-code-mirror-to-monaco.md
-- _posts/2018-01-03-bringing-consistency-to-your-organisation-s-content.md
-- _posts/2018-01-03-breaking-up-content-for-reuse.md
-- _posts/2018-01-03-creating-a-simple-content-model-in-contensis-9.md
-- _posts/2018-01-03-building-a-what-s-new-page-with-content-types-and-entries.md
-- _posts/2018-01-03-contensis-10-0-released.md
-- _posts/2018-01-03-contensis-10-1-released.md
+label: link
 hide_body: true
 is_partial: false
 fields:
@@ -37,3 +30,11 @@ fields:
   label: External
   hidden: true
   default: true
+pages:
+- _posts/2018-01-03-creating-a-simple-content-model-in-contensis-9.md
+- _posts/2018-01-03-bringing-consistency-to-your-organisation-s-content.md
+- _posts/2018-01-03-building-a-what-s-new-page-with-content-types-and-entries.md
+- _posts/2018-01-03-from-code-mirror-to-monaco.md
+- _posts/2018-01-03-breaking-up-content-for-reuse.md
+- _posts/2018-01-03-contensis-10-1-released.md
+- _posts/2018-01-03-contensis-10-0-released.md
