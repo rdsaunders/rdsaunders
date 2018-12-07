@@ -67,6 +67,7 @@ fields:
   default: talk
 pages:
 - _talks/2016-05-24-rocket-conference-2016.md
+- _talks/contensis-product-update.md
 - _talks/2014-05-22-design-systems-in-website-and-apps.md
 - _talks/2017-11-09-harmonising-content-and-code.md
 - _talks/2015-07-09-customer-journey-mapping.md
