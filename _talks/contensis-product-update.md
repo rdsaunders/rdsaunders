@@ -9,6 +9,5 @@ meta:
   location: We The Curious, One Millennium Square, Bristol
   resources: "* [Slides on Speakerdeck](https://speakerdeck.com/rdsaunders/rocket-conf-2018-contensis-update)"
 layout: ''
-published: false
 
 ---
