@@ -1,14 +1,14 @@
 ---
 title: Contensis product update
-date: 2017-11-09 00:00:00 +0000
-excerpt: 
-link: https://www.youtube.com/watch?v=NQlfr_rrQ2w
-embed:
-  ratio: 16/9
+date: 2018-10-04 00:00:00 +0100
+excerpt: ''
+link: https://www.youtube.com/watch?v=6fxqAm97e8k
+embed: true
 meta:
-  event: Contensis User Group
-  location: Anomalous Space, Pentonville Road, London
-  resources: "* [Slides on Speakerdeck](https://speakerdeck.com/rdsaunders/harmonising-content-and-code)\n"
+  event: Rocket Conference
+  location: We The Curious, One Millennium Square, Bristol
+  resources: "* [Slides on Speakerdeck](https://speakerdeck.com/rdsaunders/rocket-conf-2018-contensis-update)"
+layout: ''
 published: false
 
 ---
