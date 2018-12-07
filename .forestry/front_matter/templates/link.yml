@@ -32,6 +32,7 @@ fields:
   default: true
 pages:
 - _posts/2018-01-03-breaking-up-content-for-reuse.md
+- _posts/new-editorial-features-released-in-contensis-11-1.md
 - _posts/introducing-the-contensis-open-roadmap.md
 - _posts/contensis-11-is-now-available.md
 - _posts/2018-01-03-from-code-mirror-to-monaco.md
