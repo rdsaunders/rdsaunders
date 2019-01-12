@@ -49,6 +49,10 @@ defaults:
       type: talks
     values:
       layout: talk
+  - scope:
+      type: notes
+    values:
+      layout: note
 
 paginate: 20
 paginate_path: "/page:num/"
