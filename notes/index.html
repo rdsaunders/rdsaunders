@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Notes
+pagination: 
+  enabled: true
+  collection: notes
+  sort_reverse: true
 ---
 
 
-{% for item in site.notes reversed %}
+{% for item in paginator.posts %}
 	<article class="item item__link">
 		<h2 class="item__title"><a class="item__link" href="{{ item.url }}">{{ item.title }}</a></h2>
 		<p class="item__meta">
@@ -25,3 +29,6 @@ title: Notes
 
 	</article>
 {% endfor %}
+
+{% include item-pagination.html %}
+
