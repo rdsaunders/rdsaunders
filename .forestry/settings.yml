@@ -4,9 +4,17 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: jekyll-posts
+  label: Posts
+  create: all
 - type: directory
   path: _photos
   label: Photos
+  create: all
+  match: "**/*"
+- type: directory
+  path: _photosets
+  label: Photosets
   create: all
   match: "**/*"
 - type: directory
@@ -21,9 +29,6 @@ sections:
   match: "**/*"
 - type: jekyll-pages
   label: Pages
-  create: all
-- type: jekyll-posts
-  label: Posts
   create: all
 upload_dir: assets/uploads
 public_path: "/assets/uploads"
