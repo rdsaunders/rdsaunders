@@ -19,3 +19,5 @@ fields:
 - type: textarea
   name: caption
   label: Caption
+pages:
+- _photos/tate-fly-by.md
