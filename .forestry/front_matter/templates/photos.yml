@@ -16,7 +16,7 @@ fields:
 - type: file
   name: image
   label: Photo
-- type: text
+- type: textarea
   name: caption
   label: Caption
 pages:
