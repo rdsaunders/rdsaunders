@@ -30,11 +30,11 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
-upload_dir: assets/uploads
-public_path: "/assets/uploads"
+upload_dir: ''
+public_path: https://res.cloudinary.com/rdsaunders/image/upload
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":year:/:month:/:day:/:filename:"
+file_template: ":filename:"
 build:
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
   publish_command: bundle exec jekyll build -d _site
