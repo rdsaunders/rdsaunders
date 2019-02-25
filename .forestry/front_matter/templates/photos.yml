@@ -20,4 +20,5 @@ fields:
   name: caption
   label: Caption
 pages:
+- _photos/newport-university-reflections.md
 - _photos/tate-fly-by.md
