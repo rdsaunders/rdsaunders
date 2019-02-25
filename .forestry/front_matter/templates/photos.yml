@@ -19,6 +19,9 @@ fields:
 - type: textarea
   name: caption
   label: Caption
+- type: tag_list
+  name: tags
+  label: Tags
 pages:
 - _photos/newport-university-reflections.md
 - _photos/tate-fly-by.md
