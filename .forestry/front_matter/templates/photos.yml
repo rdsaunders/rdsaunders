@@ -19,5 +19,3 @@ fields:
 - type: textarea
   name: caption
   label: Caption
-pages:
-- _photos/enclosed.md
