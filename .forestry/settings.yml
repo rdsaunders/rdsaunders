@@ -12,6 +12,8 @@ sections:
   label: Photos
   create: all
   match: "**/*"
+  templates:
+  - photos
 - type: directory
   path: _photosets
   label: Photosets
