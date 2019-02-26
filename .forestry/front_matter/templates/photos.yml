@@ -20,6 +20,9 @@ fields:
   name: caption
   label: Caption
 - type: tag_list
+  name: category
+  label: Category
+- type: tag_list
   name: tags
   label: Tags
 pages:
