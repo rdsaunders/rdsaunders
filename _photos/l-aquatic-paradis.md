@@ -6,11 +6,11 @@ caption: ''
 category:
 - Urban Exploration
 tags:
-- " Urbex"
 - Barcelona
 - Spain
 - Sitges
 - Water Park
 - Abandoned
+- Urbex
 
 ---
