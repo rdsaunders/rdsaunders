@@ -130,3 +130,4 @@ pagination:
   indexpage: 'index'
 
 ############################################################
+cloudinary_url: https://res.cloudinary.com/rdsaunders/image/upload
