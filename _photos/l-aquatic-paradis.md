@@ -6,7 +6,6 @@ caption: ''
 category:
 - Urban Exploration
 tags:
-- UE
 - " Urbex"
 - Barcelona
 - Spain
