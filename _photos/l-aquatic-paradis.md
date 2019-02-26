@@ -13,6 +13,5 @@ tags:
 - Sitges
 - Water Park
 - Abandoned
-published: false
 
 ---
