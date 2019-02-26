@@ -15,7 +15,7 @@ pagination:
 		<h2 class="f5"><a class="item__link" href="{{ item.url }}">{{ item.title }}</a></h2>
 		<p class="item__meta ml-auto tr">
 			{% if item.tags.size > 1 %}<span class="meta-tags">{{ item.tags | array_to_sentence_string }}</span> {% endif %}
-			<time class="meta-date db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+			<time class="meta-date db f6 ttu mv1" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
 		</p>
 		</div>
 	</article>
