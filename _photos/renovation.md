@@ -1,7 +1,7 @@
 ---
 title: Renovation
 date: 2010-10-09 00:00:00 +0100
-image: https://res.cloudinary.com/rdsaunders/image/upload/v1551268566/2010-10-09-renovation.jpg
+image: "/v1551268566/2010-10-09-renovation.jpg"
 caption: Masonic Lodge, Gdańsk, Poland
 category:
 - Urban Exploration
