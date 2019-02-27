@@ -1,5 +1,6 @@
 ---
 title: Gdańsk, Poland
-image:
+image: 
 excerpt: 
+
 ---

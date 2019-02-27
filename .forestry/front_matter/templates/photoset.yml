@@ -16,3 +16,5 @@ fields:
   name: description
   label: Description
   description: A short description of the photo set
+pages:
+- _photosets/gdansk-poland.md
