@@ -1,10 +1,18 @@
 ---
 label: Photoset
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+- type: file
+  name: image
+  label: Cover image
+  description: An image to be used as the photoset cover
+- type: textarea
+  name: description
+  label: Description
+  description: A short description of the photo set
