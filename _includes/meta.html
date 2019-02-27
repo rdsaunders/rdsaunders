@@ -1,5 +1,7 @@
 <title>{% if page.title %}{{ page.title }}{% endif %}{% if page.caption %} | {{ page.caption }}{% endif %}</title>
 
+<meta name="title" content="{% if page.title %}{{ page.title }}{% endif %}{% if page.caption %} | {{ page.caption }}{% endif %}">
+
 {% if page.excerpt.size > 1 %}
 <meta name="description" content="{{ page.excerpt }}">
 {% elsif page.caption.size > 1 %} 
