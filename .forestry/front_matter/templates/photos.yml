@@ -34,6 +34,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- _photos/open-for-surgery.md
 - _photos/masonic-lodge-ruins.md
 - _photos/renovation.md
 - _photos/l-aquatic-paradis.md
