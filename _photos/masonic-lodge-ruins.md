@@ -7,6 +7,5 @@ category:
 - Urban Exploration
 tags:
 - Urbex
-published: false
 
 ---
