@@ -2,32 +2,19 @@
 layout: default
 ---
 <article class="h-entry">
-    <header class="bb bw1 pb3 b--moon-gray">
-        <h1 class="p-name f2 f1-l lh-title mt0 mb2">{{ page.title }}</h1>
-        <div class="mb2">
+    <h1 class="p-name f2 f1-l lh-title mt0 mb2">{{ page.title }}</h1>
 
-            <time class="dt-published mid-gray db" datetime="{{ page.published | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+    {% assign photoset = site.photos | where: 'photoset', page.relative_path %}
 
-        </div>
-    </header>
-
-    <img src="{{ page.image }}" class="w-100" />
-
-
-    <div class="e-content lh-copy measure-wide-m measure-wide-l">
-        {{ page.content | markdownify}}
+    <div class="flex">
+      {% for item in photoset reversed %}
+        <img srcset="{{ site.cloudinary_url }}/w_320/f_auto{{ item.image }} 320w,
+        {{ site.cloudinary_url }}/w_512/f_auto{{ item.image }} 512w,
+        {{ site.cloudinary_url }}/w_768/f_auto{{ item.image }} 768w,
+        {{ site.cloudinary_url }}/w_1400/f_auto{{ item.image }} 1400w"
+    src="{{ site.cloudinary_url }}/w_320/f_auto{{ item.image }}" class="w-100 pr1" />
+      {% endfor %}
     </div>
-
-    {% if page.tags %}
-    <footer>
-        <div class="mb3">
-          Tagged: {{ page.tags | array_to_sentence_string }}
-        </div>
-    </footer>
-    {% endif %} 
-
-
-    {% include post-navigation.html %}
 
 </article>
 

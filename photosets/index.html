@@ -10,18 +10,8 @@ pagination:
 
 {% for item in paginator.posts %}
 	<article class="item item__link">
-		<header>
-				<h2 class="item__title"><a class="item__link" href="{{ item.url }}">{{ item.title }}</a></h2>
-		</header>
-		<div>
-				<a class="item__link" href="{{ item.url }}"><img src="{{ item.image }}" /></a>
-		</div>
-		<footer>
-				<p class="item__meta tr">
-						{% if item.tags %}<span class="meta-tags">{{ item.tags | array_to_sentence_string }}</span> / {% endif %}
-						<time class="meta-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
-					</p>
-		</footer>
+		<h2 class="item__title"><a class="item__link" href="{{ item.url }}">{{ item.title }}</a></h2>
+		<a class="item__link" href="{{ item.url }}"><img src="{{ item.image }}" /></a>
 	</article>
 {% endfor %}
 
