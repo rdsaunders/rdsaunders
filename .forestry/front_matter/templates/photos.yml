@@ -19,6 +19,14 @@ fields:
 - type: textarea
   name: caption
   label: Caption
+- type: select
+  config:
+    source:
+      type: pages
+      section: photosets
+  label: Photoset
+  name: photoset
+  description: Select the photoset that the photo belongs to
 - type: tag_list
   name: category
   label: Category
