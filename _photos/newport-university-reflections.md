@@ -7,7 +7,7 @@ tags:
 - Newport
 - Wales
 - Architecture
-category:
+categories:
 - Architecture
 
 ---
