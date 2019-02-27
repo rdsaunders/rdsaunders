@@ -2,10 +2,10 @@
 
 <meta name="title" content="{% if page.title %}{{ page.title }}{% endif %}{% if page.caption %} | {{ page.caption }}{% endif %}">
 
-{% if page.excerpt.size > 1 %}
-<meta name="description" content="{{ page.excerpt }}">
-{% elsif page.caption.size > 1 %} 
+{% if page.caption.size > 1 %}
 <meta name="description" content="{{ page.caption }}">
+{% elsif page.excerpt.size > 1 %} 
+<meta name="description" content="{{ page.excerpt }}">
 {% else %}
 <meta name="description" content="{{ site.description }}">
 {% endif %}
