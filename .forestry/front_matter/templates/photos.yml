@@ -26,6 +26,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- _photos/renovation.md
 - _photos/l-aquatic-paradis.md
 - _photos/newport-university-reflections.md
 - _photos/tate-fly-by.md
