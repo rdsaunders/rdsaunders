@@ -8,6 +8,5 @@ category:
 tags:
 - Urbex
 - Stairs
-published: false
 
 ---
