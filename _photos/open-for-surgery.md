@@ -7,6 +7,5 @@ photoset: _photosets/gdansk-poland.md
 category:
 - Urban Exploration
 tags: []
-published: false
 
 ---
