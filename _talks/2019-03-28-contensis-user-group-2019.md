@@ -9,6 +9,5 @@ meta:
   event: Contensis User Group
   location: Hackney House, 25-27 Curtain Road, EC2A 3LT
   resources: ''
-published: false
 
 ---
