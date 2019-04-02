@@ -8,6 +8,6 @@ embed: true
 meta:
   event: Contensis User Group
   location: Hackney House, 25-27 Curtain Road, EC2A 3LT
-  resources: ''
+  resources: "* [Slides on Speakerdeck](https://speakerdeck.com/rdsaunders/contensis-user-group-spring-2019)"
 
 ---
