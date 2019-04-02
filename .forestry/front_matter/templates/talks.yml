@@ -65,7 +65,7 @@ fields:
   hidden: false
   default: talk
 pages:
-- _talks/contensis-product-update.md
+- _talks/2019-03-28-contensis-user-group-2019.md
 - _talks/2017-11-09-harmonising-content-and-code.md
 - _talks/2016-03-10-sharing-is-caring.md
 - _talks/2015-06-04-rocket-conference-2015.md
