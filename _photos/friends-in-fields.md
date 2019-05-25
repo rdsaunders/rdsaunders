@@ -6,6 +6,5 @@ caption: 'Morning walk with Elsie and we find these friendly horses through the 
 photoset: ''
 category: []
 tags: []
-published: false
 
 ---
