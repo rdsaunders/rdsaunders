@@ -10,13 +10,12 @@ pagination:
 
 {% for item in paginator.posts %}
 	<article class="item item__link">
-		<a class="item__link" href="{{ item.url }}"> <img srcset="{{ site.cloudinary_url }}/w_320/f_auto{{ item.image }} 320w,
-			{{ site.cloudinary_url }}/w_512/f_auto{{ item.image }} 512w,
-			{{ site.cloudinary_url }}/w_768/f_auto{{ item.image }} 768w,
-			{{ site.cloudinary_url }}/w_1400/f_auto{{ item.image }} 1400w"
-	   src="{{ site.cloudinary_url }}/w_320/f_auto{{ item.image }}" class="w-100 mv3" /></a>
+		<a class="item__link" href="{{ item.url }}"> <img srcset="{{ site.baseurl }}/{{ item.image }}?nf_resize=fit&w=300 320w,
+			{{ site.baseurl }}/{{ item.image }}?nf_resize=fit&w=512 512w,
+			{{ site.baseurl }}/{{ item.image }}?nf_resize=fit&w=768 768w,
+			{{ site.baseurl }}/{{ item.image }}?nf_resize=fit&w=1400 1400w"
+	   src="{{ site.baseurl }}/{{ item.image }}?nf_resize=fit&w=320" class="w-100 mv3" /></a>
 		<div class="flex-ns items-center">
-		<h2 class="f5"><a class="item__link" href="{{ item.url }}">{{ item.title }}</a></h2>
 		<p class="item__meta ml-auto tr">
 			<time class="meta-date db f6 ttu mv1" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
 		</p>

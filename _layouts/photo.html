@@ -3,19 +3,19 @@ layout: default
 ---
 <article class="h-entry">
     <header class="pb3">
-        <h1 class="p-name f2 f1-l lh-title mt0 mb2">{{ page.title }}</h1>
+        <h1 class="p-name f2 f1-l lh-title mt0 mb2" datetime="{{ page.published | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</h1>
         <div class="mb2">
 
-            <time class="dt-published ttu tracked f6 mid-gray db" datetime="{{ page.published | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+            <time class="dt-published ttu tracked f6 mid-gray db" >{{ page.location }}</time>
 
         </div>
     </header>
 
-    <img srcset="{{ site.cloudinary_url }}/w_320/f_auto{{ page.image }} 320w,
-                 {{ site.cloudinary_url }}/w_512/f_auto{{ page.image }} 512w,
-                 {{ site.cloudinary_url }}/w_768/f_auto{{ page.image }} 768w,
-                 {{ site.cloudinary_url }}/w_1400/f_auto{{ page.image }} 1400w"
-            src="{{ site.cloudinary_url }}/w_320/f_auto{{ page.image }}" class="w-100 mv3" />
+    <img srcset="{{ site.baseurl }}/{{ page.image }}?nf_resize=fit&w=320 320w,
+                {{ site.baseurl }}/{{ page.image }}?nf_resize=fit&w=512 512w,
+                {{ site.baseurl }}/{{ page.image }}?nf_resize=fit&w=768 768w,
+                {{ site.baseurl }}/{{ page.image }}?nf_resize=fit&w=1400 1400w"
+            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="w-100 mv3" />
 
 
     <div class="e-content lh-copy measure-wide-m measure-wide-l">
@@ -25,7 +25,10 @@ layout: default
     {% if page.tags %}
     <footer>
         <div class="mb3 tr">
-          {{ page.tags | array_to_sentence_string }}
+            {% if page.tags.size > 0 %}
+            Tag{% if page.tags.size > 1 %}s{% endif %}:
+            {{ page.tags | sort | join: ", " }}
+          {% endif %}
         </div>
     </footer>
     {% endif %} 

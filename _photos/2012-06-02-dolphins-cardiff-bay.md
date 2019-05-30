@@ -1,0 +1,8 @@
+---
+title: "'Dolphins' Cardiff Bay"
+caption: "'Dolphins' Cardiff Bay"
+date: 2012-06-02 13:14
+location: ""
+tags: ""
+image: assets/uploads/2012/06/a6f06ba484cb16ffc011e84ba17c2d62.jpg
+---
