@@ -30,15 +30,15 @@ fields:
   hidden: true
   default: true
 pages:
-- _posts/2018-01-03-contensis-10-1-released.md
-- _posts/2018-01-03-bringing-consistency-to-your-organisation-s-content.md
-- _posts/2018-01-03-contensis-10-0-released.md
-- _posts/2018-01-03-from-code-mirror-to-monaco.md
-- _posts/2018-02-21-contensis-11-is-now-available.md
-- _posts/2018-03-22-introducing-the-contensis-open-roadmap.md
-- _posts/2018-05-15-new-editorial-features-released-in-contensis-11-1.md
-- _posts/2018-12-07-upload-and-deliver-beautiful-responsive-images-with-contensis-11-3.md
-- _posts/2018-01-03-building-a-what-s-new-page-with-content-types-and-entries.md
-- _posts/2018-08-08-creating-connected-content-with-inline-entries.md
-- _posts/2018-01-03-creating-a-simple-content-model-in-contensis-9.md
 - _posts/2018-01-03-breaking-up-content-for-reuse.md
+- _posts/2018-01-03-creating-a-simple-content-model-in-contensis-9.md
+- _posts/2018-08-08-creating-connected-content-with-inline-entries.md
+- _posts/2018-01-03-building-a-what-s-new-page-with-content-types-and-entries.md
+- _posts/2018-12-07-upload-and-deliver-beautiful-responsive-images-with-contensis-11-3.md
+- _posts/2018-05-15-new-editorial-features-released-in-contensis-11-1.md
+- _posts/2018-03-22-introducing-the-contensis-open-roadmap.md
+- _posts/2018-02-21-contensis-11-is-now-available.md
+- _posts/2018-01-03-from-code-mirror-to-monaco.md
+- _posts/2018-01-03-contensis-10-0-released.md
+- _posts/2018-01-03-bringing-consistency-to-your-organisation-s-content.md
+- _posts/2018-01-03-contensis-10-1-released.md
