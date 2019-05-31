@@ -33,10 +33,10 @@ sections:
   label: Pages
   create: all
 upload_dir: ''
-public_path: https://res.cloudinary.com/rdsaunders/image/upload
+public_path: https://www.rdsaunders.co.uk/assets/uploads
 front_matter_path: ''
-use_front_matter_path: true
-file_template: ":filename:"
+use_front_matter_path: 
+file_template: ":year:/:month:/:filename:"
 build:
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
   publish_command: bundle exec jekyll build -d _site
