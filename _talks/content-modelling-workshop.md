@@ -9,6 +9,5 @@ meta:
   event: Brighton University
   location: Moulsecoomb Campus, Brighton, UK
   resources: ''
-published: false
 
 ---
