@@ -26,13 +26,14 @@ fields:
   hidden: false
   default: post
 pages:
-- _posts/2016-11-22-documenting-your-product-aids-the-iterative-process.md
-- _posts/2014-07-09-responsive-web-design-the-ever-changing-landscape.md
-- _posts/2018-01-17-using-the-css-selector-to-check-for-visual-alignment.md
-- _posts/2015-11-05-underground.md
-- _posts/2018-01-17-identifying-visual-density-and-hierarchy-using-the-css-filter-property.md
-- _posts/2015-11-25-cobwebs.md
-- _posts/2016-02-13-svn-for-atom-editor.md
-- _posts/2013-12-06-farewell-handheld-conference.md
-- _posts/2013-09-23-what-makes-a-successful-local-government-intranet.md
+- _posts/sendamangalam-nammakal.md
 - _posts/2016-10-10-small-ux-changes-big-impact.md
+- _posts/2013-09-23-what-makes-a-successful-local-government-intranet.md
+- _posts/2013-12-06-farewell-handheld-conference.md
+- _posts/2016-02-13-svn-for-atom-editor.md
+- _posts/2015-11-25-cobwebs.md
+- _posts/2018-01-17-identifying-visual-density-and-hierarchy-using-the-css-filter-property.md
+- _posts/2015-11-05-underground.md
+- _posts/2018-01-17-using-the-css-selector-to-check-for-visual-alignment.md
+- _posts/2014-07-09-responsive-web-design-the-ever-changing-landscape.md
+- _posts/2016-11-22-documenting-your-product-aids-the-iterative-process.md
