@@ -5,6 +5,8 @@ excerpt: ''
 date: 2007-12-09 00:00:00 +0000
 tags:
 - India
+- Travel
+- Personal
 
 ---
 We were split into four groups to visit different churches in Sendamangalem and Nammakal in the Tamil Nadu region of India.
