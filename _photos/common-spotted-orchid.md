@@ -12,6 +12,5 @@ tags:
 - field
 - spotted
 - purple
-published: false
 
 ---
