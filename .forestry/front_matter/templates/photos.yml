@@ -33,15 +33,14 @@ fields:
   name: tags
   label: Tags
 pages:
-- _photos/test-3.md
-- _photos/test-2.md
-- _photos/test-1.md
-- _photos/cooli.md
 - _photos/esra-in-the-bluebells.md
-- _photos/open-for-surgery.md
-- _photos/newport-university-reflections.md
+- _photos/renovation.md
 - _photos/friends-in-fields.md
+- _photos/open-for-surgery.md
+- _photos/cooli.md
+- _photos/test-2.md
+- _photos/test-3.md
+- _photos/newport-university-reflections.md
 - _photos/masonic-lodge-ruins.md
 - _photos/l-aquatic-paradis.md
 - _photos/tate-fly-by.md
-- _photos/renovation.md
