@@ -33,6 +33,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- _photos/civic-centre.md
 - _photos/renovation.md
 - _photos/open-for-surgery.md
 - _photos/newport-university-reflections.md
