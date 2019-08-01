@@ -33,7 +33,7 @@ sections:
   label: Pages
   create: all
 upload_dir: assets/uploads
-public_path: https://www.rdsaunders.co.uk/assets/uploads
+public_path: https://www.rdsaunders.co.uk/.netlify/large-media
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":year:/:month:/:filename:"
