@@ -10,6 +10,5 @@ tags:
 - esra
 - border collie
 - dog
-published: false
 
 ---
