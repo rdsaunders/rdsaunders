@@ -33,6 +33,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- _photos/test-1.md
 - _photos/cooli.md
 - _photos/esra-in-the-bluebells.md
 - _photos/open-for-surgery.md
