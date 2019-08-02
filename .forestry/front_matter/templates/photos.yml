@@ -33,6 +33,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- _photos/my-quiet-place.md
 - _photos/esra-in-the-bluebells.md
 - _photos/trekfest-2019.md
 - _photos/civic-centre.md
