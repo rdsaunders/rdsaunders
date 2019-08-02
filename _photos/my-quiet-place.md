@@ -9,6 +9,5 @@ tags:
 - Wild camping
 - bushcraft
 - hammock
-published: false
 
 ---
