@@ -33,11 +33,11 @@ fields:
   name: tags
   label: Tags
 pages:
-- _photos/morning-commute.md
-- _photos/my-quiet-place.md
-- _photos/esra-in-the-bluebells.md
 - _photos/trekfest-2019.md
 - _photos/civic-centre.md
+- _photos/esra-in-the-bluebells.md
+- _photos/my-quiet-place.md
+- _photos/morning-commute.md
 - _photos/renovation.md
 - _photos/open-for-surgery.md
 - _photos/newport-university-reflections.md

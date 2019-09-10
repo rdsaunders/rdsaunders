@@ -26,6 +26,7 @@ fields:
   hidden: false
   default: post
 pages:
+- _posts/weeknotes-s01e01.md
 - _posts/2016-11-22-documenting-your-product-aids-the-iterative-process.md
 - _posts/2016-10-10-small-ux-changes-big-impact.md
 - _posts/2018-01-17-using-the-css-selector-to-check-for-visual-alignment.md
