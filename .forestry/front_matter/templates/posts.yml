@@ -26,6 +26,7 @@ fields:
   hidden: false
   default: post
 pages:
+- _posts/2019-09-15-weeknotes-s01e01.md
 - _posts/2019-09-08-weeknotes-s01e01.md
 - _posts/2016-11-22-documenting-your-product-aids-the-iterative-process.md
 - _posts/2016-10-10-small-ux-changes-big-impact.md
