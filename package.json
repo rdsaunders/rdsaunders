@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "NPM Builder runner for Netlify",
   "scripts": {
-    "build": "jekyll build"
+    "build": "bundle exec jekyll build"
   },
   "author": "Richard Saunders"
 }
