@@ -15,7 +15,7 @@ layout: default
         {{ page.content | markdownify}}
     </div>
 
-    {% if page.tags %}
+    {% if page.tags.size > 1 %}
     <footer>
         <div class="mb3">
           Tagged: {{ page.tags | array_to_sentence_string }}
