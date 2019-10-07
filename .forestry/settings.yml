@@ -33,11 +33,6 @@ sections:
   label: Talks
   create: all
   match: "**/*"
-- type: directory
-  path: _notes
-  label: Notes
-  create: all
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
