@@ -40,8 +40,6 @@ collections:
   links:
     output: true
     permalink: /bookmarks/:year/:month/:title/
-  notes:
-    output: true
   talks:
     output: true
   photos:
@@ -59,10 +57,6 @@ defaults:
       type: talks
     values:
       layout: talk
-  - scope:
-      type: notes
-    values:
-      layout: note
   - scope:
       type: links
     values:

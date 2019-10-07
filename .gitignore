@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 ig-data
 data.csv
+.vscode
