@@ -1,4 +1,0 @@
----
-title: Gdańsk, Poland
-image: 
----
