@@ -21,25 +21,26 @@ pagination:
   </header>
   <div>
 
-    {% for bookmark in month.items reversed %}
+    {% for item in month.items reversed %}
     <article class="mb4">
       <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
-        <a href="{{ bookmark.link}}" rel="bookmark" target="_blank">{{ bookmark.title }}</a>
+        <a href="{{ item.link}}" rel="bookmark" target="_blank">{{ item.title }}</a>
       </h3>
 
-      <time class="mid-gray db mb2" datetime="{{ bookmark.date | date_to_xmlschema }}">{{ bookmark.date | date: "%d %B, %Y" }}</time>
+      <time class="mid-gray db mb2" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
 
-      {% if bookmark.excerpt %}
+      {% if item.excerpt %}
       <div class="item__excerpt mb2">
-        {{ bookmark.excerpt }}
+        {{ item.excerpt }}
       </div>
       {% endif %}
 
-      {% if bookmark.tags %}
+      {% if item.tags.size > 0 %}
       <div class="item__tags">
-        {{ bookmark.tags }}
+        <b>Tagged with:</b> {{ item.tags | array_to_sentence_string }}
       </div>
       {% endif %}
+
     </article>
 
     {% endfor %}
