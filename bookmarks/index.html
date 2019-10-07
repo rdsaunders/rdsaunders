@@ -21,7 +21,7 @@ pagination:
   </header>
   <div>
 
-    {% for bookmark in month.items %}
+    {% for bookmark in month.items reversed %}
     <article class="mb4">
       <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
         <a href="{{ bookmark.link}}" rel="bookmark" target="_blank">{{ bookmark.title }}</a>
