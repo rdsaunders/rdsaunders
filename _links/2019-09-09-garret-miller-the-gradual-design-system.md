@@ -3,10 +3,13 @@ layout: link
 date: September 09, 2019 at 03:49PM
 title: 'Video: Garret Miller - The gradual design system'
 link: https://vimeo.com/356898983
-excerpt: Design systems have emerged as a solution to the complexity of building and
-  maintaing software. As Slack has rapidly scaled, we've built our own component library
-  that outlines our product foundations and interface elements. In the process, we
-  found that the most important output of our work isn't j
+excerpt: "As Slack has rapidly scaled, we've built our own component library that
+  outlines our product foundations and interface elements. In the process, we found
+  that the most important output of our work isn't just the design system, but rather
+  the processes that define how we work together with shifting priorities and a rapidly
+  scaling product. \n\nLearn about what we've built, the hiccups we've encountered
+  along the way, and how the work we're doing now will pave the way for an even more
+  powerful Slack in the future."
 tags:
 - Design Systems
 - Video
