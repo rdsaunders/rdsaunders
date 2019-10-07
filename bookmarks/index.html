@@ -1,47 +1,52 @@
 ---
 layout: page
 title: Bookmarks
-pagination: 
+pagination:
   enabled: true
   collection: links
   sort_reverse: true
 ---
-{% assign bookmarks = site.links | sort:"date" %}
-{% for bookmark in bookmarks reversed %}
-  {% assign this_year = bookmark.date | date:"%Y" %}
-  {% assign this_month = bookmark.date | date:"%M" %}
 
-  {% if this_year != year %}
-    {% unless forloop.first %}
-  </div>
-</section>
-    {% endunless %}
+{% assign postsByYear = site.links | group_by_exp:"bookmark", "bookmark.date | date: '%Y'" %}
 
-    <section class="flex mb4 pv2 bb b--moon-gray">
-      <header class="pr3" aria-labelledby="year-{{ this_year }}">
-        <h2 id="year-{{ this_year }}" class="f3 f3-m f3-l ma0">{{ this_year }}</h2>
-      </header>
+{% for year in postsByYear reversed %}
+<h1>{{ year.name }}</h1>
+{% assign postsByMonth = year.items | group_by_exp:"bookmark", "bookmark.date | date: '%B'" %}
 
-      <div>
-        {% assign year = this_year %}
+{% for month in postsByMonth reversed %}
+<section class="flex mb4 pv2 bb b--moon-gray"><!-- start of month -->
+
+  <header class="pr3" aria-labelledby="month-{{ month.name }}">
+    <h2 id="month-{{ month.name }}" class="f3 f3-m f3-l ma0">{{ month.name }}</h2>
+  </header>
+  <div>
+
+    {% for bookmark in month.items %}
+    <article class="mb4">
+      <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
+        <a href="{{ bookmark.link}}" rel="bookmark" target="_blank">{{ bookmark.title }}</a>
+      </h3>
+
+      <time class="mid-gray db mb2" datetime="{{ bookmark.date | date_to_xmlschema }}">{{ bookmark.date | date: "%d %B, %Y" }}</time>
+
+      {% if bookmark.excerpt %}
+      <div class="item__excerpt mb2">
+        {{ bookmark.excerpt }}
+      </div>
       {% endif %}
 
-        <article class="mb4">
-          <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
-            <a href="{{ bookmark.link}}" rel="bookmark" target="_blank">{{ bookmark.title }}</a>
-          </h3>
+      {% if bookmark.tags %}
+      <div class="item__tags">
+        {{ bookmark.tags }}
+      </div>
+      {% endif %}
+    </article>
 
-           <time class="mid-gray db" datetime="{{ bookmark.date | date_to_xmlschema }}">{{ bookmark.date | date: "%d %B, %Y" }}</time>
+    {% endfor %}
 
-           {% if bookmark.excerpt %}
-           <div class="item__excerpt">
-             {{ bookmark.excerpt }}
-           </div>
-           {% endif %}
-        </article>
+  </div>
+</section><!-- end of month -->
 
-      {% if forloop.last %}
-    </section>
+{% endfor %}
 
-  {% endif %}
 {% endfor %}
