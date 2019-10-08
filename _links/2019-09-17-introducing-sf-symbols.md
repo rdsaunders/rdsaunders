@@ -15,5 +15,6 @@ tags:
 - Design
 - SVG
 - Icons
+- Apple
 
 ---
