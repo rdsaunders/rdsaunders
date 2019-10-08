@@ -1,7 +1,14 @@
 ---
-layout: link 
-date: "September 14, 2019 at 08:36PM"
-title: "Two Browsers Walked Into a Scrollbar"
-link: "https://www.filamentgroup.com/lab/scrollbars/"
-excerpt: "The scrollbar is a humble but productive mechanism that operates as the primary means through which one can traverse a document."
+layout: link
+date: September 14, 2019 at 08:36PM
+title: Two browsers walked into a scrollbar
+link: https://www.filamentgroup.com/lab/scrollbars/
+excerpt: The scrollbar is a humble but productive mechanism that operates as the primary
+  means through which one can traverse a document.
+tags:
+- CSS
+- Front End
+- Accessibility
+- a11y
+
 ---
