@@ -1,7 +1,7 @@
 ---
 layout: link
 date: September 11, 2019 at 04:52PM
-title: Top 10 application-design mMistakes
+title: Top 10 application-design mistakes
 link: https://www.nngroup.com/articles/top-10-application-design-mistakes/
 excerpt: Designing complex applications is a challenging undertaking. Building applications
   that have both the depth to support complicated tasks and the intuitiveness to make
