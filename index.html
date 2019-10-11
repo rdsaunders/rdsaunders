@@ -4,10 +4,14 @@ pagination:
   enabled: true
 ---
 
+<section>
+<header>
+  <h1 class="f1 lh-title">Articles</h1>
+</header>
 
 {% for item in paginator.posts %}
 <article class="pv4 bb bw1 b--light-gray">
-  <h2 class="f3 f2-m f2-l lh-solid mt0 mb2">
+  <h2 class="f3 f2-m f2-l lh-title mt0 mb2">
     <a class="link underline dim" href="{% if item.external %}{{ item.link }}{% else %}{{ item.url }}{% endif %}" target="{% if item.external %}_blank{% else %}_self{% endif %}">{{ item.title }}</a>
   </h2>
 
@@ -31,5 +35,7 @@ pagination:
 
 </article>
 {% endfor %}
+
+</section>
 
 {% include item-pagination.html %}
