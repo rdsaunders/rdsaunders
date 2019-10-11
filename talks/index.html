@@ -2,36 +2,47 @@
 layout: page
 title: Talks
 ---
-{% assign talks = site.talks | sort:"date" %}
-{% for talk in talks reversed %}
-  {% assign this_year = talk.date | date:"%Y" %}
 
-  {% if this_year != year %}
-    {% unless forloop.first %}
-  </div>
-</section>
-    {% endunless %}
+{% assign postsByYear = site.talks | group_by_exp:"talk", "talk.date | date: '%Y'" %}
 
-    <section class="flex mb4 pv2 bb b--moon-gray">
-      <header class="pr3" aria-labelledby="year-{{ this_year }}">
-        <h2 id="year-{{ this_year }}" class="f3 f3-m f3-l ma0">{{ this_year }}</h2>
-      </header>
+{% for year in postsByYear reversed %}
 
-      <div>
-        {% assign year = this_year %}
+<section class="flex mb4 pv2 bb b--moon-gray"><!-- start of year -->
+
+  <header class="pr3" aria-labelledby="year-{{ year.name }}">
+    <h2 id="year-{{ year.name }}" class="f3 f3-m f3-l ma0">{{ year.name }}</h2>
+  </header>
+  <div>
+
+    {% for item in year.items reversed %}
+    <article class="mb4">
+      <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
+        <a href="{{ item.link}}" rel="bookmark" target="_blank">{{ item.title }}</a>
+      </h3>
+
+      <h4 class="ma0 mb3">{{ item.meta.event }}</h4>
+      
+      <div class="mid-gray mb2">{{ item.meta.location }}</div>
+      
+      <time class="mid-gray db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+    
+      {% if item.excerpt %}
+      <div class="item__excerpt mb2">
+        {{ item.excerpt }}
+      </div>
       {% endif %}
 
-        <article class="mb4">
-          <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
-            <a href="{{ site.baseurl }}{{ talk.url }}" rel="bookmark">{{ talk.title }}</a>
-          </h3>
-          <h4 class="ma0 mb3">{{ talk.meta.event }}</h4>
-            <div class="mid-gray mb2">{{ talk.meta.location }}</div>
-            <time class="mid-gray db" datetime="{{ talk.date | date_to_xmlschema }}">{{ talk.date | date: "%d %B, %Y" }}</time>
-        </article>
+      {% if item.tags.size > 0 %}
+      <div class="item__tags">
+        <b>Tagged with:</b> {{ item.tags | array_to_sentence_string }}
+      </div>
+      {% endif %}
 
-      {% if forloop.last %}
-    </section>
+    </article>
 
-  {% endif %}
+    {% endfor %}
+
+  </div>
+</section><!-- end of year -->
+
 {% endfor %}
