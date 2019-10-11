@@ -6,7 +6,7 @@ link: https://github.com/alphagov/govdesign/blob/master/Poster_GovernmentDesignP
 excerpt: A set of posters the GOV.UK team put together to communicate their design
   principles.
 tags:
-- Design Principles
 - GOV.UK
+- Design principles
 
 ---

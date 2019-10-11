@@ -21,6 +21,12 @@ fields:
   name: link
   label: Link
   description: URL to the article
+- name: embed_url
+  type: text
+  config:
+    required: false
+  label: Embed URL
+  description: If you are linking to a video then add the link here.
 - type: tag_list
   name: tags
   label: Tags

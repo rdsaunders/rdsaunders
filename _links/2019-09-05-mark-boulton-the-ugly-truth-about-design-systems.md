@@ -1,7 +1,7 @@
 ---
 layout: link
 date: September 05, 2019 at 04:55PM
-title: 'Video: Mark Boulton - The ugly truth about design systems'
+title: Mark Boulton - The ugly truth about design systems
 link: https://vimeo.com/356885057
 excerpt: Design systems are great for scaling design across complex organisations
   and products. But in our drive for scale, consistency and standards, have we considered
@@ -10,7 +10,8 @@ excerpt: Design systems are great for scaling design across complex organisation
   from engineering and code, to designers and stakeholders and provide guidance from
   his experience of producing design systems for over a decade.
 tags:
-- video
 - Design Systems
+- Video
+embed_url: https://vimeo.com/356885057
 
 ---

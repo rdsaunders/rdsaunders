@@ -1,7 +1,7 @@
 ---
 layout: link
 date: September 17, 2019 at 08:07AM
-title: 'Video: Introducing SF Symbols'
+title: Introducing SF Symbols
 link: https://developer.apple.com/videos/play/wwdc2019/206/
 excerpt: SF Symbols introduces a comprehensive library of vector-based symbols that
   you can incorporate into your app to simplify the layout of user interface elements
@@ -11,6 +11,10 @@ excerpt: SF Symbols introduces a comprehensive library of vector-based symbols t
   to create new symbols for your specific needs that perfectly match the visual style
   of SF Symbols.
 tags:
-- video
+- Video
+- Design
+- SVG
+- Icons
+- Apple
 
 ---

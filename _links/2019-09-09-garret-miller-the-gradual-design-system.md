@@ -1,7 +1,7 @@
 ---
 layout: link
 date: September 09, 2019 at 03:49PM
-title: 'Video: Garret Miller - The gradual design system'
+title: Garret Miller - The gradual design system
 link: https://vimeo.com/356898983
 excerpt: "As Slack has rapidly scaled, we've built our own component library that
   outlines our product foundations and interface elements. In the process, we found
@@ -13,5 +13,6 @@ excerpt: "As Slack has rapidly scaled, we've built our own component library tha
 tags:
 - Design Systems
 - Video
+embed_url: https://vimeo.com/356898983
 
 ---
