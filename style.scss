@@ -4,3 +4,13 @@
 
 @import "tachyons";
 @import "_syntax";
+@import "_link";
+
+kbd {
+    font-size: 1.1em;
+    background: #fff;
+    padding: 0.25em 0.375em;
+    border-radius: 0.25em;
+    line-height: 1;
+    border: 1px solid #ccc;
+}
