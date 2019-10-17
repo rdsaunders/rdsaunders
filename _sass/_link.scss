@@ -12,24 +12,40 @@
 
 */
 
+a,
 .link {
-    text-decoration: none;
-    transition: color .15s ease-in;
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+    text-decoration-thickness: .08em;
+    text-underline-offset: 0.08em;
+    color: var(--dark);
   }
   
+  a:link,
+  a:visited,
   .link:link,
   .link:visited {
     transition: color .15s ease-in;
   }
+
+  .a:hover,
   .link:hover   {
-    transition: color .15s ease-in;
+    background-color: var(--blue);
+    color: var(--white);
   }
+
+  a:active,
   .link:active  {
     transition: color .15s ease-in;
   }
+
+  a:focus,
   .link:focus   {
-    transition: color .15s ease-in;
-    outline: 3px dotted currentColor;
+    transition: all .15s ease-in;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    outline: 0;
   }
   
   
