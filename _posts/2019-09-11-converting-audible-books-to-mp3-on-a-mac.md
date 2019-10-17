@@ -3,7 +3,7 @@ layout: post
 category: []
 title: " Converting Audible books to MP3 on a Mac"
 excerpt: Easily convert Audible audio books to MP3 with Open Audible.
-date: 2019-09-12 00:00:00 +0100
+date: 2019-09-11 10:41:00 +0100
 tags:
 - Audio Books
 - Books
