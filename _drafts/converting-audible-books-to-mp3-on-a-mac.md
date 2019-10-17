@@ -2,9 +2,11 @@
 layout: post
 category: []
 title: " Converting Audible books to MP3 on a Mac"
-excerpt: ''
+excerpt: Easily convert Audible audio books to MP3 with Open Audible.
 date: 2019-09-11 00:00:00 +0100
-tags: []
+tags:
+- Audio Books
+- Books
 
 ---
 ![The open Audible interface showing the artwork of Elon Musk's biography.](/assets/uploads/2019/10/OpenAudible.png "A screenshot of the Open Audible interface")
