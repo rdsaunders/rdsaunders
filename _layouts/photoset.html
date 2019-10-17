@@ -8,7 +8,7 @@ layout: default
 
     <div class="flex">
       {% for item in photoset reversed %}
-        <img srcset="{{ site.cloudinary_url }}/w_320/f_auto{{ item.image }} 320w,
+        <img loading="lazy" srcset="{{ site.cloudinary_url }}/w_320/f_auto{{ item.image }} 320w,
         {{ site.cloudinary_url }}/w_512/f_auto{{ item.image }} 512w,
         {{ site.cloudinary_url }}/w_768/f_auto{{ item.image }} 768w,
         {{ site.cloudinary_url }}/w_1400/f_auto{{ item.image }} 1400w"
