@@ -30,6 +30,7 @@ fields:
   default: []
   label: Category
 pages:
+- _posts/2019-09-11-converting-audible-books-to-mp3-on-a-mac.md
 - _posts/2019-10-06-weeknotes-s01e05.md
 - _posts/2019-09-22-weeknotes-s01e03.md
 - _posts/2019-09-29-weeknotes-s01e04.md
