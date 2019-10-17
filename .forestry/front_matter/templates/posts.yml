@@ -17,6 +17,8 @@ fields:
   type: datetime
   hidden: false
   default: ''
+  config:
+    display_utc: true
 - type: tag_list
   name: tags
   label: Tags
