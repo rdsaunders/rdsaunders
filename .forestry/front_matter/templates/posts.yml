@@ -28,8 +28,16 @@ fields:
   hidden: false
   default: post
 - name: category
-  type: tag_list
+  type: select
   default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: categories
+      file: _data/categories.yml
+      path: Categories
   label: Category
 pages:
 - _posts/2019-09-29-weeknotes-s01e04.md
