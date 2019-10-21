@@ -3,10 +3,17 @@
    <p>By <a rel="author" class="p-author h-card" href="{{ site.url }}">{{ site.author}}</a> on
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time> 
     
-    {% if page.category.size > 0 %}
-    <span class="p-category">
-     in {{ page.categories | array_to_sentence_string }}
-    </span>
+    {% if page.categories.size > 0 %}
+    in
+        {% if post %}
+            {% assign categories = post.categories %}
+        {% else %}
+            {% assign categories = page.categories %}
+        {% endif %}
+        {% for category in categories %}
+         <a class="p-category" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+         {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
     {% endif %}
     </p>
 </address>
