@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: _data/categories.yml
+  label: Categories
 - type: jekyll-posts
   label: Blog
   create: documents
