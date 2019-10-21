@@ -14,7 +14,7 @@ layout: default
     {% if page.tags.size > 1 %}
     <footer>
         <div class="mb3 p-category">
-          Tagged: {{ page.tags | array_to_sentence_string }}
+          <b>Tagged:</b> {{ page.tags | array_to_sentence_string }}
         </div>
     </footer>
     {% endif %} 
