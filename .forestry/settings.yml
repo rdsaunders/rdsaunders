@@ -5,9 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: _date/categories.yml
+  path: _data/categories.yml
   label: Categories
-  match: "**/*"
 - type: jekyll-posts
   label: Blog
   create: documents
