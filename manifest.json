@@ -3,7 +3,7 @@
   "short_name": "rdsaunders",
   "lang": "en-GB",
   "start_url": "/",
-  "display": "browser",
+  "display": "standalone",
   "icons": [
       {
           "src": "/images/android-chrome-192x192.png",
