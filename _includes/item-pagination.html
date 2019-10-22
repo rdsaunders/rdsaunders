@@ -2,7 +2,7 @@
 <nav class="flex justify-between pv3 bb b--moon-gray">
 
   {% if paginator.previous_page %}
-    <a class="link" href="{{ paginator.previous_page_path }}" rel="prev">Previous</a>
+    <a href="{{ paginator.previous_page_path }}" rel="prev">Previous</a>
   {% else %}
     <span class="mid-gray">Previous</span>
   {% endif %}
@@ -10,7 +10,7 @@
   <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
   {% if paginator.next_page %}
-    <a class="link" href="{{ paginator.next_page_path }}" rel="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" rel="next">Next</a>
   {% else %}
     <span class="mid-gray">Next</span>
   {% endif %}

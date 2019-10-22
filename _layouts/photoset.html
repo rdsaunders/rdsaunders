@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="h-entry">
-    <h1 class="p-name f2 f1-l lh-title mt0 mb2">{{ page.title }}</h1>
+    <h1 class="f2 f1-l lh-title mt0 mb2 | p-name">{{ page.title }}</h1>
 
     {% assign photoset = site.photos | where: 'photoset', page.relative_path %}
 

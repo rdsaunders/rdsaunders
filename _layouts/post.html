@@ -3,17 +3,17 @@ layout: default
 ---
 <article class="h-entry">
     <header class="bb bw1 pb3 b--moon-gray">
-        <h1 class="p-name f2 f1-l lh-title mt0 mb2">{{ page.title }}</h1>
+        <h1 class="f2 f1-l lh-title mt0 mb2 | p-name">{{ page.title }}</h1>
         {% include author.html %}
     </header>
 
-    <div class="e-content lh-copy measure-wide-m measure-wide-l">
+    <div class="lh-copy measure-wide-m measure-wide-l | e-content">
         {{ page.content | markdownify}}
     </div>
 
     {% if page.tags.size > 1 %}
     <footer>
-        <div class="mb3 p-category">
+        <div class="mb3 | p-category">
           <b>Tagged:</b> {{ page.tags | array_to_sentence_string }}
         </div>
     </footer>

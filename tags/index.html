@@ -1,0 +1,27 @@
+---
+layout: page
+permalink: /tags/
+title: Tags
+---
+
+
+<section class="">
+    {% for tag in site.tags %}
+
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <article class="flex-none-ns flex-m flex-l mb4 pv2 bb b--moon-gray">
+        <header class="pr3 mb4" aria-labelledby="{{ tag_name }}">
+            <h2 class="f3 f3-m f3-l ma0">{{ tag_name }}</h2>
+        </header>
+
+        <div>
+            <a name="{{ tag_name | slugize }}"></a>
+            {% for post in site.tags[tag_name] %}
+            <article class="h-entry">
+                <h3 class="f3 f3-m f3-l lh-title mt0 mb2"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+    {% endfor %}
+</section>
