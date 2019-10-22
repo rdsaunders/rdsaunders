@@ -1,0 +1,16 @@
+{
+  "name": "The personal site of Richard Saunders",
+  "short_name": "rdsaunders",
+  "lang": "en-GB",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#307fe2",
+  "icons": [
+    {
+      "src": "/images/homescreen.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#f4f4f4"
+}

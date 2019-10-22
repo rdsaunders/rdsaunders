@@ -28,6 +28,10 @@ github_username:  rdsaunders
 dribbble_username: rdsaunders
 instagram_username: richardsaunders
 
+# Theme / Manifest
+theme_color: #f4f4f4
+
+
 
 # Build settings
 markdown: kramdown
