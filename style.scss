@@ -6,11 +6,26 @@
 @import "_syntax";
 @import "_link";
 
+:root {
+    --blue: #307FE2;
+    --dark: #111;
+    --white: #fff;
+    --gray: #ccc;
+    ---light-gray: #eee;
+}
+
+.br-100 {     border-radius: 100%; }
+
+.b--moon-gray {    border-color: var(gray); }
+.b--light-gray {   border-color: var(light-gray);}
+
 kbd {
     font-size: 1.1em;
-    background: #fff;
+    background: var(white);
     padding: 0.25em 0.375em;
     border-radius: 0.25em;
     line-height: 1;
-    border: 1px solid #ccc;
+    border: 1px solid var(gray);
 }
+
+.no-underline { text-decoration: none; }

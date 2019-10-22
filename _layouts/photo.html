@@ -18,13 +18,13 @@ layout: default
             src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="w-100 mv3" />
 
 
-    <div class="e-content lh-copy measure-wide-m measure-wide-l">
+    <div class="lh-copy measure-wide-m measure-wide-l | e-content ">
         {{ page.content | markdownify}}
     </div>
 
     {% if page.tags %}
-    <footer>
-        <div class="mb3 tr">
+    <footer class="flex justify-end">
+        <div class="mb3">
             {% if page.tags.size > 0 %}
             Tag{% if page.tags.size > 1 %}s{% endif %}:
             {{ page.tags | sort | join: ", " }}

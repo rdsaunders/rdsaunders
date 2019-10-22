@@ -27,11 +27,7 @@
 //  External Library Includes 
 // @import 'tachyons/normalize';
 
-:root {
-    --blue: #307FE2;
-    --dark: #111;
-    --white: #fff;
-}
+
 
 //  Variables 
 //  Importing here will allow you to override any variables in the modules 
@@ -53,8 +49,8 @@
 // @import 'tachyons/background-position';
 // @import 'tachyons/outlines';
 @import 'tachyons/borders';
-@import 'tachyons/border-colors';
-@import 'tachyons/border-radius';
+// @import 'tachyons/border-colors';
+// @import 'tachyons/border-radius';
 // @import 'tachyons/border-style';
 @import 'tachyons/border-widths';
 // @import 'tachyons/box-shadow';
@@ -84,8 +80,8 @@
 @import 'tachyons/spacing';
 // @import 'tachyons/negative-margins';
 // @import 'tachyons/tables';
-@import 'tachyons/text-decoration';
-@import 'tachyons/text-align';
+// @import 'tachyons/text-decoration';
+// @import 'tachyons/text-align';
 @import 'tachyons/text-transform';
 @import 'tachyons/type-scale';
 @import 'tachyons/typography';
@@ -93,7 +89,7 @@
 @import 'tachyons/visibility';
 // @import 'tachyons/white-space';
 @import 'tachyons/vertical-align';
-@import 'tachyons/hovers';
+// @import 'tachyons/hovers';
 // @import 'tachyons/z-index';
 // @import 'tachyons/nested';
 @import 'tachyons/styles';
