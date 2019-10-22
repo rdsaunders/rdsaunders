@@ -1,6 +1,6 @@
 ---
 title: Bacon rolls
-date: 2019-10-19 00:00:00 +0100
+date: 2019-10-18T23:00:00.000+00:00
 image: "/assets/uploads/2019/10/8BD742C7-4B28-4B28-966F-A50E162747D0.jpeg"
 caption: Bacon rolls at Who Let the Dads Out
 photoset: ''
@@ -9,6 +9,5 @@ tags:
 - Bacon
 - child
 - bnw
-published: false
 
 ---
