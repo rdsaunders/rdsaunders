@@ -8,27 +8,50 @@
 
 :root {
     --blue: #307FE2;
-    --dark: #111;
+    --near-black: #111;
     --white: #fff;
     --near-white: #f4f4f4;
     --gray: #ccc;
     --mid-gray: #555;
     --light-gray: #eee;
-
-
+    --spacing-extra-small: .25rem;
+    --spacing-small: .5rem;
+    --spacing-large: 2rem;
+    --spacing-extra-large: 4rem;
+    --breakpoint-not-small: 'screen and (min-width: 30em)';
+    --breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)';
+    --breakpoint-large: 'screen and (min-width: 60em)';
 }
 
+.sans-serif {
+    font-family: -apple-system, BlinkMacSystemFont,
+                 'avenir next', avenir,
+                 'helvetica neue', helvetica,
+                 ubuntu,
+                 roboto, noto,
+                 'segoe ui', arial,
+                 sans-serif;
+}
+  
 
-
+// Border radius
 .br-100 {     border-radius: 100%; }
 .br-pill {     border-radius: 9999px; }
 
+// Border color
 .b--moon-gray {    border-color: var(--gray); }
 .b--light-gray {   border-color: var(--light-gray);}
+
+// Background color
 .bg-near-white {    background-color: var(--near-white); }
 .bg-mid-gray {      background-color: var(--mid-gray); }
-.bb { border-bottom-style: solid; border-bottom-width: 1px; }
+
+// Text color
 .white { color: var(--white);}
+.near-black {color: var(--near-black)}
+
+// Border styling
+.bb { border-bottom-style: solid; border-bottom-width: 1px; }
 .bw1 { border-width: .125rem; }
 .bw2 { border-width: .25rem; }
 
