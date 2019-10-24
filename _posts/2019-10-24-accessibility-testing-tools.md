@@ -44,7 +44,7 @@ It's a great question. I certainly have my go to list of tools bookmarked. It wa
 - [Caret Browsing](https://chrome.google.com/webstore/detail/caret-browsing/fklpgenihifpccgiifchnihilipmbffg?hl=en) – Browse the text of web pages using arrow keys.
 
 ## Screen readers
-- [NVDA](https://www.nvaccess.org/download/
+- [NVDA](https://www.nvaccess.org/download/)
 - [NVDA quick key reference](https://www.nvaccess.org/files/nvdaTracAttachments/455/keycommands%20with%20laptop%20keyboard%20layout.html)
 - Voice Over ([User Guide](https://help.apple.com/voiceover/mac/10.15/))
 - [Voice Over quick key reference](https://www.apple.com/voiceover/info/guide/_1131.html)
