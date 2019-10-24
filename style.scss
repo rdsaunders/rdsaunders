@@ -16,6 +16,7 @@
     --light-gray: #eee;
     --spacing-extra-small: .25rem;
     --spacing-small: .5rem;
+    --spacing-medium: 1rem;
     --spacing-large: 2rem;
     --spacing-extra-large: 4rem;
     --breakpoint-not-small: 'screen and (min-width: 30em)';
@@ -64,4 +65,9 @@ kbd {
     border: 1px solid var(--gray);
 }
 
+blockquote {
+    padding-left: var(--spacing-medium);
+    border-left: 2px solid var(--blue);
+
+}
 .no-underline { text-decoration: none; }
