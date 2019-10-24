@@ -54,4 +54,18 @@ a,
     border: 1px solid var(--blue);
   }
   
-  
+  a[rel~=noopener]:after {
+  background:url(../images/svg/external.svg) no-repeat;
+  height: 0.75em;
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  opacity: 0.8;
+  vertical-align: baseline;
+}
+
+ a[rel~=me]:after {
+    background: none;
+}
