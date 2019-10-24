@@ -4,7 +4,7 @@ category: Accessibility
 title: Accessibility testing tools
 excerpt: 'A collection of accessibility tools collated from a question raised in the
   Design systems slack community. '
-date: 2019-10-24 21:20:00 +0100
+date: 2019-10-24T20:20:00.000+00:00
 tags:
 - a11y
 - Accessibility
@@ -24,7 +24,6 @@ It's a great question. I certainly have my go to list of tools bookmarked. It wa
 
 ## Browser extensions and plugins
 - [Chrome Lens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd) – Visual impairment simulation and auditing tools to aid accessibility development.
-
 - [aXe - Web accessibility testing](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) – Accessibility checker for WCAG 2 and Section 508 accessibility.
 - [aXe Coconut](https://chrome.google.com/webstore/detail/axe-coconut-web-accessibi/iobddmbdndbbbfjopjdgadphaoihpojp?hl=en) – Experimental version of the popular aXe - Web accessibility checker.
 - [WAVE](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) – WAVE is a web accessibility evaluation tool developed by WebAIM.org. It provides visual feedback about the accessibility of your web content by injecting icons and indicators into your page.
