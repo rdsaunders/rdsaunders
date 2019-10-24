@@ -9,9 +9,9 @@ pagination:
 
 
 {% for item in paginator.posts %}
-	<article class="item item__link">
-		<h2 class="item__title"><a class="item__link" href="{{ item.url }}">{{ item.title }}</a></h2>
-		<a class="item__link" href="{{ item.url }}"><img src="{{ item.image }}" /></a>
+	<article class="h-entry">
+		<h2><a class="u-url" href="{{ item.url }}">{{ item.title }}</a></h2>
+		<a href="{{ item.url }}"><img src="{{ item.image }}" /></a>
 	</article>
 {% endfor %}
 
