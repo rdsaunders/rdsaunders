@@ -27,13 +27,13 @@ title: Talks
       <time class="mid-gray db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
     
       {% if item.excerpt %}
-      <div class="item__excerpt mb2">
+      <div class="lh-copy mb2">
         {{ item.excerpt }}
       </div>
       {% endif %}
 
       {% if item.tags.size > 0 %}
-      <div class="item__tags">
+      <div>
         <b>Tagged with:</b> {{ item.tags | array_to_sentence_string }}
       </div>
       {% endif %}
