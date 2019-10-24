@@ -18,7 +18,7 @@ fields:
   hidden: false
   default: ''
   config:
-    display_utc: true
+    display_utc: false
 - type: tag_list
   name: tags
   label: Tags
