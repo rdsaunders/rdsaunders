@@ -21,20 +21,6 @@ fields:
     required: false
   label: Location
   description: 'Enter the location of this photo '
-- type: select
-  config:
-    source:
-      type: pages
-      section: photosets
-  label: Photoset
-  name: photoset
-  description: Select the photoset that the photo belongs to
-- type: tag_list
-  name: category
-  label: Category
-- type: tag_list
-  name: tags
-  label: Tags
 - name: geolocation
   type: field_group
   config: {}
@@ -50,3 +36,17 @@ fields:
       required: false
     label: Longitude
   label: Geolocation
+- type: select
+  config:
+    source:
+      type: pages
+      section: photosets
+  label: Photoset
+  name: photoset
+  description: Select the photoset that the photo belongs to
+- type: tag_list
+  name: category
+  label: Category
+- type: tag_list
+  name: tags
+  label: Tags
