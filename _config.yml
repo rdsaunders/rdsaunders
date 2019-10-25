@@ -21,6 +21,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.rdsaunders.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""
 author: Richard Saunders
+lang: en_GB
 
 # Social Networks
 twitter_username: rdsaunders
@@ -39,6 +40,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate-v2
+  - jekyll-seo-tag
 
 
 collections:

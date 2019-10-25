@@ -15,7 +15,7 @@
 {% endif %}
 
 {% if page.image %}
-  <meta content="{{ site.cloudinary_url }}/w_1024/f_auto{{ page.image }}" property="og:image">
+  <meta content="{{ site.url }}{{ page.image }}?nf_resize=fit&w=1024" property="og:image">
 {% else %}
   <meta content="{{ site.url }}/images/og-default.jpg" property="og:image">
   <meta property="og:image:type" content="image/jpeg" />

@@ -12,5 +12,4 @@ tags:
 - Water Park
 - Abandoned
 - Urbex
-
 ---
