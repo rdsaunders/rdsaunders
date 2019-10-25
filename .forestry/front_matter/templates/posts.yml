@@ -20,14 +20,6 @@ fields:
   default: ''
   config:
     display_utc: false
-- type: tag_list
-  name: tags
-  label: Tags
-- name: layout
-  label: Layout
-  type: text
-  hidden: true
-  default: post
 - name: categories
   type: list
   config:
@@ -40,6 +32,14 @@ fields:
       file: _data/categories.yml
       path: Categories
   label: Categories
+- type: tag_list
+  name: tags
+  label: Tags
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: post
 pages:
 - _posts/2007-12-09-sendamangalam-nammakal.md
 - _posts/2018-01-17-identifying-visual-density-and-hierarchy-using-the-css-filter-property.md
