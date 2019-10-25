@@ -4,5 +4,5 @@ caption: "Took a quick january swim in here. Yes it was cold!"
 date: 2013-01-03 09:32
 location: ""
 tags: ""
-image: assets/uploads/2013/01/1ea33b1cfe98c0f68bc522660d50cbb9.jpg
+image: /assets/uploads/2013/01/1ea33b1cfe98c0f68bc522660d50cbb9.jpg
 ---

@@ -4,5 +4,5 @@ caption: "Slowly roasted beef brisket"
 date: 2015-01-11 01:27
 location: ""
 tags: "lovefood"
-image: assets/uploads/2015/01/9f4f7a8e64c4a43ac30ddec2c6d4ceb3.jpg
+image: /assets/uploads/2015/01/9f4f7a8e64c4a43ac30ddec2c6d4ceb3.jpg
 ---

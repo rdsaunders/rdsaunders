@@ -4,5 +4,5 @@ caption: "Brian Houston opens  with a great message on men being wired for conqu
 date: 2016-11-18 22:45
 location: "LIFE Church UK"
 tags: "xcel2016 lifechurchuk upnorth bradford yorkshire xcelconf"
-image: assets/uploads/2016/11/587aa7da7d699927e5e4b01529ade149.jpg
+image: /assets/uploads/2016/11/587aa7da7d699927e5e4b01529ade149.jpg
 ---

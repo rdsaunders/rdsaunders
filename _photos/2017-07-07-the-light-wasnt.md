@@ -4,5 +4,5 @@ caption: "The light wasn't great for photos today, but love this moody edit of m
 date: 2017-07-07 13:27
 location: "Abercastle"
 tags: "coastalpath shotoniphone7plus pembrokeshire punchingabovemyweight"
-image: assets/uploads/2017/07/2a5251b4949b255d9fee011044d7f29e.jpg
+image: /assets/uploads/2017/07/2a5251b4949b255d9fee011044d7f29e.jpg
 ---

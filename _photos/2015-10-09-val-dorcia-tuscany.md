@@ -12,5 +12,5 @@ Being the end of the summer most of the surrounding fields we're no longer lusci
 date: 2015-10-09 08:31
 location: "Val d'Orcia"
 tags: "tuscany italy siena italian Montepulciano goldenhour pienza valdorcia"
-image: assets/uploads/2015/10/b2863d974e27573c1a69a1884af703ef.jpg
+image: /assets/uploads/2015/10/b2863d974e27573c1a69a1884af703ef.jpg
 ---

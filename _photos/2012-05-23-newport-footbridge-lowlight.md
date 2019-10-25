@@ -4,5 +4,5 @@ caption: "Newport Footbridge Lowlight"
 date: 2012-05-23 14:29
 location: ""
 tags: ""
-image: assets/uploads/2012/05/a87f17635d29757b03ea10aca183b6ee.jpg
+image: /assets/uploads/2012/05/a87f17635d29757b03ea10aca183b6ee.jpg
 ---

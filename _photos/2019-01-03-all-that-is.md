@@ -18,5 +18,5 @@ The crownless again shall be king"
 date: 2019-01-03 14:05
 location: ""
 tags: "wildcampinguk wildcamping fire bushcraft"
-image: assets/uploads/2019/01/27ad8146bdefdd13f507163d77c755fd.jpg
+image: /assets/uploads/2019/01/27ad8146bdefdd13f507163d77c755fd.jpg
 ---

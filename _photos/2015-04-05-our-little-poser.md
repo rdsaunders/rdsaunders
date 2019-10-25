@@ -4,5 +4,5 @@ caption: "Our little poser! He loooks sweet and innocent but only 5 minutes earl
 date: 2015-04-05 23:38
 location: ""
 tags: "bordercollie collie esrathebordercollie easter"
-image: assets/uploads/2015/04/6b5962a319d69a87967572246a540ad4.jpg
+image: /assets/uploads/2015/04/6b5962a319d69a87967572246a540ad4.jpg
 ---

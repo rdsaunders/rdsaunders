@@ -4,5 +4,5 @@ caption: "Today we get to celebrate this beautiful woman's birthday. She's not o
 date: 2018-03-19 00:25
 location: ""
 tags: ""
-image: assets/uploads/2018/03/e53b9ddf4dae16c7cac4ffc1d338697d.jpg
+image: /assets/uploads/2018/03/e53b9ddf4dae16c7cac4ffc1d338697d.jpg
 ---

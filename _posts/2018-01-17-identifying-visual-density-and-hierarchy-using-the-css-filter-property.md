@@ -7,7 +7,7 @@ excerpt: Use the filter CSS property as a quick acid test to see which elements 
 tags:
 - CSS
 - Design
-image: assets/uploads/2018/01/17/visual-density.png
+image: /assets/uploads/2018/01/17/visual-density.png
 ---
 ![](/assets/uploads/2018/01/17/visual-density.png)
 

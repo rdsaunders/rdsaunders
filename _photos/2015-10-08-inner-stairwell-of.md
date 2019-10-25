@@ -12,5 +12,5 @@ We arrived early at the tower to avoid the crowds and to enjoy the dry weather a
 date: 2015-10-08 01:38
 location: "Torre del Mangia"
 tags: "tuscany italy siena italian tower architecture stairs"
-image: assets/uploads/2015/10/5aa4d050b6bbf1865290d64f9a6eb6ef.jpg
+image: /assets/uploads/2015/10/5aa4d050b6bbf1865290d64f9a6eb6ef.jpg
 ---

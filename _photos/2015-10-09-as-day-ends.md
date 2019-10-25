@@ -14,5 +14,5 @@ Osteria Cacio E Pepe Vagliagli, this is the skyline that greeted us as we went o
 date: 2015-10-09 06:20
 location: "Agriturismo Il Poderaccio"
 tags: "tuscany italy siena italian Ilpoderaccio vagliagli sunset skyline dusk"
-image: assets/uploads/2015/10/792ad8b412d805c0cbbb6c1794fef619.jpg
+image: /assets/uploads/2015/10/792ad8b412d805c0cbbb6c1794fef619.jpg
 ---

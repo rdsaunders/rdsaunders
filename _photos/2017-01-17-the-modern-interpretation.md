@@ -4,5 +4,5 @@ caption: "The modern interpretation of the towel of babel. This sculpture consis
 date: 2017-01-17 12:41
 location: "Tate Modern"
 tags: ""
-image: assets/uploads/2017/01/15a4f1e987ccc6784732f45ca46357c9.jpg
+image: /assets/uploads/2017/01/15a4f1e987ccc6784732f45ca46357c9.jpg
 ---

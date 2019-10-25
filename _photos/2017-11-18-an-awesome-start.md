@@ -4,5 +4,5 @@ caption: "An awesome start to day two of    @lifechurchhome"
 date: 2017-11-18 04:28
 location: "LIFE Church Home"
 tags: "xcelconf moment iphone7plus"
-image: assets/uploads/2017/11/9022b2ba3fad628f828e734570824025.jpg
+image: /assets/uploads/2017/11/9022b2ba3fad628f828e734570824025.jpg
 ---
