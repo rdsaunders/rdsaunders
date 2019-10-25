@@ -38,15 +38,15 @@ fields:
       required: false
       options: []
       source:
-        type: pages
+        type: documents
         section: categories
-        file: 
-        path: 
+        file: _data/categories.yml
+        path: Categories
     label: Category
   config:
     min: 
     max: 
-    labelField: 
+    labelField: category
   label: Categories
 pages:
 - _posts/2007-12-09-sendamangalam-nammakal.md
