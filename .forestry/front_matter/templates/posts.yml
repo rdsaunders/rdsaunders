@@ -28,17 +28,25 @@ fields:
   type: text
   hidden: false
   default: post
-- name: category
-  type: select
-  default: []
+- name: categories
+  type: field_group_list
+  fields:
+  - name: category
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: categories
+        file: 
+        path: 
+    label: Category
   config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: categories
-      file: 
-      path: 
+    min: 
+    max: 
+    labelField: 
   label: Categories
 pages:
 - _posts/2007-12-09-sendamangalam-nammakal.md
