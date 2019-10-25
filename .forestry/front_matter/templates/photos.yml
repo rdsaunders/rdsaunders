@@ -15,9 +15,27 @@ fields:
 - type: file
   name: image
   label: Photo
-- type: textarea
-  name: caption
-  label: Caption
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
+  description: 'Enter the location of this photo '
+- name: geolocation
+  type: field_group
+  config: {}
+  fields:
+  - name: latitude
+    type: text
+    config:
+      required: false
+    label: Latitude
+  - name: longitude
+    type: text
+    config:
+      required: false
+    label: Longitude
+  label: Geolocation
 - type: select
   config:
     source:
@@ -33,15 +51,5 @@ fields:
   name: tags
   label: Tags
 pages:
-- _photos/open-for-surgery.md
-- _photos/renovation.md
-- _photos/esra-in-the-bluebells.md
-- _photos/trekfest-2019.md
-- _photos/my-quiet-place.md
-- _photos/morning-commute.md
-- _photos/civic-centre.md
-- _photos/newport-university-reflections.md
-- _photos/palma-mariner.md
-- _photos/tate-fly-by.md
-- _photos/l-aquatic-paradis.md
-- _photos/masonic-lodge-ruins.md
+- _photos/bacon-butties.md
+- _photos/taking-in-the-view.md
