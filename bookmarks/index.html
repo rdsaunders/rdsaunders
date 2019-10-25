@@ -16,16 +16,18 @@ pagination:
 {% for month in postsByMonth reversed %}
 <section class="flex-none-ns flex-m flex-l mb4 pv2 bb b--moon-gray"><!-- start of month -->
 
-  <header class="pr3 mb4" aria-labelledby="month-{{ month.name }}">
+  <header class="w-100 w-20-ns mb4" aria-labelledby="month-{{ month.name }}">
     <h2 id="month-{{ month.name }}" class="f3 f3-m f3-l ma0">{{ month.name }}</h2>
   </header>
-  <div>
+  <div class="w-100 w-80-ns pl3-ns">
 
     {% for item in month.items reversed %}
     <article class="pb4 | h-entry">
       <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
-        <a class="u-bookmark-of h-cite" href="{{ item.link}}" rel="bookmark" target="_blank">{{ item.title }}</a>
+        <a class="u-bookmark-of h-cite" href="{{ item.link}}" rel="bookmark" target="_blank"><span class="sr-only">Opens in new window</span>{{ item.title }} <img width="12px" height="12px" class="ph1" aria-hidden="true" src="/images/svg/external.svg"></a>
       </h3>
+
+    
 
       <time class="mid-gray db mb2" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
 
