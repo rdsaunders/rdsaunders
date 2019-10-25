@@ -2,33 +2,28 @@
 layout: default
 ---
 <article class="h-entry">
-    <header class="pb3">
-        <h1 class="p-name f2 f1-l lh-title mt0 mb2" datetime="{{ page.published | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</h1>
-        <div class="mb2">
-
-            <time class="dt-published ttu tracked f6 mid-gray db" >{{ page.location }}</time>
-
-        </div>
+    <header class="mb3">
+        <h1 class="f4 f3-l lh-title mt0 mb2 | p-name">{{ page.title }}</h1>
+        <time class="ttu tracked f6 mid-gray dib | dt-published" datetime="{{ page.published | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+        {% include location.html %}
     </header>
 
     <img loading="lazy" srcset="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320 320w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=512 512w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=768 768w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=1400 1400w"
-            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="w-100 mv3" />
+            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="w-100 mb3 | u-photo" />
 
-
+    {% if page.content.size > 1 %}        
     <div class="lh-copy measure-wide-m measure-wide-l | e-content ">
         {{ page.content | markdownify}}
     </div>
+    {% endif %}
 
-    {% if page.tags %}
-    <footer class="flex justify-end">
+    {% if page.tags.size > 1 %}
+    <footer class="bt b--moon-gray">
         <div class="mb3">
-            {% if page.tags.size > 0 %}
-            Tag{% if page.tags.size > 1 %}s{% endif %}:
-            {{ page.tags | sort | join: ", " }}
-          {% endif %}
+            <b>Tagged:</b> {{ page.tags | sort | join: ", " }}
         </div>
     </footer>
     {% endif %} 

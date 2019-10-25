@@ -1,0 +1,11 @@
+<p class="ttu tracked f6 mid-gray dib | h-geo">
+    {% if page.location.size > 1 %}
+        <span> • {{ page.location }}</span>
+    {% endif %}
+
+    {% if page.geolocation.latitude.size > 1 %}
+     • <span class="p-latitude">{{ page.geolocation.latitude }}</span>, 
+        <span class="p-longitude">{{ page.geolocation.longitude }}</span>
+    {% endif %}
+</p>
+
