@@ -14,7 +14,6 @@ tags:
 - mallorca
 - train
 - palma
-published: false
 
 ---
 Dan enjoying the vintage train ride to Sóller from Palma. 
