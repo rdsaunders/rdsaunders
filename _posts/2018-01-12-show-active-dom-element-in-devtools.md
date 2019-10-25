@@ -4,11 +4,15 @@ tags:
 - til
 - DevTools
 - JavaScript
-date: 2018-01-11 10:46:28 +0000
+date: 2018-01-11T10:46:28.000+00:00
 excerpt: How to show the currently active DOM element in the console of Chrome DevTools.
 publication: ''
 link: ''
 external: false
+layout: post
+categories:
+- Front-end development
+
 ---
 Sometimes you find yourself trying to identify a weird bug in a piece of UI and often DevTools comes to the rescue to help you out.
 
