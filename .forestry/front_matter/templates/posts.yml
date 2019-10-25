@@ -41,7 +41,6 @@ fields:
   hidden: true
   default: post
 pages:
-- _posts/2007-12-09-sendamangalam-nammakal.md
 - _posts/2018-01-17-identifying-visual-density-and-hierarchy-using-the-css-filter-property.md
 - _posts/2018-01-17-using-the-css-selector-to-check-for-visual-alignment.md
 - _posts/2019-09-11-converting-audible-books-to-mp3-on-a-mac.md
