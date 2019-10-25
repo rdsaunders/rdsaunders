@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Weeknotes #7'
+title: 'Weeknotes #6'
 excerpt: 'S01E06: Spent some time learning some stuff in the terminal. More prototyping
   and user testing. Accessibility discussions and got on top of the backlog.'
 date: 2019-10-12 00:00:00 +0100
