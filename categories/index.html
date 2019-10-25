@@ -4,22 +4,25 @@ permalink: /categories/
 title: Categories
 ---
 
-
-<section class="flex-none-ns flex-m flex-l mb4 pv2 bb b--moon-gray">
-    {% for category in site.categories %}
-
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        <header class="pr3 mb4" aria-labelledby="{{ category_name }}">
-            <h2 class="f3 f3-m f3-l ma0">{{ category_name }}</h2>
+{% assign sorted_cats = site.categories | sort %}
+{% for category in sorted_cats %}
+    {% assign sorted_posts = category[1] | reversed %}
+    <div class="flex flex-column flex-row-ns pv4 bb b--moon-gray">
+        <header class="w-100 w-30-ns mb4">
+            <h2 class="f3 f3-m f3-l ma0" id="{{ category[0] | slugize }}">{{category[0] | capitalize}}</h2>
         </header>
 
-        <div>
-            <a name="{{ category_name | slugize }}"></a>
-            {% for post in site.categories[category_name] %}
-            <article class="h-entry">
-                <h3 class="f3 f3-m f3-l lh-title mt0 mb2"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
-            </article>
-            {% endfor %}
+        <div class="w-100 w-70-ns pl3-ns">
+            <ul class="list pl0 ma0">
+                {% for item in sorted_posts %}
+                <li>
+                    <article class="mb3 | h-entry">
+                        <h3 class="f3 f3-m f3-l lh-title mt0 mb1"><a href="{{ site.baseurl }}{{ item.url }}">{{item.title}}</a></h3>
+                        <time class="meta-date mid-gray db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date_to_long_string }}</time>
+                    </article>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-    {% endfor %}
-</section>
+    </div>
+{% endfor %}

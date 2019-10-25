@@ -5,23 +5,25 @@ title: Tags
 ---
 
 
-<section class="">
-    {% for tag in site.tags %}
-
-        {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <article class="flex-none-ns flex-m flex-l mb4 pv2 bb b--moon-gray">
-        <header class="pr3 mb4" aria-labelledby="{{ tag_name }}">
-            <h2 class="f3 f3-m f3-l ma0">{{ tag_name }}</h2>
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+    {% assign sorted_posts = tag[1] | reversed %}
+    <div class="flex flex-column flex-row-ns pv4 bb b--moon-gray">
+        <header class="w-100 w-30-ns mb4">
+            <h2 class="f3 f3-m f3-l ma0" id="{{ tag[0] | slugize }}">{{ tag[0] }}</h2>
         </header>
 
-        <div>
-            <a name="{{ tag_name | slugize }}"></a>
-            {% for post in site.tags[tag_name] %}
-            <article class="h-entry">
-                <h3 class="f3 f3-m f3-l lh-title mt0 mb2"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
-            </article>
-            {% endfor %}
+        <div class="w-100 w-70-ns pl3-ns">
+            <ul class="list pl0 ma0">
+                {% for item in sorted_posts %}
+                <li>
+                    <article class="mb3 | h-entry">
+                        <h3 class="f3 f3-m f3-l lh-title mt0 mb1"><a href="{{ site.baseurl }}{{ item.url }}">{{item.title}}</a></h3>
+                        <time class="meta-date mid-gray db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date_to_long_string }}</time>
+                    </article>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-    </article>
-    {% endfor %}
-</section>
+    </div>
+{% endfor %}
