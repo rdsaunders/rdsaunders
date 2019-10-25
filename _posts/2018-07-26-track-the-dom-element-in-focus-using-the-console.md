@@ -7,12 +7,17 @@ tags:
 - Accessibility
 - a11y
 date: 2018-07-26
-excerpt: When trying to improve keyboard behaviour in your application you'll need to understand the tab order of of your UI. Sometimes its not possible to see the active element due to a lack of styling. This post shows how the Dev Tools console can help.
+excerpt: When trying to improve keyboard behaviour in your application you'll need
+  to understand the tab order of of your UI. Sometimes its not possible to see the
+  active element due to a lack of styling. This post shows how the Dev Tools console
+  can help.
 publication: ''
 link: ''
 external: false
----
+categories:
+- Front-end development
 
+---
 When trying to improve keyboard behaviour in your application you'll need to understand the tab order of of your UI. Sometimes its not possible to see the active element due to a lack of styling. This post shows how the Dev Tools console can help
 
 I've recently been looking to improve the keyboard behaviour of Contensis but its not always obvious which element is getting focus when navigating around the UI, using the console and what I learned in my [previous article]({% post_url 2018-01-12-show-active-dom-element-in-devtools %}) I've been able to update the console with the [activeElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement "document.activeElement property on MDN docs") as I navigate using the tab key.
