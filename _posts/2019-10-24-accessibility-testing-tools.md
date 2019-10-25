@@ -12,7 +12,6 @@ tags:
 - WCAG
 categories:
 - Accessibility
-- Front-end development
 
 ---
 I recently came across a question in the [Design Systems](https://design-systems.slack.com) Slack community from [Sonali Zaveri](http://www.sonalizaveri.com/) relating to accessibility testing tools.
