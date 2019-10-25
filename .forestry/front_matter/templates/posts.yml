@@ -29,24 +29,16 @@ fields:
   hidden: false
   default: post
 - name: categories
-  type: field_group_list
-  fields:
-  - name: category
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: documents
-        section: categories
-        file: _data/categories.yml
-        path: Categories
-    label: Category
+  type: list
   config:
+    use_select: true
     min: 
     max: 
-    labelField: category
+    source:
+      type: documents
+      section: categories
+      file: _data/categories.yml
+      path: Categories
   label: Categories
 pages:
 - _posts/2007-12-09-sendamangalam-nammakal.md
