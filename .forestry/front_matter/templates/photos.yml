@@ -53,5 +53,6 @@ fields:
   name: tags
   label: Tags
 pages:
+- _photos/autumn-days.md
 - _photos/taking-in-the-view.md
 - _photos/bacon-butties.md
