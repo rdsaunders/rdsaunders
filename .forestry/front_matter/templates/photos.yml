@@ -2,11 +2,18 @@
 label: Photos
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - type: datetime
   name: date
   label: Date
   config:
     date_format: DD/MM/YYYY
+    export_format: MM/DD/YYYY h:mm A ZZ
+  default: now
 - type: file
   name: image
   label: Photo
