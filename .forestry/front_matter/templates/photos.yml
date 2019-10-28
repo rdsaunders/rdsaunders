@@ -12,7 +12,7 @@ fields:
   label: Date
   config:
     date_format: DD/MM/YYYY
-    export_format: MM/DD/YYYY h:mm A ZZ
+    export_format: ''
   default: now
 - type: file
   name: image
