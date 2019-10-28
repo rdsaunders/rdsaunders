@@ -11,7 +11,6 @@ category: []
 tags:
 - autumn
 - leaves
-published: false
 
 ---
 Autumn days when the grass is jewelled   
