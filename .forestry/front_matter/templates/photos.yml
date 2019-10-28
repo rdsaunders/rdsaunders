@@ -2,11 +2,6 @@
 label: Photos
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title
-  config:
-    required: true
 - type: datetime
   name: date
   label: Date
@@ -51,5 +46,5 @@ fields:
   name: tags
   label: Tags
 pages:
-- _photos/bacon-butties.md
 - _photos/taking-in-the-view.md
+- _photos/bacon-butties.md
