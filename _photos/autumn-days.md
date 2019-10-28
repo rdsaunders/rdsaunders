@@ -1,5 +1,5 @@
 ---
-date: 10/28/2019 12:20 PM +0000
+date: 2019-10-28 00:00:00 +0000
 title: Autumn days
 image: "/assets/uploads/2019/10/IMG_0690.jpg"
 location: Newport
