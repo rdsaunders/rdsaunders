@@ -1,6 +1,7 @@
 ---
-label: link
+label: Bookmark
 hide_body: true
+display_field: title
 fields:
 - type: text
   name: title
@@ -21,15 +22,24 @@ fields:
   name: link
   label: Link
   description: URL to the article
+- name: tags
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: documents
+      section: tags
+      file: _data/tags.yml
+      path: Tags
+  label: Tags
 - name: embed_url
   type: text
   config:
     required: false
   label: Embed URL
   description: If you are linking to a video then add the link here.
-- type: tag_list
-  name: tags
-  label: Tags
 - type: boolean
   name: external
   label: External
