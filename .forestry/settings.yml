@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/categories.yml
-  label: Categories
 - type: jekyll-posts
   label: Blog
   create: documents
@@ -20,6 +17,13 @@ sections:
   templates:
   - link
 - type: directory
+  path: _talks
+  label: Talks
+  create: all
+  match: "**/*"
+- type: heading
+  label: Photography
+- type: directory
   path: _photos
   label: Photos
   create: documents
@@ -31,11 +35,15 @@ sections:
   label: Photosets
   create: all
   match: "**/*"
-- type: directory
-  path: _talks
-  label: Talks
-  create: all
+- type: heading
+  label: Metadata
+- type: document
+  path: _data/tags.yml
+  label: Tags
   match: "**/*"
+- type: document
+  path: _data/categories.yml
+  label: Categories
 - type: jekyll-pages
   label: Pages
   create: all
