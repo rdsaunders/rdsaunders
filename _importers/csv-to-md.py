@@ -5,6 +5,7 @@
 # Import the python library for parsing CSV files.
 import csv
 from datetime import datetime
+from slugify import slugify
 
 # Open our data file in read-mode.
 csvfile = open('data.csv', 'r')
@@ -27,11 +28,12 @@ for row_index, row in enumerate(datareader):
 		# Open a new file with filename based on the first column
 		date_str = row[0]
 		# Sanitise the title column (2nd column of my CSV)
-		title = row[1].lower().replace("/", " ").replace(":", "").replace(" -", "").replace(" ", "-")
+		title = row[1].lower()
+		titleSlug = slugify(title)
 		# Convert the pocket time stamp string to a date
 		date_object = datetime.strptime(date_str, '%B %d, %Y at %I:%M%p').date()
 		# Combine the date and title to geneate the filename
-		filename = date_object.strftime("%Y-%m-%d-") + title + '.md'
+		filename = date_object.strftime("%Y-%m-%d-") + titleSlug + '.md'
 		content_path = "_links/"
 		new_yaml = open(content_path + filename, 'w')
 
