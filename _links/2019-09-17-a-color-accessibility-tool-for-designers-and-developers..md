@@ -8,8 +8,6 @@ excerpt: Hex Naw is a tool that helps designers and developers test entire color
   Naw do the rest.
 tags:
 - Accessibility
-- a11y
+- A11y
 - Colour
-- a11y tools
-
 ---

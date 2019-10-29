@@ -7,7 +7,7 @@ excerpt: Last week, Figma Chicago held our 2nd Meetup, titled “Optimizing for 
   in Figma”. This is a recap of the event.
 tags:
 - Figma
-- Remote
+- Remote working
 - Design
 
 ---

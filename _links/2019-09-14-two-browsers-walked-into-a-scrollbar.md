@@ -7,8 +7,7 @@ excerpt: The scrollbar is a humble but productive mechanism that operates as the
   means through which one can traverse a document.
 tags:
 - CSS
-- Front End
 - Accessibility
-- a11y
+- A11y
 
 ---

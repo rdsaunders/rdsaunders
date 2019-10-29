@@ -6,7 +6,7 @@ link: https://www.figma.com/blog/dribbble-case-study/
 excerpt: Making long-distance collaboration a team sport.
 tags:
 - Figma
-- Remote
+- Remote working
 - Design
 
 ---

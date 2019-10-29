@@ -8,6 +8,6 @@ excerpt: In 2016, Slack was two years old and already used by millions of people
   fit, our code was built in a way that favored time-to-market over maintainability,
   consistency, or reusability.
 tags:
-- Design System
+- Design systems
 
 ---

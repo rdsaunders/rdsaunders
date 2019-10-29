@@ -8,7 +8,7 @@ excerpt: Tooltips are messages that appear when the user hovers over part of an 
   disappear when the user hovers off the element. Adam explains some of the pitfalls
   with tooltips and offers some alternative advice.
 tags:
-- a11y
+- A11y
 - Accessibility
 
 ---
