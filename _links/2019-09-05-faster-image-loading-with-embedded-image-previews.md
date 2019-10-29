@@ -7,7 +7,6 @@ excerpt: The Embedded Image Preview (EIP) technique introduced in this article a
   us to load preview images during lazy loading using progressive JPEGs, Ajax and
   HTTP range requests without having to transfer additional data.
 tags:
-- Performance
-- Front End
-
+- Web performance
+- Front-end development
 ---
