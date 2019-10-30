@@ -2,10 +2,6 @@
 ---
 @charset "UTF-8";
 
-@import "tachyons";
-@import "_syntax";
-@import "_link";
-
 :root {
     --blue: #307FE2;
     --near-black: #111;
@@ -33,6 +29,9 @@
                  'segoe ui', arial,
                  sans-serif;
 }
+
+.i { font-style: italic; }
+
   
 
 // Border radius
@@ -72,13 +71,25 @@ blockquote {
 }
 .no-underline { text-decoration: none; }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
+//  Variables 
+@import 'media-queries';
+
+//  Modules 
+@import 'display';
+@import 'flexbox';
+@import 'font-weight';
+@import 'heights';
+@import 'line-height';
+@import 'lists';
+@import 'max-widths';
+@import 'widths';
+@import 'spacing';
+@import 'text-transform';
+@import 'type-scale';
+@import 'typography';
+@import 'utilities';
+@import 'visibility';
+@import 'syntax';
+@import 'styles';
+@import "links";
+

@@ -12,7 +12,7 @@ pagination:
 {% for item in paginator.posts %}
 <article class="pv4 bb bw1 b--light-gray">
   <h2 class="f3 f2-m f2-l lh-title mt0 mb2">
-    <a href="{% if item.external %}{{ item.link }}{% else %}{{ item.url }}{% endif %}" target="{% if item.external %}_blank{% else %}_self{% endif %}" {% if item.external %}rel="noopener"{% endif %}>{% if item.external %}<span class="sr-only">Opens in new window</span>{% endif %}{{ item.title }}</a>
+    <a href="{% if item.external %}{{ item.link }}{% else %}{{ item.url }}{% endif %}" target="{% if item.external %}_blank{% else %}_self{% endif %}" {% if item.external %}rel="noopener"{% endif %}>{% if item.external %}<span class="clip">Opens in new window</span>{% endif %}{{ item.title }}</a>
   </h2>
 
   <div class="mb2">

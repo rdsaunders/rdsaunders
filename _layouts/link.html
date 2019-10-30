@@ -3,16 +3,16 @@ layout: default
 ---
 <section class="page">
 
-    <header class="page__header">
-        <h1 class="page__title">{{ page.title }}</h1>
-        <p class="page__meta">
-            <time class="meta-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+    <header>
+        <h1>{{ page.title }}</h1>
+        <p>
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
             {% if page.tags %} /
-            <span class="meta-tags">{{ page.tags | array_to_sentence_string }}</span> {% endif %}
+            <span>{{ page.tags | array_to_sentence_string }}</span> {% endif %}
         </p>
     </header>
 
-    <div class="page__body">
+    <div>
         {{ content }}
     </div>
 
