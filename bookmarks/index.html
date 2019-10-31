@@ -23,16 +23,16 @@ pagination:
 
     {% for item in month.items reversed %}
     <article class="pb4 | h-entry">
-      <h3 class="f3 f3-m f3-l lh-title mt0 mb2">
+      <h3 class="f3 f3-m f3-l measure-wide-m measure-wide-l lh-title mt0 mb2">
         <a class="u-bookmark-of h-cite" href="{{ item.link}}" rel="bookmark noopener" target="_blank"><span class="clip">Opens in new window</span> {{ item.title }} </a>
       </h3>
 
     
 
-      <time class="mid-gray db mb2" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+      <time class="f5 mid-gray db mb2" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
 
       {% if item.excerpt %}
-      <div class="lh-copy mb2">
+      <div class="lh-copy measure-wide-m measure-wide-l mb2">
         {{ item.excerpt }}
       </div>
       {% endif %}

@@ -10,6 +10,7 @@
     --near-white: #fafafa;
     --soft-white: #c3c1c1;
     --gray: #ccc;
+    --neutral-gray: #222;
     --mid-gray: #555;
     --light-gray: #eee;
     --spacing-extra-small: .25rem;
@@ -40,7 +41,8 @@
         --link-txt-color: var(--text-color);
         --divider-primary-color: var(--mid-gray);
         --icon-color: var(--text-color);
-            
+        --divider-primary-color: var(--neutral-gray);
+
         img {
             filter: brightness(.8) contrast(1.1);
         }
@@ -57,7 +59,7 @@
 --text-color: var(--soft-white);
 --body-color: var(--near-black);
 --link-txt-color: var(--text-color);
---divider-primary-color: var(--mid-gray);
+--divider-primary-color: var(--neutral-gray);
 --icon-color: var(--text-color);
 
     img {

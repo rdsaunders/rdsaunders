@@ -18,8 +18,8 @@ title: Bookmarks by tag
                     {% if item.tags contains tag %}
                     <li>
                         <article class="mb3 | h-entry">
-                            <h3 class="f3 f3-m f3-l lh-title mt0 mb1"><a href="{{ site.baseurl }}{{ item.url }}" rel="noopener">{{item.title}}</a></h3>
-                            <time class="meta-date mid-gray db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date_to_long_string }}</time>
+                            <h3 class="f3 f3-m f3-l measure-wide-m measure-wide-l lh-title mt0 mb2"><a href="{{ site.baseurl }}{{ item.url }}" rel="noopener">{{item.title}}</a></h3>
+                            <time class="f5 mid-gray db" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date_to_long_string }}</time>
                         </article>
                     </li>
                     {% endif %}

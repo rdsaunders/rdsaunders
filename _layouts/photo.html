@@ -14,7 +14,7 @@ seo:
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=512 512w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=768 768w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=1400 1400w"
-            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="w-100 mb3 | u-photo" />
+            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="w-100 w-auto-ns h-auto vh-50-l mb3 | u-photo" />
 
     {% if page.content.size > 1 %}        
     <div class="lh-copy measure-wide-m measure-wide-l | e-content ">
@@ -23,7 +23,7 @@ seo:
     {% endif %}
 
     {% if page.tags.size > 1 %}
-    <footer class="bt b--divider">
+    <footer class="bt f5 b--divider">
         <div class="mb3">
             <b>Tagged:</b> {{ page.tags | sort | join: ", " }}
         </div>

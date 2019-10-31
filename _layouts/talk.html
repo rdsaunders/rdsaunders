@@ -25,7 +25,7 @@ layout: default
             <dl class="ma0">
                 <dt class="db b">Presented</dt>
                 <dd class="db ma0 mb2">
-                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+                    <time class="f5" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
                 </dd>
             </dl>
             {% endif %} {% for item in page.meta %} {% capture meta__value %}{{ item[1] }}{% endcapture %}
