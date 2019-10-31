@@ -4,9 +4,10 @@
 
 :root {
     --blue: #307FE2;
-    --near-black: #111;
+    --near-black: #141414;
     --white: #fff;
-    --near-white: #f4f4f4;
+    --near-white: #fafafa;
+    --soft-white: #c3c1c1;
     --gray: #ccc;
     --mid-gray: #555;
     --light-gray: #eee;
@@ -18,6 +19,33 @@
     --breakpoint-not-small: 'screen and (min-width: 30em)';
     --breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)';
     --breakpoint-large: 'screen and (min-width: 60em)';
+    --text-color: var(--near-black);
+    --body-color: var(--near-white);
+    --link-txt-color: var(--text-color);
+    --divider-primary-color: var(--light-gray);
+    --icon-color: var(--near-black);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: var(--soft-white);
+        --body-color: var(--near-black);
+        --link-txt-color: var(--text-color);
+        --divider-primary-color: var(--mid-gray);
+        --icon-color: var(--text-color);
+    }
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+.icon {
+    fill: var(--icon-color);
+}
+
+.logo {
+    color: var(--text-color);
 }
 
 .sans-serif {
@@ -39,8 +67,7 @@
 .br-pill {     border-radius: 9999px; }
 
 // Border color
-.b--moon-gray {    border-color: var(--gray); }
-.b--light-gray {   border-color: var(--light-gray);}
+.b--divider {   border-color: var(--divider-primary-color);}
 
 // Background color
 .bg-near-white {    background-color: var(--near-white); }

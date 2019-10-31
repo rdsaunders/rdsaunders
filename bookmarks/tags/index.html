@@ -7,7 +7,7 @@ title: Bookmarks by tag
 
 {% assign sorted_tags =  site.links | map: 'tags' | join: ','  | split: ',' | uniq | sort %}
 {% for tag in sorted_tags %}
-    <div class="flex flex-column flex-row-ns pv4 bb b--moon-gray">
+    <div class="flex flex-column flex-row-ns pv4 bb b--divider">
         <header class="w-100 w-30-ns mb4">
             <h2 class="f3 f3-m f3-l ma0" id="{{ tag | slugize }}">{{ tag }}</h2>
         </header>

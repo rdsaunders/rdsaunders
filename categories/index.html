@@ -7,7 +7,7 @@ title: Categories
 {% assign sorted_cats = site.categories | sort %}
 {% for category in sorted_cats %}
     {% assign sorted_posts = category[1] | reversed %}
-    <div class="flex flex-column flex-row-ns pv4 bb b--moon-gray">
+    <div class="flex flex-column flex-row-ns pv4 bb b--divider">
         <header class="w-100 w-30-ns mb4">
             <h2 class="f3 f3-m f3-l ma0" id="{{ category[0] | slugize }}">{{category[0] | capitalize}}</h2>
         </header>
