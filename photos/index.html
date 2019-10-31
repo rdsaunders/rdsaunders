@@ -10,7 +10,7 @@ pagination:
 
 {% for item in paginator.posts %}
 	<article class="h-entry">
-		<a class="u-url" href="{{ item.url }}"> <img class="w-100 | u-photo" srcset="{{ site.baseurl }}{{ item.image }}?nf_resize=fit&w=300 320w,
+		<a class="db mb4 | u-url" href="{{ item.url }}"> <img class="w-100 | u-photo" srcset="{{ site.baseurl }}{{ item.image }}?nf_resize=fit&w=300 320w,
 			{{ site.baseurl }}{{ item.image }}?nf_resize=fit&w=512 512w,
 			{{ site.baseurl }}{{ item.image }}?nf_resize=fit&w=768 768w,
 			{{ site.baseurl }}{{ item.image }}?nf_resize=fit&w=1400 1400w"
