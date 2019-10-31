@@ -3,6 +3,7 @@
 @charset "UTF-8";
 
 :root {
+    --color-mode: 'light';
     --blue: #307FE2;
     --near-black: #141414;
     --white: #fff;
@@ -21,19 +22,25 @@
     --breakpoint-large: 'screen and (min-width: 60em)';
     --text-color: var(--near-black);
     --body-color: var(--near-white);
+    --button-bg-color: var(--body-color);
     --link-txt-color: var(--text-color);
     --divider-primary-color: var(--light-gray);
     --icon-color: var(--near-black);
 }
 
 @media (prefers-color-scheme: dark) {
+
     :root {
+        --color-mode: 'dark';
+    }
+
+    :root:not([data-user-color-scheme]) {
         --text-color: var(--soft-white);
         --body-color: var(--near-black);
         --link-txt-color: var(--text-color);
         --divider-primary-color: var(--mid-gray);
         --icon-color: var(--text-color);
-
+            
         img {
             filter: brightness(.8) contrast(1.1);
         }
@@ -41,6 +48,24 @@
         img:hover {
             filter: brightness(1) contrast(1);
         }
+    }
+
+}
+
+// Create sass mixin to repeat this, used where prefers colour is not avaliable
+[data-user-color-scheme='dark'] {
+--text-color: var(--soft-white);
+--body-color: var(--near-black);
+--link-txt-color: var(--text-color);
+--divider-primary-color: var(--mid-gray);
+--icon-color: var(--text-color);
+
+    img {
+        filter: brightness(.8) contrast(1.1);
+    }
+
+    img:hover {
+        filter: brightness(1) contrast(1);
     }
 }
 
@@ -127,4 +152,4 @@ blockquote {
 @import 'syntax';
 @import 'styles';
 @import "links";
-
+@import "theme-switch";
