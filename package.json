@@ -5,5 +5,9 @@
   "scripts": {
     "build": "bundle exec jekyll build"
   },
-  "author": "Richard Saunders"
+  "author": "Richard Saunders",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-svg-sprite": "^1.5.0"
+  }
 }

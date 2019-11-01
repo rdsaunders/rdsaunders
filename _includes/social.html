@@ -1,39 +1,32 @@
 <ul class="list pl0 mv0 flex ml-auto">
 {% if site.twitter_username %}
-<li class="pr2"><a class="inline-flex" rel="me" href="https://twitter.com/{{ site.twitter_username }}">
-    <svg class="icon" version="1.1" width="24" height="24" viewBox="0 0 800 800" role="img" aria-labelledby="twitterTitle">
-        <title id="twitterTitle">Follow me on twitter</title>
-        <path d="M718 236C729 468 559 725 251 725 98 725 0 651 0 651S120 676 242 584C119 576 89 469 89 469s34 9 74-3c-138-34-132-163-132-163S65 324 106 324C-19 227 55 104 55 104s113 159 339 172c-33-180 174-263 280-150 55-9 106-40 106-40s-18 61-73 90.5c45-3 94-26 94-26S769 202 718 236z"></path>
+<li class="pr2"><a class="inline-flex" rel="me" href="https://twitter.com/{{ site.twitter_username }}" aria-label="Follow me on Twitter">
+    <svg class="icon" width="24" height="24" focusable="false">
+        <use xlink:href="#twitter"></use>
     </svg>
 </a>
 </li>
 {% endif %} 
 {% if site.dribbble_username %}
-<li class="pr2"><a class="inline-flex" rel="me" href="https://dribbble.com/{{ site.dribbble_username }}">
-    <svg class="icon" version="1.1" width="24" height="24" viewBox="0 0 800 800" role="img" aria-labelledby="dribbleTitle">
-        <title id="dribbleTitle">See my shots on dribbble</title>
-        <path d="M40 400C40 202 202 40 400 40s360 162 360 360-162 360-360 360S40 598 40 400zm473 36c41 111 58 219 59 219-0 0 111-67 131-206 0-0-94-30-190-13zm-59 14c-179 60-243 192-243 192 0 0 131 113 309 41 0 0-20-122-66-233zM171 606c109-174 262-206 262-206s-16-37-26-53c-168 50-315 43-315 43 0-0-10 118 79 216zm213-306c-52-97-114-177-114-177C125 190 99 338 99 338s138 3 285-38zm59-17c114-42 160-113 160-113S500 64 328 101c0-0 68 88 115 182zm24 46c8 15 27 59 27 59 0 0 87-15 213 10 0-116-69-192-69-192-0 0-52 75-171 123z"></path>
+<li class="pr2"><a class="inline-flex" rel="me" href="https://dribbble.com/{{ site.dribbble_username }}" aria-label="See my shots on Dribbble">
+    <svg class="icon" width="24" height="24" focusable="false">
+        <use xlink:href="#dribble"></use>
     </svg>
 </a>
 </li>
 {% endif %} 
 {% if site.github_username %}
-<li class="pr2"><a class="inline-flex" rel="me" href="https://github.com/{{ site.github_username }}">
-    <svg class="icon" version="1.1" width="24" height="24" viewBox="0 0 800 800" role="img" aria-labelledby="githubTitle">
-        <title id="githubTitle">View my GitHub profile</title>
-        <path d="M400 48c200 0 360 160 360 360 0 160-104 296-246 343-13 4-24-3-24-18v-99c0-48-25-66-25-66 79-9 165-39 165-178-0-61-38-97-38-97 0-0 20-40-2-95-0-0-30-10-100 37-58-17-122-17-180 0-69-47-100-37-100-37-22 55-3 95-2 95-0-0-38 36-38 97 0 139 86 170 165 178 0-0-20 14-24 48-20 10-73 25-105-30 0 0-18-35-54-38 0-0-36-0-3 23 0-0 24 11 41 52-0-0 22 71 121 49v61c0 15-12 22-25 18C144 708 40 568 40 408 40 209 200 48 400 48z"></path>
+<li class="pr2"><a class="inline-flex" rel="me" href="https://github.com/{{ site.github_username }}" aria-label="View my code on GitHub">
+    <svg class="icon" width="24" height="24" focusable="false">
+        <use xlink:href="#github"></use>
     </svg>
 </a>
 </li>
 {% endif %}
 {% if site.instagram_username %}
-<li><a class="inline-flex" rel="me" href="https://instagram.com/{{ site.instagram_username }}">
-    <svg class="icon" version="1.1" width="24" height="24" viewBox="0 0 504 504" role="img" aria-labelledby="instagramTitle">
-        <title id="instagramTitle">Follow me on Instagram</title>
-        <path d="M252 45.47c67.27 0 75.23.26 101.8 1.47 24.56 1.12 37.9 5.22 46.78 8.67a78.07 78.07 0 0 1 29 18.84 78 78 0 0 1 18.84 29c3.45 8.88 7.55 22.22 8.67 46.78 1.21 26.57 1.47 34.53 1.47 101.8s-.26 75.23-1.47 101.8c-1.12 24.56-5.22 37.9-8.67 46.78a83.42 83.42 0 0 1-47.81 47.81c-8.88 3.45-22.22 7.55-46.78 8.67-26.56 1.21-34.53 1.47-101.8 1.47s-75.24-.26-101.8-1.47c-24.56-1.12-37.9-5.22-46.78-8.67a78.06 78.06 0 0 1-29-18.84 78 78 0 0 1-18.84-29c-3.45-8.88-7.55-22.22-8.67-46.78-1.21-26.57-1.47-34.53-1.47-101.8s.26-75.23 1.47-101.8c1.12-24.56 5.22-37.9 8.67-46.78a78.08 78.08 0 0 1 18.84-29 78 78 0 0 1 29-18.85c8.88-3.45 22.22-7.55 46.78-8.67 26.57-1.21 34.53-1.47 101.8-1.47M252 .08c-68.42 0-77 .29-103.86 1.51S103 7.07 87 13.3a123.49 123.49 0 0 0-44.63 29.06A123.49 123.49 0 0 0 13.31 87C7.08 103 2.82 121.32 1.6 148.13S.08 183.58.08 252s.29 77 1.52 103.87S7.08 401 13.31 417a123.49 123.49 0 0 0 29.06 44.62A123.47 123.47 0 0 0 87 490.7c16 6.23 34.34 10.49 61.15 11.71s35.45 1.52 103.87 1.52 77-.29 103.87-1.52S401 496.92 417 490.7a128.82 128.82 0 0 0 73.7-73.7c6.23-16 10.49-34.34 11.71-61.15s1.52-35.45 1.52-103.87-.29-77-1.51-103.87S496.93 103 490.7 87a123.48 123.48 0 0 0-29.06-44.62A123.49 123.49 0 0 0 417 13.31C401 7.08 382.68 2.82 355.87 1.6S320.42.08 252 .08"
-        />
-        <path d="M252 122.64A129.36 129.36 0 1 0 381.36 252 129.37 129.37 0 0 0 252 122.64zM252 336a84 84 0 1 1 84-84 84 84 0 0 1-84 84zm164.71-218.47a30.23 30.23 0 1 1-30.23-30.23 30.23 30.23 0 0 1 30.23 30.23"
-        />
+<li><a class="inline-flex" rel="me" href="https://instagram.com/{{ site.instagram_username }}" aria-label="Find me on Instagram">
+    <svg class="icon" width="24" height="24" focusable="false">
+        <use xlink:href="#instagram"></use>
     </svg>
 </a>
 </li>

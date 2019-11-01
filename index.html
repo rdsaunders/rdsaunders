@@ -27,11 +27,11 @@ pagination:
     <p>Article originally written for <span class="br-pill bw2 pv1 ph2 bg-mid-gray white dib">{{ item.publication }}</span></p>
   {% endif %} 
 
-  {% if item.tags %}
+  {% if item.tags.size > 0 %}
   <div class="mt3">
-    {{ item.tags | array_to_sentence_string }}
+    <b>Tagged with:</b> {{ item.tags | array_to_sentence_string }}
   </div>
-  {% endif %} 
+  {% endif %}
 
 </article>
 {% endfor %}

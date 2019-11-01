@@ -6,6 +6,7 @@ const COLOR_MODE_KEY = '--color-mode';
 
 const modeToggleButton = document.querySelector('.js-mode-toggle');
 const modeStatusElement = document.querySelector('.js-mode-status');
+const modeToggleSVG = document.querySelector('.js-mode-svg').querySelector('use');
 
 /**
  * Pass in a custom prop key and this function will return its
@@ -69,7 +70,7 @@ const toggleSetting = () => {
  */
 const setButtonLabelAndStatus = currentSetting => { 
   modeToggleButton.setAttribute('aria-label', `Enable ${currentSetting === 'dark' ? 'light' : 'dark'} mode`);
-  modeToggleButton.innerText = `${currentSetting === 'dark' ? '☀' : '☾'}`;
+  modeToggleSVG.setAttribute('xlink:href', `${currentSetting === 'dark' ? '#sun' : '#moon'}`);
   modeStatusElement.innerText = `Color mode is now "${currentSetting}"`;
 }
 

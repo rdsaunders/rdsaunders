@@ -3,7 +3,11 @@
     <small>©&thinsp;
         <time>2019</time>
         <a href="{{ site.url }}" rel="author">Richard Saunders</a>
-        <span class="flex items-center mt2">Made with love <img width="16px" height="16px" class="ph1" alt="❤" src="/images/svg/heart.svg"> in Wales.</span>
+        <span class="flex items-center mt2">Made with love
+            <svg class="icon ph1" width="16" height="16">
+                <use xlink:href="#heart"></use>
+            </svg>
+            in Wales.</span>
     </small>
 
     {% include social.html %}
