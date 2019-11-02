@@ -53,6 +53,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- _photos/these-two-sit-in-logs.md
 - _photos/autumn-days.md
-- _photos/taking-in-the-view.md
 - _photos/bacon-butties.md
+- _photos/taking-in-the-view.md
