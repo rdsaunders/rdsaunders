@@ -7,5 +7,7 @@ photoset: ''
 category: []
 tags: []
 location: Newport, Wales
+altText: A clock tower of a council building lit by the morning sun next to a tree
+  in leaf.
 
 ---
