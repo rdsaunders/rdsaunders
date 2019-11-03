@@ -38,6 +38,10 @@ sections:
 - type: heading
   label: Metadata
 - type: document
+  path: _data/categories.yml
+  label: Categories
+  match: "**/*"
+- type: document
   path: _data/tags.yml
   label: Tags
 - type: jekyll-pages
