@@ -40,9 +40,6 @@ sections:
 - type: document
   path: _data/tags.yml
   label: Tags
-- type: document
-  path: _data/categories.yml
-  label: Categories
 - type: jekyll-pages
   label: Pages
   create: all
