@@ -1,8 +1,10 @@
 ---
-title: "Loch lochy"
-caption: "Loch lochy"
+title: Loch lochy
+caption: Loch lochy
 date: 2013-01-03 08:45
-location: ""
-tags: ""
-image: /assets/uploads/2013/01/613e1ede4e8df2dfe51f63fabd8179a3.jpg
+location: ''
+tags: ''
+image: "/assets/uploads/2013/01/613e1ede4e8df2dfe51f63fabd8179a3.jpg"
+altText: A tree silhouette in front of a loch
+
 ---
