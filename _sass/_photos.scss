@@ -1,0 +1,23 @@
+// BASIC
+:root {
+    --grid-size: 12rem;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(var(--grid-size),1fr));
+    grid-gap: 0.25em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .gallery_item {
+    position: relative;
+    display: inline-grid;
+  }
+  
+  .gallery_item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
