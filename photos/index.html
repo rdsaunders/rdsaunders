@@ -12,7 +12,7 @@ pagination:
 {% for item in paginator.posts %}
 		<li class="gallery_item">
 				<article class="h-entry">
-					<a class="u-url" href="{{ item.url }}"> <img class="u-photo" srcset="{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=320&h=320 320w,
+					<a class="u-url" href="{{ item.url }}"> <img loading="lazy" class="u-photo" srcset="{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=320&h=320 320w,
 			{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=512&h=512 512w,
 			{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=768&h=768 768w,
 			{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=1400&h=1400 1400w"
