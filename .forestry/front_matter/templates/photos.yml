@@ -17,6 +17,12 @@ fields:
 - type: file
   name: image
   label: Photo
+- name: altText
+  type: text
+  config:
+    required: false
+  label: Alt text
+  description: Provide accessible alt text for image
 - name: location
   type: text
   config:
