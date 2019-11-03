@@ -12,5 +12,6 @@ tags:
 - Bacon
 - food
 - ilovebeingadad
+altText: A little girls head at eye level of a table looking at the camera.
 
 ---
