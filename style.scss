@@ -27,6 +27,8 @@
     --link-txt-color: var(--text-color);
     --divider-primary-color: var(--light-gray);
     --icon-color: var(--near-black);
+    --kbd-bg-color: var(--white);
+    --kbd-stroke-color: var(--gray);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,9 +41,11 @@
         --text-color: var(--soft-white);
         --body-color: var(--near-black);
         --link-txt-color: var(--text-color);
-        --divider-primary-color: var(--mid-gray);
         --icon-color: var(--text-color);
         --divider-primary-color: var(--neutral-gray);
+        --kbd-bg-color: var(--neutral-gray);
+        --kbd-stroke-color: var(--mid-gray);
+
 
         img {
             filter: brightness(.8) contrast(1.1);
@@ -61,6 +65,9 @@
 --link-txt-color: var(--text-color);
 --divider-primary-color: var(--neutral-gray);
 --icon-color: var(--text-color);
+--kbd-bg-color: var(--neutral-gray);
+--kbd-stroke-color: var(--mid-gray);
+
 
     img {
         filter: brightness(.8) contrast(1.1);
@@ -118,12 +125,13 @@ body {
 .bw2 { border-width: .25rem; }
 
 kbd {
-    font-size: 1.1em;
-    background: var(--white);
-    padding: 0.25em 0.375em;
-    border-radius: 0.25em;
+    font-size: 1.1rem;
+    background: var(--kbd-bg-color);
+    padding: 0.25rem 0.375rem;
+    border-radius: 0.25rem;
     line-height: 1;
-    border: 1px solid var(--gray);
+    border: 1px solid var(--kbd-stroke-color);
+    white-space: nowrap;
 }
 
 blockquote {
@@ -132,6 +140,12 @@ blockquote {
 
 }
 .no-underline { text-decoration: none; }
+
+pre code {
+    white-space: pre-wrap;
+    display: block;
+    width: 100%;
+}
 
 //  Variables 
 @import 'media-queries';
