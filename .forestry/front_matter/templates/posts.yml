@@ -41,6 +41,7 @@ fields:
   hidden: true
   default: post
 pages:
+- _posts/capturing-crisp-consistent-screenshots-for-presentations.md
 - _posts/2018-01-17-using-the-css-selector-to-check-for-visual-alignment.md
 - _posts/2018-01-17-identifying-visual-density-and-hierarchy-using-the-css-filter-property.md
 - _posts/2019-10-12-weeknotes-6.md
