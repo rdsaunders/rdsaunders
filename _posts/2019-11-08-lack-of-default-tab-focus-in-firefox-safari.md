@@ -32,7 +32,7 @@ So it also turns out that in Mac OS you need to configure Firefox to set what el
 
 1. In Firefox, type <kbd>about:config</kbd> in the URL bar.
 2. By default there is no Preference called [accessibility.tabfocus](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/accessibility.tabfocus) on the mac so you'll have to create one.
-3. Right click in the window and select New, then "integer" from the context menu
+3. Right click in the window and select New, then "integer" from the context menu.
 4. Give it the preference name _accessibility.tabfocus_ and then set the value to 7.
 
 A value of 7 will give tab focus to all elements on a page, links, linked images and all form elements. This is the default behaviour in Windows.
