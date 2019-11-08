@@ -7,7 +7,10 @@ excerpt: I’ve been using Firefox for around six months now but I’ve never lo
 date: 2019-11-08 00:00:00 +0000
 categories:
 - Accessibility
-tags: []
+tags:
+- UX
+- Accessibility
+- A11y
 
 ---
 I've struggled to understand why I couldn’t use the <kbd>Tab</kbd> key to navigate a web site in Firefox on my Mac. I've been using Firefox for about six months, but I’ve never taken the time to understand why.
