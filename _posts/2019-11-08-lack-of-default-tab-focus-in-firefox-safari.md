@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The lack of default Tab focus in Firefox & Safari
+title: The lack of default Tab focus in Firefox and Safari
 excerpt: I’ve been using Firefox for around six months now but I’ve never looked into
   why the browser doesn't get Tab Focus in Mac OS. Turns out its honouring the OS
   behaviour.
