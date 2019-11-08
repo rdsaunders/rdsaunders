@@ -17,7 +17,7 @@ I've struggled to understand why I couldn’t use the <kbd>Tab</kbd> key to navi
 
 As a long time Chrome user I hadn't had experienced this problem as Tab focus simply worked. But as I've been testing our components for accessibility I needed to find out why this was happening.
 
-It turns out Firefox is honouring the focus behaviour of the OS. This behaviour is set by a preference called Use keyboard navigation to move focus between controls. Its a checkbox I didn't know about, or have switched on.
+It turns out Firefox is honouring the focus behaviour of the OS. This behaviour is set by a preference called _Use keyboard navigation to move focus between controls_. Its a checkbox I didn't know about, or have switched on.
 
 You can find it in System Preferences.
 
