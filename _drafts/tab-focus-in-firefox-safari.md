@@ -41,3 +41,5 @@ A value of 7 will give tab focus to all elements on a page, links, linked images
 It’s worth noting a similar property also exists in Safari. 
 
 Tab focus is only given to button elements. For links to get focus you’ll need to enable the *Press Tab to highlight each item on a web page* property in Safaris preferences. Head over to *Preferences* > *Advanced* > *Accessibility* to find it.
+
+So there you are, if you've switched from Chrome hopefully that little annoyance can now be resolved.
