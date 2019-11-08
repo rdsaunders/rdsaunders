@@ -30,7 +30,7 @@ You can find it in System Preferences.
 
 So it also turns out that in Mac OS you need to configure Firefox to set what elements should receive tab focus. If you don’t set this you’ll only get tab focus on text fields.
 
-1. In Firefox, type "about:config" in the URL bar.
+1. In Firefox, type <kbd>about:config</kbd> in the URL bar.
 2. By default there is no Preference called [accessibility.tabfocus](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/accessibility.tabfocus) on the mac so you'll have to create one.
 3. Right click in the window and select New, then "integer" from the context menu
 4. Give it the preference name _accessibility.tabfocus_ and then set the value to 7.
