@@ -94,6 +94,12 @@ body {
     width: 100%;
     height: auto;
 }
+
+
+hr {
+    color: var(--divider-primary-color);
+}
+
 .sans-serif {
     font-family: -apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,
