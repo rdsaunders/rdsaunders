@@ -12,7 +12,7 @@ tags:
 ---
 This week and the previous weekend was a departure from a  normal week for me. I spent the weekend in Palma, Majorca with the team from Zengenti.
 
-We arrived in Palma on Saturday afternoon to a sweet 28℃, I've been craving the sunshine for a little while and it felt good. Our flight was delayed due to a wheel that needed to be replaced, however that gave me time to consume a few episodes of The New Amsterdam TV show on prime. 
+We arrived in Palma on Saturday afternoon to a sweet 28℃, I've been craving the sunshine for a little while and it felt good. Our flight was delayed due to a wheel that needed to be replaced, however that gave me time to consume a few episodes of The New Amsterdam TV show on prime.
 
 It was a great recommendation but there was more than one occasion where I had to wipe a tear from my eye. I really do get drawn in to the story lines of some TV shows.
 
@@ -20,17 +20,17 @@ Our transfer dropped us off at [Hotel Armadams](https://www.hotelarmadams.com/en
 
 We ate at Celler Sa Premsa in the old town in the evening. It was a good atmosphere with 30+ of the team eating and spending time together. The traditional tapas starters we're great but we we're pretty disappointed with the mains. Ah well I think most people where happy that the wine was flowing, along with some local aniseed liquor.
 
-/group-shot-palma.jpg
+![](/assets/uploads/2019/11/group-shot-palma-1.jpg)
 
----
+***
 
-Sunday morning started out with a walk along the mariner walking away from the centre of Palma as the sun was coming up. I managed to FaceTime with the girls and share some of what I was experiencing. I really miss them when I go away. 
+Sunday morning started out with a walk along the mariner walking away from the centre of Palma as the sun was coming up. I managed to FaceTime with the girls and share some of what I was experiencing. I really miss them when I go away.
 
-/palma-mariner.jpg
+![](/assets/uploads/2019/11/palma-mariner-1.jpg)
 
 I made my way up to Castell de Bellver a 1300 circular castle on the hilltop that looks over Palma, I took the route that went up the 500+ stairs of Parque Del Bosque Del Castillo De Bellver.
 
-/palma-steps-to-castle.jpg
+![](/assets/uploads/2019/11/palma-steps-to-castle-1.jpg)
 
 /palma-church.jpg
 
@@ -40,10 +40,7 @@ The view from the top was nice, but the early morning haze meant that you couldn
 
 /castell-de-bellver.jpg
 
-
-
 I managed to head back to the hotel at the time most people had come down for breakfast. It was then mentioned a few people were going to head to Sóller on an old train. I was undecided so had a swim, by the time I got out I was up for a little trip.
-
 
 The train left Palma on the Ferrocarril de Sóller, a narrow gauge railway built in 1912 between Palma and Sóller. The journey cost €25 for a return ticket, unfortunately this didn't include the tram in Sóller that took you to the port.
 
@@ -68,8 +65,8 @@ The journey was stunning along route, although my photos don't do it justice.
 We had a short time in Sóller, mostly spent in the square, over a few drinks and a late lunch. It felt nice to get out of the centre of Palma and in to a smaller town. My only regret is not spending a little more time exploring.
 
 Once we got back from Sóller I was suffering with a bit of a tension headache, so grabbed an early night ready for an early start the next day.
-  
----
+
+***
 
 Having had an extremely early night, the tension headache had subsided and had woken up early. It was still pretty dark as I walked from the hotel to Cathedral de Mallorca (Catedral-Basílica de Santa María de Mallorca). It just seemed to be me, a few runners and those heading out for work on their electric scooters. It was about a 15-20 minute walk, but was great to see what goes on in Palma at the beginning of the day.
 
@@ -77,7 +74,7 @@ I stopped at a small church to pray, a few people were practicing some choral so
 
 I didn't stay long before heading back to the hotel for breakfast. On my way back it was amazing to see how much care the local authority took over the public spaces, wether that was the clearing of leaves of the paths, swept in the road for the road cleaners. To the workers raking over the sand in the children's park, and paths being hosed down. Everywhere was immaculate.
 
-After breakfast a couple of us headed back to the Cathedral to take a look inside. It cost us €8 to enter, and could only pay in cash. The place is massive with different styles of architecture, and has Gaudí hands over many aspects of the Cathedral. 
+After breakfast a couple of us headed back to the Cathedral to take a look inside. It cost us €8 to enter, and could only pay in cash. The place is massive with different styles of architecture, and has Gaudí hands over many aspects of the Cathedral.
 
 /cathedral.jpg
 
@@ -87,15 +84,15 @@ We arrived early and had the sun casting light along the arches of the cathedral
 
 /cathedral-interior.jpg
 
-Having spent a small amount of time in the Cathedral we ambled back to the hotel, exploring a few shops on the way. 
+Having spent a small amount of time in the Cathedral we ambled back to the hotel, exploring a few shops on the way.
 
 /paella.jpg
 
-Lunch time saw us eating at Restaurant Pesquero. I shared lunch with Drew a A paella of cuttlefish, prawns, calamari and ‘allioli de mar’ with saffron, died in squid ink and Mallorcan Langoustine. Its a dish I had never experienced but would definitely have again. There was more than enough for two. Next time I'll make sure I use my napkin as a forkful of squid ink rice made contact with my shorts! 
+Lunch time saw us eating at Restaurant Pesquero. I shared lunch with Drew a A paella of cuttlefish, prawns, calamari and ‘allioli de mar’ with saffron, died in squid ink and Mallorcan Langoustine. Its a dish I had never experienced but would definitely have again. There was more than enough for two. Next time I'll make sure I use my napkin as a forkful of squid ink rice made contact with my shorts!
 
 The rest of the day was spent in the pool in the hotel, before we headed to the airport to make out way home.
 
----
+***
 
 Due to our flight times, we didn't got back to Ludlow until the early hours of Tuesday morning. I stayed over at Moore hall before heading back to Wales on the train later in the day. It was so good to see the girls when I got home.
 
