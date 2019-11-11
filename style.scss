@@ -95,6 +95,24 @@ body {
     height: auto;
 }
 
+.skip-link {
+position: fixed;
+top: -20em;
+left: 0;
+right: 0;
+z-index: 20;
+background: red;
+color: #fff;
+padding: .5em 1em;
+font-size: 1em;
+text-align: center;
+transition: top .1s linear; }
+
+.skip-link:focus, 
+.skip-link:focus-visible {
+    top: 0;
+    color: #fff;
+    box-shadow: inset 0 0 0 5px var(--purple), inset 0 0 0 6px #fff; }
 
 hr {
     color: var(--divider-primary-color);
@@ -160,6 +178,7 @@ pre code {
 .photoset {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+grid-column-gap: 0.25rem;
 
 }
 
