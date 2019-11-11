@@ -10,21 +10,25 @@ seo:
         {% include location.html %}
     </header>
 
-    <img loading="lazy" srcset="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320 320w,
+
+
+    <div class="content lh-copy measure-wide-m measure-wide-l | e-content ">
+
+            <img loading="lazy" srcset="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320 320w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=512 512w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=768 768w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=1400 1400w"
-            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="w-100 w-auto-ns h-auto mb3 | u-photo" alt="{{ page.altText}}"/>
+            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="u-photo" alt="{{ page.altText}}"/>
+        
+            {% if page.content.size > 1 %}        
+                {{ page.content | markdownify}}
+            {% endif %}
 
-    {% if page.content.size > 1 %}        
-    <div class="lh-copy measure-wide-m measure-wide-l | e-content ">
-        {{ page.content | markdownify}}
     </div>
-    {% endif %}
 
     {% if page.tags.size > 1 %}
     <footer class="bt f5 b--divider">
-        <div class="mb3">
+        <div class="mv3">
             <b>Tagged:</b> {{ page.tags | sort | join: ", " }}
         </div>
     </footer>

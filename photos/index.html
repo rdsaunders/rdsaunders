@@ -12,7 +12,7 @@ pagination:
 {% for item in paginator.posts %}
 		<li class="gallery_item">
 				<article class="h-entry">
-					<a class="u-url" href="{{ item.url }}" rel="bookmark" > <img loading="lazy" class="u-photo" src="{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=320&h=320" alt="{{ item.altText }}"/></a>
+					<a class="u-url" href="{{ item.url }}" rel="bookmark" > <img loading="lazy" class="u-photo" src="{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=320&h=320" width="320px" height="320px" alt="{{ item.altText }}"/></a>
 				</article>
 	</li>
 {% endfor %}
