@@ -147,6 +147,16 @@ pre code {
     width: 100%;
 }
 
+.photoset {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.photoset img {
+max-width: 100%;
+}
+
 //  Variables 
 @import 'media-queries';
 
