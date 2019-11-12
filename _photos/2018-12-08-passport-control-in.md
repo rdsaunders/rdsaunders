@@ -3,7 +3,11 @@ title: Passport control
 caption: Passport control in Surkhet was simply this officer as we got off the plane
 date: 2018-12-08 00:19
 location: Surkhet, Nepal
-tags: nepal Surkhet shotoniphone
+tags:
+- Nepal
+- Surkhet
+- Airport
+- Police Man
 image: "/assets/uploads/2018/12/ea945d0800bae7c2900d2668147eba91.jpg"
 altText: A police man standing in front of a plane
 
