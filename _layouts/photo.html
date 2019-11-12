@@ -18,7 +18,7 @@ seo:
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=512 512w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=768 768w,
                 {{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=1400 1400w"
-            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="u-photo" alt="{{ page.altText}}"/>
+            src="{{ site.baseurl }}{{ page.image }}?nf_resize=fit&w=320" class="u-photo" alt="{{ page.altText}}" />
         
             {% if page.content.size > 1 %}        
                 {{ page.content | markdownify}}

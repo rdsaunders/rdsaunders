@@ -96,22 +96,24 @@ body {
 }
 
 .skip-link {
-	padding: 6px;
-	position: absolute;
-	top: -40px;
-	left: 0px;
-	color: var(--text-color);
-	background-color: var(--body-color);
-	transition: top 1s ease-out;
-	z-index: 100;
+padding: 0.25rem 0.5rem;
+position: absolute;
+top: -10rem;
+left: 0;
+color: var(--text-color);
+background-color: var(--body-color);
+transition: top 1s ease-out,
+            left 1s ease-out;
+z-index: 100;
 }
 
 .skip-link:focus {
-	position: absolute;
-	left: 0;
-	top: 0;
-	outline-color: transparent;	
-    transition: top .1s ease-in;
+position: absolute;
+left: 0.5rem;
+top: 0.5rem;
+outline-color: transparent;	
+transition: top 0.1s ease-in,
+            left 0.1s ease-in;
 }
 
 
