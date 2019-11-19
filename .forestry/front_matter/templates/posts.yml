@@ -50,7 +50,7 @@ fields:
   hidden: true
   default: post
 pages:
-- _posts/create-a-photo-post-to-jekyll-blog-using-the-github-api-and-apple-shortcuts.md
+- _posts/2019-11-18-create-a-photo-post-to-jekyll-blog-using-the-github-api-and-apple-shortcuts.md
 - _posts/2019-10-18-weeknotes-7.md
 - _posts/2019-11-08-lack-of-default-tab-focus-in-firefox-safari.md
 - _posts/2018-01-17-using-the-css-selector-to-check-for-visual-alignment.md
