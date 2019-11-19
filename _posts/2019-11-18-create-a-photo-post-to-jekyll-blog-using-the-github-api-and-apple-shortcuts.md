@@ -49,9 +49,9 @@ A shared version of the shortcut is available [here](https://www.icloud.com/shor
 | date | Uses the creation date of the photo. |
 | altText | Uses the alt text provided at the prompt. |
 | location | Gets the Town/City from the photo GPS coordinates when available. |
-|: geolocation | An array. |
-| latitude :| Get the latitude from the photo GPS coordinates. |
-| longitude :| Get the longitude from the photo GPS coordinates. |
+| geolocation | An array. |
+| latitude | Get the latitude from the photo GPS coordinates. |
+| longitude | Get the longitude from the photo GPS coordinates. |
 | image | A file path created from upload path and year and months from the photo creation date e.g. /uploadpath/2019/11/filename.jpg |
 | tags | An array of tags.|
 
