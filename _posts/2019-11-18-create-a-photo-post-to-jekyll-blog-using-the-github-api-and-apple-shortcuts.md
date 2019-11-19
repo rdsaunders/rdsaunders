@@ -41,19 +41,49 @@ A shared version of the shortcut is available [here](https://www.icloud.com/shor
 8. Uploads the image to GitHub to path specified during shortcut setup, it automatically places the file in a /year/month/ structure.
 9. Creates and uploads a markdown file containing the location, latitude, longitude, alt text, title, date, image and tags using YAML front matter.
 
-
 ## Yaml front matter structure
-| Front matter field | Data population |
-|:--|:--|
-| title | Uses the title provided by the user. |
-| date | Uses the creation date of the photo. |
-| altText | Uses the alt text provided at the prompt. |
-| location | Gets the Town/City from the photo GPS coordinates when available. |
-| geolocation | An array. |
-| latitude | Get the latitude from the photo GPS coordinates. |
-| longitude | Get the longitude from the photo GPS coordinates. |
-| image | A file path created from upload path and year and months from the photo creation date e.g. /uploadpath/2019/11/filename.jpg |
-| tags | An array of tags.|
+<table class="striped">
+  <tr>
+    <th>Front matter field</th>
+    <th>Data population</th>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>Uses the title provided by the user.</td>
+  </tr>
+  <tr>
+    <td>date</td>
+    <td>Uses the creation date of the photo.</td>
+  </tr>
+  <tr>
+    <td>altText</td>
+    <td>Uses the alt text provided at the prompt.</td>
+  </tr>
+  <tr>
+    <td>location</td>
+    <td>Gets the Town/City from the photo GPS coordinates when available.</td>
+  </tr>
+  <tr>
+    <td>geolocation</td>
+    <td>An array.</td>
+  </tr>
+  <tr>
+    <td>latitude</td>
+    <td>Get the latitude from the photo GPS coordinates.</td>
+  </tr>
+  <tr>
+    <td>longitude</td>
+    <td>Get the longitude from the photo GPS coordinates.</td>
+  </tr>
+  <tr>
+    <td>image</td>
+    <td>A file path created from upload path and year and months from the photo creation date e.g. /uploadpath/2019/11/filename.jpg</td>
+  </tr>
+  <tr>
+    <td>tags</td>
+    <td>An array of tags.</td>
+  </tr>
+</table>
 
 
 ## Notes / quirks:

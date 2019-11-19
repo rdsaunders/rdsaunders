@@ -29,6 +29,9 @@
     --icon-color: var(--near-black);
     --kbd-bg-color: var(--white);
     --kbd-stroke-color: var(--gray);
+    --table-row-color: var(--white);
+    --table-stroke-color: var(--gray);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +48,8 @@
         --divider-primary-color: var(--neutral-gray);
         --kbd-bg-color: var(--neutral-gray);
         --kbd-stroke-color: var(--mid-gray);
+        --table-row-color: var(--neutral-gray);
+        --table-stroke-color: var(--mid-gray);
 
 
         img {
@@ -67,6 +72,8 @@
 --icon-color: var(--text-color);
 --kbd-bg-color: var(--neutral-gray);
 --kbd-stroke-color: var(--mid-gray);
+--table-row-color: var(--neutral-gray);
+--table-stroke-color: var(--mid-gray);
 
 
     img {
@@ -129,6 +136,25 @@ hr {
                  roboto, noto,
                  'segoe ui', arial,
                  sans-serif;
+}
+
+.striped {
+border-collapse: collapse;
+border-spacing: 0;
+border-color: var(--table-stroke-color);
+}
+
+.striped td,
+.striped th  {
+padding: 0.5rem 1rem;
+}
+
+.striped th {
+text-align: left;
+}
+
+.striped tr:nth-child(2n+1) {
+background-color: var(--table-row-color);
 }
 
 .i { font-style: italic; }
