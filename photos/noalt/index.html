@@ -1,0 +1,24 @@
+---
+layout: page
+title: Photos
+pagination: 
+  enabled: true
+  collection: photos
+  sort_reverse: true
+  per_page: 24
+---
+
+<ul class="gallery">
+	{% for item in paginator.posts %}
+			<li class="gallery_item">
+					<article class="h-entry">
+						<a class="u-url" href="{{ item.url }}" rel="bookmark" > <img loading="lazy" class="u-photo" src="{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=320&h=320" width="320px" height="320px" alt="{{ item.altText }}"/></a>
+						{% if item.altText.size > 1 %}
+						{% else %}
+						<a href="https://app.forestry.io/sites/ewocchnvkvhlgg/#/pages/{{ item.path | replace_first: '_photos/', '_photos-' | replace: '.md', '-md'}}/" rel="noopener" target="_blank">😢 Edit photo</a>
+						{% endif %}
+					</article>
+			</li>
+		{% endfor %}
+</ul>
+{% include item-pagination.html %}
