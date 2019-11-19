@@ -3,7 +3,7 @@ layout: post
 title: Create a photo post to Jekyll blog using the GitHub API and Apple Shortcuts
 excerpt: I've recently added a photos section to my site, and in keeping with the
   indie web movement I wanted to post content to my site first and look to POSSE later.
-date: 2019-11-18 22:50:00 +0000
+date: 2019-11-18T22:50:00.000+00:00
 categories: []
 tags:
 - Photography
@@ -23,7 +23,7 @@ A shared version of the shortcut is available [here](https://www.icloud.com/shor
 ## Prerequisites
 - **GitHub username** – used to authenticate to the GitHub API
 - **GitHub repository name** – the repository you are uploading to.
-- **GitHub personal access token** – this must have read/write access to the appropriate repository. View the [Github docs]() to find out how to create a access token.
+- **GitHub personal access token** – this must have read/write access to the appropriate repository. View the [Github docs](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) to find out how to create a access token.
 - **GitHub committer** **name** and **email address** – used when committing files to the repository.
 - **Image upload path** – where the photos should be uploaded.
 - **Post upload path** – where the markdown file should be created e.g. _photos .
