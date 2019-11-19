@@ -30,7 +30,7 @@
     --kbd-bg-color: var(--white);
     --kbd-stroke-color: var(--gray);
     --table-row-color: var(--white);
-    --table-stroke-color: var(--gray);
+    --table-stroke-color: var(--light-gray);
 
 }
 
@@ -141,12 +141,17 @@ hr {
 .striped {
 border-collapse: collapse;
 border-spacing: 0;
-border-color: var(--table-stroke-color);
+border: 1px solid var(--table-stroke-color);
 }
 
 .striped td,
 .striped th  {
 padding: 0.5rem 1rem;
+}
+
+.striped td {
+border-top: 1px solid var(--table-stroke-color);
+border-bottom: 1px solid var(--table-stroke-color);
 }
 
 .striped th {
@@ -155,6 +160,10 @@ text-align: left;
 
 .striped tr:nth-child(2n+1) {
 background-color: var(--table-row-color);
+}
+
+caption {
+    margin-bottom: 0.5rem;
 }
 
 .i { font-style: italic; }

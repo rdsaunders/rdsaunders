@@ -43,6 +43,7 @@ A shared version of the shortcut is available [here](https://www.icloud.com/shor
 
 ## Yaml front matter structure
 <table class="striped">
+<caption>A table explaining how the front matter is populated</caption>
   <tr>
     <th>Front matter field</th>
     <th>Data population</th>
