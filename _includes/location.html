@@ -1,11 +1,10 @@
-<p class="ttu tracked f6 mid-gray dib | h-geo">
+<p class="ttu tracked f6 mid-gray dib">
     {% if page.location.size > 1 %}
-        <span> • {{ page.location }}</span>
+        • <span>{{ page.location }}</span>
     {% endif %}
 
     {% if page.geolocation.latitude.size > 1 %}
-     • <span class="p-latitude">{{ page.geolocation.latitude }}</span>, 
-        <span class="p-longitude">{{ page.geolocation.longitude }}</span>
+     • <a class="p-location h-geo" href="https://www.openstreetmap.org/#map=17/{{ page.geolocation.latitude }}/{{ page.geolocation.longitude }}" rel="noopener" target="_blank"><data class="p-latitude" value="{{ page.geolocation.latitude }}">{{ page.geolocation.latitude | round }}<abbr title="degrees">°</abbr></data>, 
+        <data class="p-longitude" value="{{ page.geolocation.longitude }}">{{ page.geolocation.longitude | round }}<abbr title="degrees">°</abbr></data></a>
     {% endif %}
 </p>
-
