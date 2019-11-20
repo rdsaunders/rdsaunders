@@ -7,37 +7,29 @@ pagination:
   sort_reverse: true
 ---
 
-{% assign postsByYear = site.notes | group_by_exp:"note", "note.date | date: '%Y'" %}
+{% for item in paginator.posts %}
+<article class="flex-ns pt3 mb3 bt b--divider | h-entry">
+    <a class="f5 f4-l w-30-ns lh-copy | u-url" href="{{ item.url }}"> 
+      <time class="dt-published" datetime="{{ item.date | date_to_xmlschema }}">
+          <span class="db-ns">{{ item.date | date_to_long_string }}</span>
+          <span class="db-ns">{{ item.date | date: "%I:%M %P"}}</span>
+      </time>
+    </a>
 
-{% for year in postsByYear reversed %}
-<h2>{{ year.name }}</h2>
-{% assign postsByMonth = year.items | group_by_exp:"note", "note.date | date: '%B'" %}
+    <div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy | e-content p-name">
+      {{ item.content }}
 
-{% for month in postsByMonth reversed %}
-<section class="flex-none-ns flex-m flex-l mb4 pv2 bb b--divider"><!-- start of month -->
+      {% if item.geolocation.latitude.size > 1 %}
+      <a class="p-location h-geo" href="https://www.openstreetmap.org/#map=17/{{ item.geolocation.latitude }}/{{ item.geolocation.longitude }}" target="_blank"><data class="p-latitude" value="{{ page.geolocation.latitude }}">{{ item.geolocation.latitude | round }}<abbr title="degrees">°</abbr></data>, 
+         <data class="p-longitude" value="{{ item.geolocation.longitude }}">{{ item.geolocation.longitude | round }}<abbr title="degrees">°</abbr></data></a>
+      {% endif %}
+    </div>
 
-  <header class="w-100 w-20-ns mb4" aria-labelledby="month-{{ month.name }}">
-    <h3 id="month-{{ month.name }}" class="f3 f3-m f3-l ma0">{{ month.name }}</h3>
-  </header>
-  <div class="w-100 w-80-ns pl3-ns">
 
-    {% for item in month.items reversed %}
-    <article class="pb4 | h-entry">
-      <h4 class="f3 f3-m f3-l measure-wide-m measure-wide-l lh-title mt0 mb2">
-        <a class="u-bookmark-of h-cite" href="{{ item.url }}"> {{ item.date | date_to_long_string }} </a>
-      </h4>
 
-      <div class="lh-copy measure-wide-m measure-wide-l mb2">
-        {{ item.content }}
-      </div>
-
-    </article>
-
-    {% endfor %}
-
-  </div>
-</section><!-- end of month -->
-
+</article>
 {% endfor %}
 
-{% endfor %}
+</section>
+
+{% include item-pagination.html %}

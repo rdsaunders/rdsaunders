@@ -102,6 +102,11 @@ body {
     height: auto;
 }
 
+.content p {
+    margin-top: 0;
+}
+
+
 .skip-link {
 padding: 0.25rem 0.5rem;
 position: absolute;
@@ -184,9 +189,11 @@ caption {
 // Text color
 .white { color: var(--white);}
 .near-black {color: var(--near-black)}
+.mid-gray {color: var(--mid-gray);}
 
 // Border styling
 .bb { border-bottom-style: solid; border-bottom-width: 1px; }
+.bt { border-top-style: solid; border-top-width: 1px; }
 .bw1 { border-width: .125rem; }
 .bw2 { border-width: .25rem; }
 
