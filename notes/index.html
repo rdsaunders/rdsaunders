@@ -27,8 +27,6 @@ pagination:
         <a class="u-bookmark-of h-cite" href="{{ item.url }}"> {{ item.date | date_to_long_string }} </a>
       </h4>
 
-      <time class="f5 mid-gray db mb2" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
-
       <div class="lh-copy measure-wide-m measure-wide-l mb2">
         {{ item.content }}
       </div>
