@@ -42,6 +42,17 @@ plugins:
   - jekyll-seo-tag
 
 
+feed:
+  collections:
+    photos:
+      path: "/photos/feed.xml"
+    notes:
+      path: "/notes/feed.xml"
+    links:
+      path: "/bookmarks/feed.xml"
+  excerpt_only: true
+
+
 permalink: /:categories/:year/:month/:day/:title
 
 collections:
