@@ -33,7 +33,7 @@ a,
   }
   
   a[rel~=noopener]:after {
-  background:url(../images/svg/external.svg) no-repeat;
+  background: url(../images/svg/external.svg) no-repeat;
   height: 0.75em;
   content: "";
   display: inline-block;

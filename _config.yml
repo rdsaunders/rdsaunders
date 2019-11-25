@@ -42,18 +42,20 @@ plugins:
   - jekyll-seo-tag
 
 
+permalink: /:categories/:year/:month/:day/:title
+
 collections:
   links:
     output: true
-    permalink: /bookmarks/:year/:month/:title/
+    permalink: /bookmarks/:year/:month/:title
   notes:
     output: true
-    permalink: /notes/:year:month:day:hour:minute:second/
+    permalink: /notes/:year:month:day:hour:minute:second
   talks:
     output: true
   photos:
     output: true
-    permalink: /photos/:year/:month/:day/:title/
+    permalink: /photos/:year/:month/:day/:title
   photosets:
     output: true
 # Post layout defaults
