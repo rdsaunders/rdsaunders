@@ -145,3 +145,5 @@ pagination:
 
 ############################################################
 cloudinary_url: https://res.cloudinary.com/rdsaunders/image/upload
+
+mapbox: pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ

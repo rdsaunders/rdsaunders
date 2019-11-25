@@ -8,10 +8,22 @@ layout: default
 
     <div class="content pt3 lh-copy measure-wide-m measure-wide-l | e-content">
         {{ page.content | markdownify}}
+        {% if page.geolocation.latitude.size > 1 %}
+
+        <picture class="mb2">
+            <source media="all and (prefers-color-scheme: dark)" srcset="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/pin-l+307fe2({{ page.geolocation.longitude }},{{ page.geolocation.latitude }})/{{ page.geolocation.longitude }},{{ page.geolocation.latitude }},15/800x300?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ">
+            <img src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-l+307fe2({{ page.geolocation.longitude }},{{ page.geolocation.latitude }})/{{ page.geolocation.longitude }},{{ page.geolocation.latitude }},15/800x300?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ" alt="Map of checkin">
+          </picture>
+
+          {% endif %}
     </div>
 
     <footer>
         <p class="ttu tracked f6 mid-gray dib">
+            {% if page.checkin.size > 1 %}
+                <span>{{ page.checkin }}</span> •
+            {% endif %}
+            
             {% if page.location.size > 1 %}
                 <span>{{ page.location }}</span>
             {% endif %}

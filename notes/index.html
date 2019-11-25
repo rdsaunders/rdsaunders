@@ -9,7 +9,8 @@ pagination:
 
 {% for item in paginator.posts %}
 <article class="flex-ns pt3 mb3 bt b--divider | h-entry">
-    <a class="f5 f4-l w-30-ns lh-copy | u-url" href="{{ item.url }}"> 
+  {% if item.geolocation.latitude.size > 1 %}
+  <a class="f5 f4-l w-30-ns lh-copy | u-url" href="{{ item.url }}"> 
       <time class="dt-published" datetime="{{ item.date | date_to_xmlschema }}">
           <span class="db-ns">{{ item.date | date_to_long_string }}</span>
           <span class="db-ns">{{ item.date | date: "%I:%M %P"}}</span>
@@ -17,15 +18,30 @@ pagination:
     </a>
 
     <div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy | e-content p-name">
+      <div class="mb2"><strong>Checked in to:</strong> {{ item.checkin}}</div>
+      
+      <picture class="mb2">
+        <source media="all and (prefers-color-scheme: dark)" srcset="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/pin-l+307fe2({{ item.geolocation.longitude }},{{ item.geolocation.latitude }})/{{ item.geolocation.longitude }},{{ item.geolocation.latitude }},13/800x300?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ">
+        <img src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-l+307fe2({{ item.geolocation.longitude }},{{ item.geolocation.latitude }})/{{ item.geolocation.longitude }},{{ item.geolocation.latitude }},13/800x300?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ" alt="Map of checkin">
+      </picture>
+
       {{ item.content }}
 
-      {% if item.geolocation.latitude.size > 1 %}
-      <a class="p-location h-geo" href="https://www.openstreetmap.org/#map=17/{{ item.geolocation.latitude }}/{{ item.geolocation.longitude }}" target="_blank"><data class="p-latitude" value="{{ page.geolocation.latitude }}">{{ item.geolocation.latitude | round }}<abbr title="degrees">°</abbr></data>, 
-         <data class="p-longitude" value="{{ item.geolocation.longitude }}">{{ item.geolocation.longitude | round }}<abbr title="degrees">°</abbr></data></a>
-      {% endif %}
     </div>
 
+  {% else %}
+  <a class="f5 f4-l w-30-ns lh-copy | u-url" href="{{ item.url }}"> 
+    <time class="dt-published" datetime="{{ item.date | date_to_xmlschema }}">
+        <span class="db-ns">{{ item.date | date_to_long_string }}</span>
+        <span class="db-ns">{{ item.date | date: "%I:%M %P"}}</span>
+    </time>
+  </a>
 
+  <div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy | e-content p-name">
+    {{ item.content }}
+  </div>
+
+  {% endif %}
 
 </article>
 {% endfor %}
