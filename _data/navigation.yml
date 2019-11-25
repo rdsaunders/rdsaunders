@@ -1,0 +1,10 @@
+- link: /
+  name: Articles
+- link: /talks/
+  name: Talks
+- link: /notes/
+  name: Notes
+- link: /photos/
+  name: Photos
+- link: /bookmarks/
+  name: Bookmarks

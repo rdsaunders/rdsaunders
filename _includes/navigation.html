@@ -1,0 +1,22 @@
+<nav class="ml-auto flex items-center" aria-label="Site navigation">
+
+    {% assign current = page.url | remove:'index.html' %}
+   
+    {% for item in site.data.navigation %}
+        {% if item.link == current %}
+            <div class="dib mr2" aria-current="page">{{ item.name }}</div>
+        {% else %}
+            <a href="{{ item.link }}" class="dib mr2">{{ item.name }}</a>
+        {% endif %}
+    {% endfor %}
+
+    <div class="user-toggle dib">
+        <div role="status" class="clip js-mode-status"></div>
+        <button class="toggle-button js-mode-toggle" aria-label="Choose theme">
+            <svg class="icon js-mode-svg" width="16" height="16">
+                <use xlink:href="#moon"></use>
+            </svg>
+        </button>
+    </div>
+    
+</nav>
