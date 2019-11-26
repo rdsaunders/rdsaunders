@@ -1,0 +1,40 @@
+- name: Tepanguare
+  seller: Pact
+  origin: Honduras
+  producer: Abel Maejia
+  roastprofile: Medium
+  process: Washed
+  sweetness: Honey
+  acidity: Orange
+  mouthfeel: Silky
+  hints: Mandarin and lavendar
+- name: Mustefa Abakeno
+  seller: Pact
+  origin: Agaro, Jimma, Western Ethiopia
+  producer: Mustefa Abakeno
+  roastprofile: Light
+  process: Washed
+  sweetness: Fructose
+  acidity: Lemon
+  mouthfeel: Tea-like
+  hints: Black cherry and lemon
+- name: Huehuetenango Women Smallholders
+  seller: Pact
+  origin: Huehuetenango
+  producer: Women smallholders
+  roastprofile: Medium
+  process: Washed
+  sweetness: Pulpy
+  acidity: Lime
+  mouthfeel: Round
+  hints: Orange an apricot
+- name: Sweet Shop
+  seller: Square Mile Coffee Roasters
+  origin: "Ethiopia (Yirgacheffe / Jimma)"
+  producer: Reko / Zakir Haji Aba Milki 
+  roastprofile: 
+  process: Washed / Natural
+  sweetness: 
+  acidity: 
+  mouthfeel: 
+  hints: 
