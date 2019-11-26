@@ -15,6 +15,10 @@
   width: 100%;
 }
 
+.v-top {
+  vertical-align: top;
+}
+
 @media #{$breakpoint-not-small} {
   .dn-ns {              display: none; }
   .di-ns {              display: inline; }

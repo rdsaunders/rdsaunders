@@ -1,6 +1,10 @@
 - name: Tepanguare
-  seller: Pact
+  seller: Pact Coffee
+  sellerURL: "https://www.pactcoffee.com/"
   origin: Honduras
+  country: Hondoras
+  latitude: "15.2215307"
+  longitude: "-87.3304357"
   producer: Abel Maejia
   roastprofile: Medium
   process: Washed
@@ -9,8 +13,12 @@
   mouthfeel: Silky
   hints: Mandarin and lavendar
 - name: Mustefa Abakeno
-  seller: Pact
-  origin: Agaro, Jimma, Western Ethiopia
+  seller: Pact Coffee
+  sellerURL: "https://www.pactcoffee.com/"
+  origin: Jimma, Western Ethiopia
+  country: Ethiopia
+  latitude: "7.6750109"
+  longitude: "36.820464"
   producer: Mustefa Abakeno
   roastprofile: Light
   process: Washed
@@ -19,8 +27,12 @@
   mouthfeel: Tea-like
   hints: Black cherry and lemon
 - name: Huehuetenango Women Smallholders
-  seller: Pact
+  seller: Pact Coffee
+  sellerURL: "https://www.pactcoffee.com/"
   origin: Huehuetenango
+  country: Guatemala
+  latitude: "15.3183424"
+  longitude: "-91.5111719"
   producer: Women smallholders
   roastprofile: Medium
   process: Washed
@@ -30,7 +42,11 @@
   hints: Orange an apricot
 - name: Sweet Shop
   seller: Square Mile Coffee Roasters
-  origin: "Ethiopia (Yirgacheffe / Jimma)"
+  sellerURL: "https://squaremilecoffee.com"
+  origin: "Yirgacheffe / Jimma, Ethiopia"
+  country: Ethiopia
+  latitude: "7.6750109"
+  longitude: "36.820464"
   producer: Reko / Zakir Haji Aba Milki 
   roastprofile: 
   process: Washed / Natural
