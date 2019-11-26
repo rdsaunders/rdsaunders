@@ -3,33 +3,33 @@ layout: page
 title: Coffee I've enjoyed
 ---
 {% for coffee in site.data.coffee %}
-<article class="dt-ns w-100 pb4 mb4 bb b--divider">
+<article class="dt-ns w-100 pb4 mb4 bb b--divider lh-solid">
     <div class="dtc-ns w-30-ns mb3">
         <picture>
-        <source media="all and (prefers-color-scheme: dark)" srcset="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/{{ coffee.longitude }},{{ coffee.latitude }},6/300x300?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ">
-        <img src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/{{ coffee.longitude }},{{ coffee.latitude }},6/300x300?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ" alt="Map of checkin">
+        <source media="all and (prefers-color-scheme: dark)" srcset="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/{{ coffee.longitude }},{{ coffee.latitude }},6/300x300@2x?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ">
+        <img src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/{{ coffee.longitude }},{{ coffee.latitude }},6/300x300@2x?access_token=pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ" alt="Map of checkin">
         </picture>
     </div>
     <div class="dtc-ns v-top pl4-ns">
     <h2 class="f4 f3-ns lh-title mv0 mb4 mb3-ns">{{ coffee.name }}</h2>
-    <dl class="dt-ns w-100 mv2">
-        <dt class="b dtc-ns w-25-ns">Producer:</dt>
+    <dl class="dt-ns w-100 mv3">
+        <dt class="b dtc-ns w-25-ns mb2">Producer:</dt>
         <dd class="dtc-ns ml0 ml2-ns">{{ coffee.producer }}</dd>
     </dl>
-    <dl class="dt-ns w-100 mv2">
-        <dt class="b dtc-ns w-25-ns">Origin:</dt>
+    <dl class="dt-ns w-100 mv3">
+        <dt class="b dtc-ns w-25-ns mb2">Origin:</dt>
         <dd class="dtc-ns ml0 ml2-ns">{{ coffee.origin }}</dd>
     </dl>
-    <dl class="dt-ns w-100 mv2">
-        <dt class="b dtc-ns w-25-ns">Process:</dt>
+    <dl class="dt-ns w-100 mv3">
+        <dt class="b dtc-ns w-25-ns mb2">Process:</dt>
         <dd class="dtc-ns ml0 ml2-ns">{{ coffee.process }}</dd>
     </dl>
-    <dl class="dt-ns w-100 mv2">
-        <dt class="b dtc-ns w-25-ns">Roast:</dt>
+    <dl class="dt-ns w-100 mv3">
+        <dt class="b dtc-ns w-25-ns mb2">Roast:</dt>
         <dd class="dtc-ns ml0 ml2-ns">{{ coffee.roastprofile }}</dd>
     </dl>
-    <dl class="dt-ns w-100 mv2">
-        <dt class="b dtc-ns w-25-ns">Seller:</dt>
+    <dl class="dt-ns w-100 mv3">
+        <dt class="b dtc-ns w-25-ns mb2">Seller:</dt>
         <dd class="dtc-ns ml0 ml2-ns"><a href="{{ coffee.sellerURL }}" target="_blank" rel="noopener">{{ coffee.seller }}</a></dd>
     </dl>
     </div>
