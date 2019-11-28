@@ -7,7 +7,7 @@ layout: default
     </header>
 
     <div class="content pt3 lh-copy measure-wide-m measure-wide-l | e-content">
-        {{ page.content | markdownify}}
+        {{ page.content }}
         {% if page.geolocation.latitude.size > 1 %}
 
         <picture class="mb2">

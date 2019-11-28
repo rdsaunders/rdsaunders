@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="h-entry">
+    <header class="bb bw1 pb3 b--divider">
+        <h1 class="f4 f3-l lh-title measure-narrow-ns mt0 mb2 | p-name">{{ page.date | date_to_long_string }}</h1>
+    </header>
+
+    <div class="content pt3 lh-copy measure-wide-m measure-wide-l | e-content">
+        {{ page.content }}
+    </div>
+
+    {% include post-navigation.html %}
+
+</article>
+

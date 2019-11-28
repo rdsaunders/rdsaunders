@@ -62,6 +62,9 @@ collections:
   notes:
     output: true
     permalink: /notes/:year:month:day:hour:minute:second
+  tweets:
+    output: true
+    permalink: /twitter/:title
   talks:
     output: true
   photos:
@@ -79,6 +82,10 @@ defaults:
       type: notes
     values:
       layout: note
+  - scope:
+      type: tweets
+    values:
+      layout: tweet
   - scope:
       type: talks
     values:
