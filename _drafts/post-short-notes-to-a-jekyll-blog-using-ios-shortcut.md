@@ -4,8 +4,15 @@ title: Post short notes to a Jekyll blog using iOS Shortcut
 excerpt: A shortcut I created to post short notes to my website using iOS Shortcut
   app and the GitHub API.
 date: 2019-12-03 00:00:00 +0000
-categories: []
-tags: []
+categories:
+- Indieweb
+tags:
+- Netlify
+- iOS Shortcut
+- Jekyll
+- GitHub API
+- GitHub
+- Indieweb
 
 ---
 As I take steps to host all my content to my site first, I wanted to start adding notes and eventually push these to Twitter.
