@@ -50,7 +50,7 @@ fields:
   hidden: true
   default: post
 pages:
-- _posts/2019-12-03-post-short-notes-to-a-jekyll-blog-using-ios-shortcut.md
+- _posts/post-short-notes-to-a-jekyll-blog-using-ios-shortcut.md
 - _posts/2019-11-18-create-a-photo-post-to-jekyll-blog-using-the-github-api-and-apple-shortcuts.md
 - _posts/2019-10-18-weeknotes-7.md
 - _posts/2019-11-08-lack-of-default-tab-focus-in-firefox-safari.md
