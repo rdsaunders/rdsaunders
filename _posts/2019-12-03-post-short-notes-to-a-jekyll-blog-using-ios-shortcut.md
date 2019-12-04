@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Post short notes to a Jekyll blog using iOS Shortcuts
+title: Post short notes to a Jekyll blog using an iOS Shortcut
 excerpt: A shortcut I created to post short notes to my website using iOS Shortcut
   app and the GitHub API.
 date: 2019-12-03T00:00:00.000+00:00
