@@ -54,11 +54,22 @@ You can download a copy of the [iOS Shortcut](https://www.icloud.com/shortcuts/6
 
 ## Yaml front matter structure
 
-| Front matter field | Data population |
-| :--- | :--- |
-| date | Uses the creation date of the photo. |
-| content | The note text is used in the primary content area of the markdown file. |
+<table class="striped">
+    <caption>A table explaining how the front matter is populated</caption>
+    <tr>
+        <th>Front matter field</th>
+        <th>Data population</th>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>Uses the creation date of the note.</td>
+    </tr>
+    <tr>
+        <td>content</td>
+        <td>The note text is used in the primary content area of the markdown file.</td>
+    </tr>
+</table>
 
-## Notes / quirks:
+## Notes / quirks
 
 * The shortcut relies on access to [https://shrtcts.app/](https://shrtcts.app/) to use some of the date / string utilities.

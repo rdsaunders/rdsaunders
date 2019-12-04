@@ -41,7 +41,7 @@
           <div class="p-name">Richard Saunders <span class="normal db f4 f4-m f4-l fw2 p-job-title ">Product owner & designer</span></div>
         </a>
       
-        {% include navigation.html %}
+         {% include navigation.html %} 
       
     </header>      
     
@@ -50,52 +50,7 @@
         {{ content }}
     </main>
 
-    {% comment %} Footer {% endcomment %}
-    <footer class="flex f5 items-center mv4">
-
-        <small>©&thinsp;
-            <time>2019</time>
-            <a href="{{ site.url }}" rel="author">Richard Saunders</a>
-            <span class="flex items-center mt2">Made with love
-                <svg class="icon ph1" width="16" height="16">
-                    <use xlink:href="#heart"></use>
-                </svg>
-                in Wales.</span>
-        </small>
-      
-        {% comment %} Social links {% endcomment %}
-        <ul class="list pl0 mv0 flex ml-auto">
-            <li class="pr2">
-                <a class="inline-flex" rel="me" href="https://twitter.com/{{ site.twitter_username }}" aria-label="Follow me on Twitter">
-                    <svg class="icon" width="24" height="24" focusable="false">
-                        <use xlink:href="#twitter"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="pr2">
-                <a class="inline-flex" rel="me" href="https://dribbble.com/{{ site.dribbble_username }}" aria-label="See my shots on Dribbble">
-                    <svg class="icon" width="24" height="24" focusable="false">
-                        <use xlink:href="#dribble"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="pr2">
-                <a class="inline-flex" rel="me" href="https://github.com/{{ site.github_username }}" aria-label="View my code on GitHub">
-                    <svg class="icon" width="24" height="24" focusable="false">
-                        <use xlink:href="#github"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="inline-flex" rel="me" href="https://instagram.com/{{ site.instagram_username }}" aria-label="Find me on Instagram">
-                    <svg class="icon" width="24" height="24" focusable="false">
-                        <use xlink:href="#instagram"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-  
-    </footer>
+    {% include footer.html %}
 
     <script src="{{ site.baseurl }}/js/main.js" defer></script>
     
