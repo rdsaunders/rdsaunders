@@ -186,6 +186,7 @@ caption {
 // Background color
 .bg-near-white {    background-color: var(--near-white); }
 .bg-mid-gray {      background-color: var(--mid-gray); }
+.bg-blue { background-color: var(--blue);}
 
 // Text color
 .white { color: var(--white);}
@@ -197,6 +198,7 @@ caption {
 .bt { border-top-style: solid; border-top-width: 1px; }
 .bw1 { border-width: .125rem; }
 .bw2 { border-width: .25rem; }
+.ba0 { border: none;}
 
 kbd {
     font-size: 1rem;
@@ -230,6 +232,27 @@ grid-column-gap: 0.25rem;
 .photoset img {
 max-width: 100%;
 }
+
+.form-field {
+box-sizing: border-box;
+border-radius: 0.25rem;
+border: 2px solid var(--body-color);
+padding: 1em;
+
+    &:focus {
+        box-shadow: 0 0 0 3px var(--blue);
+    }
+}
+
+.btn {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+}
+
 
 //  Variables 
 @import 'media-queries';

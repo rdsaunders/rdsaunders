@@ -18,6 +18,11 @@ theme_color: #f4f4f4
 # Default URL Structure
 permalink: /:categories/:year/:month/:day/:title
 
+# GitHub
+github:
+  repo: "rdsaunders/rdsaunders"
+  branch: master
+
 
 # Build settings
 markdown: CommonMark
