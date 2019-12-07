@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The dark grey cloud
-excerpt: ''
+excerpt: A little insight to how I sometime feel.
 date: 2019-12-07 00:00:00 +0000
 categories: []
 tags: []
