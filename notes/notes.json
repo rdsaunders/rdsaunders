@@ -1,0 +1,15 @@
+---
+layout: null
+---
+
+[
+    {% for post in site.notes %}
+    {
+            "url": "{{ site.url }}{{ post.url }}",
+            "date": "{{ post.date | date_to_xmlschema }}",
+            "content": {{ post.content | jsonify }},
+            "syndicate": {{ post.syndicate | jsonify }}
+    }{% if forloop.last == false %},{% endif %}    
+    
+    {% endfor %}
+]
