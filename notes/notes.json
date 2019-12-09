@@ -2,13 +2,15 @@
 layout: null
 ---
 
+{% assign sorted = site.notes | sort: 'date' | reverse %}
+
 [
-    {% for post in site.notes %}
+    {% for item in sorted %}
     {
-            "url": "{{ site.url }}{{ post.url }}",
-            "date": "{{ post.date | date_to_xmlschema }}",
-            "content": {{ post.content | jsonify }},
-            "syndicate": {{ post.syndicate | jsonify }}
+            "url": "{{ site.url }}{{ item.url }}",
+            "date": "{{ item.date | date_to_xmlschema }}",
+            "content": {{ item.content | jsonify }},
+            "syndicate": {{ item.syndicate | jsonify }}
     }{% if forloop.last == false %},{% endif %}    
     
     {% endfor %}
