@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "NPM Builder runner for Netlify",
   "scripts": {
-    "build": "bundle exec jekyll build"
+    "build": "bundle exec jekyll build",
+    "build:lambda": "netlify-lambda build functions",
+    "start:lambda": "netlify-lambda serve functions",
+    "prod": "npm run build; npm run build:lambda"
+
   },
   "author": "Richard Saunders",
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-svg-sprite": "^1.5.0",
     "html-entities": "^1.2.1",
+    "netlify-lambda": "^1.6.3",
     "node-fetch": "^2.6.0",
     "twitter": "^1.7.1"
   }
