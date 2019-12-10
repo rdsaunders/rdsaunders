@@ -53,6 +53,9 @@
     {% include footer.html %}
 
     <script src="{{ site.baseurl }}/js/main.js" defer></script>
+    <script>
+      if (navigator.serviceWorker && !navigator.serviceWorker.controller) { navigator.serviceWorker.register('/serviceworker.js'); }
+    </script>
     
   </body>
 </html>
