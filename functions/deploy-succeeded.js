@@ -1,4 +1,5 @@
 import fetch from 'node-fetch'
+import encoding from 'encoding'
 import Twitter from 'twitter'
 import { AllHtmlEntities as Entities } from 'html-entities'
 
