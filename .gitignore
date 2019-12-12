@@ -10,3 +10,4 @@ tweet.json
 .env
 lambda
 functions
+.cache

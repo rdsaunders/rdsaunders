@@ -120,3 +120,11 @@ pagination:
 cloudinary_url: https://res.cloudinary.com/rdsaunders/image/upload
 
 mapbox: pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ
+
+
+webmentions:
+  username: rdsaunders
+  # Use my own cache folder
+  cache_folder: .cache
+  # skip bad URLs for 5 days
+  cache_bad_uris_for: 5
