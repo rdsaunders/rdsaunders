@@ -123,7 +123,7 @@ mapbox: pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.M
 
 
 webmentions:
-  username: rdsaunders
+  username: www.rdsaunders.co.uk
   # Use my own cache folder
   cache_folder: .cache
   # skip bad URLs for 5 days
