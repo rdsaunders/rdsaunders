@@ -1,5 +1,6 @@
 ---
 layout: null
+title: Article posts
 ---
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_GB">
@@ -7,11 +8,9 @@ layout: null
     <link href="{{ site.url }}" rel="alternate" type="text/html" hreflang="{{ site.lang }}"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}/feed.xml</id>
-    <title type="html">{{ site.title | xml_escape }}</title>
+    <title type="html">{{ site.author | xml_escape }} | {{ page.title | xml_escape }}</title>
+    <icon>{{ site.url }}/assets/richard-saunders-icon.jpg</icon>
     <subtitle>{{ site.description | xml_escape }}</subtitle>
-    <author>
-        <name>{{ site.author }}</name>
-    </author>
     {% for item in site.posts %}
     <entry>
         <title type="html">{{ item.title | xml_escape}}</title>

@@ -52,7 +52,7 @@
     </main>
 
     {% include footer.html %}
-
+    {% webmentions_js %}
     <script src="{{ site.baseurl }}/js/main.js" defer></script>
     <script>
       if (navigator.serviceWorker && !navigator.serviceWorker.controller) { navigator.serviceWorker.register('/serviceworker.js'); }

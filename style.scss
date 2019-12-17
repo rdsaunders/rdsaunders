@@ -25,13 +25,14 @@
     --body-color: var(--near-white);
     --button-bg-color: var(--body-color);
     --link-txt-color: var(--text-color);
-    --divider-primary-color: var(--light-gray);
+    --divider-color: var(--light-gray);
     --icon-color: var(--near-black);
     --kbd-bg-color: var(--white);
     --kbd-stroke-color: var(--gray);
     --table-row-color: var(--white);
     --table-stroke-color: var(--light-gray);
-
+    --pill-bg-color: var(--mid-gray);
+    --pill-txt-color: var(--white);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,13 +45,15 @@
         --text-color: var(--soft-white);
         --body-color: var(--near-black);
         --link-txt-color: var(--text-color);
+        --divider-color: var(--neutral-gray);
         --icon-color: var(--text-color);
-        --divider-primary-color: var(--neutral-gray);
         --kbd-bg-color: var(--neutral-gray);
         --kbd-stroke-color: var(--mid-gray);
         --table-row-color: var(--neutral-gray);
         --table-stroke-color: var(--mid-gray);
         --mid-gray: #808080;
+        --pill-bg-color: var(--mid-gray);
+        --pill-txt-color: var(--white);
 
 
         img {
@@ -64,18 +67,20 @@
 
 }
 
-// Create sass mixin to repeat this, used where prefers colour is not avaliable
+// Create sass mixin to repeat this, used where prefers colour is not available
 [data-user-color-scheme='dark'] {
---text-color: var(--soft-white);
---body-color: var(--near-black);
---link-txt-color: var(--text-color);
---divider-primary-color: var(--neutral-gray);
---icon-color: var(--text-color);
---kbd-bg-color: var(--neutral-gray);
---kbd-stroke-color: var(--mid-gray);
---table-row-color: var(--neutral-gray);
---table-stroke-color: var(--mid-gray);
---mid-gray: #808080;
+    --text-color: var(--soft-white);
+    --body-color: var(--near-black);
+    --link-txt-color: var(--text-color);
+    --divider-color: var(--neutral-gray);
+    --icon-color: var(--text-color);
+    --kbd-bg-color: var(--neutral-gray);
+    --kbd-stroke-color: var(--mid-gray);
+    --table-row-color: var(--neutral-gray);
+    --table-stroke-color: var(--mid-gray);
+    --mid-gray: #808080;
+    --pill-bg-color: var(--mid-gray);
+    --pill-txt-color: var(--white);
 
     img {
         filter: brightness(.8) contrast(1.1);
@@ -90,6 +95,7 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
 }
+
 .icon {
     fill: var(--icon-color);
 }
@@ -109,96 +115,133 @@ body {
 
 
 .skip-link {
-padding: 0.25rem 0.5rem;
-position: absolute;
-top: -10rem;
-left: 0;
-color: var(--text-color);
-background-color: var(--body-color);
-transition: top 1s ease-out,
-            left 1s ease-out;
-z-index: 100;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    color: var(--text-color);
+    background-color: var(--body-color);
+    transition: top 1s ease-out,
+        left 1s ease-out;
+    z-index: 100;
 }
 
 .skip-link:focus {
-position: absolute;
-left: 0.5rem;
-top: 0.5rem;
-outline-color: transparent;	
-transition: top 0.1s ease-in,
-            left 0.1s ease-in;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    outline-color: transparent;
+    transition: top 0.1s ease-in,
+        left 0.1s ease-in;
 }
 
 
 hr {
-    color: var(--divider-primary-color);
+    color: var(--divider-color);
 }
 
 .sans-serif {
     font-family: -apple-system, BlinkMacSystemFont,
-                 'avenir next', avenir,
-                 'helvetica neue', helvetica,
-                 ubuntu,
-                 roboto, noto,
-                 'segoe ui', arial,
-                 sans-serif;
+        'avenir next', avenir,
+        'helvetica neue', helvetica,
+        ubuntu,
+        roboto, noto,
+        'segoe ui', arial,
+        sans-serif;
 }
 
 .striped {
-border-collapse: collapse;
-border-spacing: 0;
-border: 1px solid var(--table-stroke-color);
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid var(--table-stroke-color);
 }
 
 .striped td,
-.striped th  {
-padding: 0.5rem 1rem;
+.striped th {
+    padding: 0.5rem 1rem;
 }
 
 .striped td {
-border-top: 1px solid var(--table-stroke-color);
-border-bottom: 1px solid var(--table-stroke-color);
+    border-top: 1px solid var(--table-stroke-color);
+    border-bottom: 1px solid var(--table-stroke-color);
 }
 
 .striped th {
-text-align: left;
+    text-align: left;
 }
 
 .striped tr:nth-child(2n+1) {
-background-color: var(--table-row-color);
+    background-color: var(--table-row-color);
 }
 
 caption {
     margin-bottom: 0.5rem;
 }
 
-.i { font-style: italic; }
+.i {
+    font-style: italic;
+}
 
-  
+
 
 // Border radius
-.br-100 {     border-radius: 100%; }
-.br-pill {     border-radius: 9999px; }
+.br-100 {
+    border-radius: 100%;
+}
+
+.br-pill {
+    border-radius: 9999px;
+}
 
 // Border color
-.b--divider {   border-color: var(--divider-primary-color);}
+.b--divider {
+    border-color: var(--divider-color);
+}
 
 // Background color
-.bg-near-white {    background-color: var(--near-white); }
-.bg-mid-gray {      background-color: var(--mid-gray); }
-.bg-blue { background-color: var(--blue);}
+.bg-mid-gray {
+    background-color: var(--mid-gray);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
 
 // Text color
-.white { color: var(--white);}
-.near-black {color: var(--near-black)}
-.mid-gray {color: var(--mid-gray);}
+.white {
+    color: var(--white);
+}
+
+.near-black {
+    color: var(--near-black)
+}
+
+.mid-gray {
+    color: var(--mid-gray);
+}
 
 // Border styling
-.bb { border-bottom-style: solid; border-bottom-width: 1px; }
-.bt { border-top-style: solid; border-top-width: 1px; }
-.bw1 { border-width: .125rem; }
-.bw2 { border-width: .25rem; }
-.ba0 { border: none;}
+.bb {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.bw1 {
+    border-width: .125rem;
+}
+
+.bw2 {
+    border-width: .25rem;
+}
+
+.ba0 {
+    border: none;
+}
 
 kbd {
     font-size: 1rem;
@@ -215,7 +258,10 @@ blockquote {
     border-left: 2px solid var(--blue);
 
 }
-.no-underline { text-decoration: none; }
+
+.no-underline {
+    text-decoration: none;
+}
 
 pre code {
     white-space: pre-wrap;
@@ -224,20 +270,20 @@ pre code {
 }
 
 .photoset {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-grid-column-gap: 0.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 0.25rem;
 }
 
 .photoset img {
-max-width: 100%;
+    max-width: 100%;
 }
 
 .form-field {
-box-sizing: border-box;
-border-radius: 0.25rem;
-border: 2px solid var(--body-color);
-padding: 1em;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    border: 2px solid var(--body-color);
+    padding: 1em;
 
     &:focus {
         box-shadow: 0 0 0 3px var(--blue);
@@ -254,8 +300,9 @@ padding: 1em;
 }
 
 
-//  Variables 
-@import 'media-queries';
+$breakpoint-not-small: var(--breakpoint-not-small) !default;
+$breakpoint-medium: var(--breakpoint-medium) !default;
+$breakpoint-large: var(--breakpoint-large) !default;
 
 //  Modules 
 @import 'display';
