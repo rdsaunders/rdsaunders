@@ -30,19 +30,9 @@ commonmark:
   options: ["SMART", "FOOTNOTES", "UNSAFE"]
   extensions: ["strikethrough", "autolink", "table"]
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-seo-tag
-
-# RSS/Atom feeds
-feed:
-  collections:
-    photos:
-      path: "/photos/feed.xml"
-    links:
-      path: "/bookmarks/feed.xml"
-  excerpt_only: true
 
 # File/folder exclusions
 exclude: [node_modules, _importers, README.md]
@@ -121,10 +111,9 @@ cloudinary_url: https://res.cloudinary.com/rdsaunders/image/upload
 
 mapbox: pk.eyJ1IjoicmRzYXVuZGVycyIsImEiOiJjazNlaGQ3YXoxMDJpM251aTJzemx5ZjRrIn0.MiRvAifw2AcQ6WP2vWCaKQ
 
+# Webmentions config
 
 webmentions:
   username: www.rdsaunders.co.uk
-  # Use my own cache folder
   cache_folder: .cache
-  # skip bad URLs for 5 days
   cache_bad_uris_for: 5
