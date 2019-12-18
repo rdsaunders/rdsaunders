@@ -12,7 +12,15 @@ pagination:
 {% for item in paginator.posts %}
 		<li class="gallery_item">
 				<article class="h-entry">
-					<a class="u-url" href="{{ item.url }}" rel="bookmark" > <img loading="lazy" class="u-photo" src="{{ site.baseurl }}{{ item.image }}?nf_resize=smartcrop&w=320&h=320" width="320px" height="320px" alt="{{ item.altText }}"/></a>
+					{% if jekyll.environment == "development" %}
+					<a class="u-url" href="{{ item.url }}" rel="bookmark" >
+						<img loading="lazy" class="u-photo" src="{{ site.url }}{{ item.image }}" width="320px" height="320px" alt="{{ item.altText }}"/>
+					</a>
+					{% else %}
+					<a class="u-url" href="{{ item.url }}" rel="bookmark" >
+						<img loading="lazy" class="u-photo" src="{{ site.cloudinary_url }}image/fetch/w_320,h_320,c_fill,f_auto/{{ site.url }}{{ item.image }}" width="320px" height="320px" alt="{{ item.altText }}"/>
+					</a>
+					{% endif %}
 				</article>
 	</li>
 {% endfor %}
