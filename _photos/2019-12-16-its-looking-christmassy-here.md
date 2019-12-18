@@ -7,5 +7,5 @@ geolocation:
   latitude: "51.58578"
   longitude: "-3.0206"
 tags: Christmas House
-image: assets/uploads/2019/12/its-looking-christmassy-here.jpg
+image: /assets/uploads/2019/12/its-looking-christmassy-here.jpg
 ---
