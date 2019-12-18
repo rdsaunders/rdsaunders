@@ -16,11 +16,11 @@ seo:
 
     <div class="content lh-copy measure-wide-m measure-wide-l | e-content ">
 
-            <img loading="lazy" srcset="{{ site.cloudinary_url }}image/upload/w_320,f_auto/{{ site.url }}{{ page.image }} 320w,
-                {{ site.cloudinary_url }}image/upload/w_512,f_auto/{{ site.url }}{{ page.image }} 512w,
-                {{ site.cloudinary_url }}image/upload/w_768,f_auto/{{ site.url }}{{ page.image }} 768w,
-                {{ site.cloudinary_url }}image/upload/w_1400,f_auto/{{ site.url }}{{ page.image }} 1400w"
-            src="{{ site.cloudinary_url }}image/upload/w_320,f_auto/{{ site.url }}{{ page.image }}" class="u-photo" alt="{{ page.altText}}" />
+            <img loading="lazy" srcset="{{ site.cloudinary_url }}image/upload/w_320,f_auto/photo_blog/{{ page.image }} 320w,
+                {{ site.cloudinary_url }}image/upload/w_512,f_auto/photo_blog/{{ page.image }} 512w,
+                {{ site.cloudinary_url }}image/upload/w_768,f_auto/photo_blog/{{ page.image }} 768w,
+                {{ site.cloudinary_url }}image/upload/w_1400,f_auto/photo_blog/{{ page.image }} 1400w"
+            src="{{ site.cloudinary_url }}image/upload/w_320,f_auto/photo_blog/{{ page.image }}" class="u-photo" alt="{{ page.altText}}" />
         
             {% if page.content.size > 1 %}        
                 {{ page.content | markdownify}}
