@@ -18,7 +18,7 @@ pagination:
 					</a>
 					{% else %}
 					<a class="u-url" href="{{ item.url }}" rel="bookmark" >
-						<img loading="lazy" class="u-photo" src="{{ site.cloudinary_url }}image/fetch/w_320,h_320,c_fill,f_auto/{{ site.url }}{{ item.image }}" width="320px" height="320px" alt="{{ item.altText }}"/>
+						<img loading="lazy" class="u-photo" src="{{ site.cloudinary_url }}image/upload/w_320,h_320,c_fill,f_auto/{{ site.url }}{{ item.image }}" width="320px" height="320px" alt="{{ item.altText }}"/>
 					</a>
 					{% endif %}
 				</article>
