@@ -19,10 +19,13 @@ layout: default
     </footer>
     {% endif %} 
     
-    {% include post-navigation.html %}
 
 </article>
 
-<div class="webmentions">
-    {% webmentions %} 
-</div>
+<section class="webmentions">
+    <h3>Webmentions</h3>
+    {% webmentions page.url posts replies links %}
+</section>
+
+{% include post-navigation.html %}
+

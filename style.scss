@@ -299,10 +299,7 @@ pre code {
     border-radius: 1em;
 }
 
-
-$breakpoint-not-small: var(--breakpoint-not-small) !default;
-$breakpoint-medium: var(--breakpoint-medium) !default;
-$breakpoint-large: var(--breakpoint-large) !default;
+@import 'media-queries';
 
 //  Modules 
 @import 'display';
@@ -312,6 +309,7 @@ $breakpoint-large: var(--breakpoint-large) !default;
 @import 'line-height';
 @import 'lists';
 @import 'max-widths';
+@import 'media-queries';
 @import 'widths';
 @import 'spacing';
 @import 'text-transform';

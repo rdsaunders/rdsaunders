@@ -60,6 +60,7 @@ defaults:
       type: posts
     values:
       layout: post
+      is_post: true
   - scope:
       type: notes
     values:
@@ -117,3 +118,7 @@ webmentions:
   username: www.rdsaunders.co.uk
   cache_folder: .cache
   cache_bad_uris_for: 5
+  templates:
+    likes: _includes/webmentions/likes.html
+    reposts: _includes/webmentions/reposts.html
+    webmentions: _includes/webmentions/webmentions.html
