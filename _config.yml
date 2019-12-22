@@ -45,6 +45,9 @@ collections:
   notes:
     output: true
     permalink: /notes/:year:month:day:hour:minute:second
+  checkins:
+    output: true
+    permalink: /checkins/:year:month:day:hour:minute:second
   tweets:
     output: true
     permalink: /twitter/:title
@@ -65,6 +68,10 @@ defaults:
       type: notes
     values:
       layout: note
+  - scope:
+      type: checkins
+    values:
+      layout: checkin
   - scope:
       type: tweets
     values:

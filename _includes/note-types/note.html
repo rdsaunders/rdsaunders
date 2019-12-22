@@ -1,0 +1,10 @@
+<a class="f5 f4-l w-30-ns lh-copy | u-url" href="{{ item.url }}">
+  <time class="dt-published" datetime="{{ item.date | date: '%Y-%m-%d %H:%M:%S' }}">
+    <span class="db-ns">{{ item.date | date_to_long_string }}</span>
+    <span class="db-ns">{{ item.date | date: "%I:%M %P"}}</span>
+  </time>
+</a>
+
+<div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy | e-content p-name">
+  {{ item.content }}
+</div>

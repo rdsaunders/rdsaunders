@@ -12,9 +12,16 @@ pagination:
 {% for item in paginator.posts %}
 		<li class="gallery_item">
 				<article class="h-entry">
+					{% if jekyll.environment == "production" %}
 					<a class="u-url" href="{{ item.url }}" rel="bookmark" >
 						<img loading="lazy" class="u-photo" src="{{ site.cloudinary_url }}image/upload/w_320,h_320,c_fill,f_auto/photo_blog/{{ item.image }}" width="320px" height="320px" alt="{{ item.altText }}"/>
 					</a>
+					{% endif %}
+					{% if jekyll.environment == "development" %}
+					<a class="u-url" href="{{ item.url }}" rel="bookmark" >
+						<img loading="lazy" class="u-photo" src="{{ site.url }}{{ item.image }}" width="320px" height="320px" alt="{{ item.altText }}"/>
+					</a>
+					{% endif %}
 				</article>
 	</li>
 {% endfor %}
