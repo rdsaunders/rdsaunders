@@ -15,7 +15,7 @@ pagination:
     {% include note-types/checkin.html %}
   {% elsif item.collection == "tweets" %}
     {% include note-types/tweet.html %}
-  {% else if %}
+  {% else %}
     {% include note-types/note.html %}
   {% endif %}
 
