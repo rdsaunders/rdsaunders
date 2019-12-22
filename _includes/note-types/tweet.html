@@ -1,0 +1,31 @@
+{% if item.reply-tweet-id.size > 1 %}
+<!-- Reply -->
+<div class="f5 f4-l lh-copy w-30-ns">
+  <time class="mid-gray | dt-published" datetime="{{ item.date | date_to_xmlschema }}">
+    <span class="db-ns">{{ item.date | date_to_long_string }}</span>
+    <span class="db-ns">{{ item.date | date: "%I:%M %P"}}</span>
+  </time>
+  <a class="f6 f5-l | u-url" href="https://twitter.com/rdsaunders/status/{{ item.original-tweet-id }}">Original tweet</a>
+</div>
+
+<div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy | e-content p-name">
+  <h2 class="f5 f4-l lh-copy mt0 mb2">⮑ Replying to <a class="u-url"
+      href="https://twitter.com/{{ item.reply-user-screen-name }}/status/{{ item.reply-tweet-id}}">a tweet from
+      {{ item.reply-user-screen-name }}</a></h2>
+  {{ item.content }}
+</div>
+{% else %}
+<!-- Tweet -->
+<div class="f5 f4-l lh-copy w-30-ns">
+  <time class="mid-gray | dt-published" datetime="{{ item.date | date_to_xmlschema }}">
+    <span class="db-ns">{{ item.date | date_to_long_string }}</span>
+    <span class="db-ns">{{ item.date | date: "%I:%M %P"}}</span>
+  </time>
+  <a class="f6 f5-l | u-url" href="https://twitter.com/rdsaunders/status/{{ item.original-tweet-id }}"
+    rel="noopener">Original tweet</a>
+</div>
+
+<div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy | e-content p-name">
+  {{ item.content }}
+</div>
+{% endif %}

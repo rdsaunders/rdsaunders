@@ -3,7 +3,7 @@ layout: page
 title: Notes & checkins
 pagination:
   enabled: true
-  collection: notes, checkins
+  collection: notes, checkins, tweets
   sort_reverse: true
   per_page: 25
 ---
@@ -13,7 +13,9 @@ pagination:
   
   {% if item.collection == "checkins" %}
     {% include note-types/checkin.html %}
-  {% else %}
+  {% elsif item.collection == "tweets" %}
+    {% include note-types/tweet.html %}
+  {% else if %}
     {% include note-types/note.html %}
   {% endif %}
 
