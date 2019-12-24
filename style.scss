@@ -225,6 +225,11 @@ caption {
 }
 
 // Border styling
+.ba {
+    border-width: 1px;
+    border-style: solid;
+}
+
 .bb {
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -243,10 +248,7 @@ caption {
     border-width: .25rem;
 }
 
-.ba {
-    border-width: 1px;
-    border-style: solid;
-}
+
 
 .ba0 {
     border: none;

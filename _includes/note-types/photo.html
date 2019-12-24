@@ -1,0 +1,20 @@
+<div class="f5 w-30-ns self-start lh-copy mid-gray">
+    <time class="mid-gray | dt-published" datetime="{{ item.date | date_to_xmlschema }}">
+        <span class="db-ns">{{ item.date | date_to_long_string }}</span>
+        <span class="db-ns">{{ item.date | date: "%I:%M %P"}} <a class="no-underline | u-url" href="{{ item.url }}" rel="bookmark">#</a></span>
+    </time>
+</div>
+
+
+<div class="content w-70-ns mt3 mt0-ns flex pl3-ns lh-copy">
+    {% if jekyll.environment == "production" %}
+    <a class="flex | u-url" href="{{ item.url }}" rel="bookmark" >
+        <img loading="lazy" class="u-photo" src="{{ site.cloudinary_url }}image/upload/w_320,f_auto/photo_blog/{{ item.image }}" alt="{{ item.altText }}"/>
+    </a>
+    {% endif %}
+    {% if jekyll.environment == "development" %}
+    <a class="flex | u-url" href="{{ item.url }}" rel="bookmark" >
+        <img loading="lazy" class="u-photo" src="{{ site.url }}{{ item.image }}" alt="{{ item.altText }}"/>
+    </a>
+    {% endif %}
+</div>
