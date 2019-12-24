@@ -6,14 +6,14 @@
 </div>
 
 
-<div class="content w-70-ns mt3 mt0-ns flex pl3-ns lh-copy">
+<div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy">
     {% if jekyll.environment == "production" %}
-    <a class="flex | u-url" href="{{ item.url }}" rel="bookmark" >
+    <a class="u-url" href="{{ item.url }}" rel="bookmark" >
         <img loading="lazy" class="u-photo" src="{{ site.cloudinary_url }}image/upload/w_320,f_auto/photo_blog/{{ item.image }}" alt="{{ item.altText }}"/>
     </a>
     {% endif %}
     {% if jekyll.environment == "development" %}
-    <a class="flex | u-url" href="{{ item.url }}" rel="bookmark" >
+    <a class="u-url" href="{{ item.url }}" rel="bookmark" >
         <img loading="lazy" class="u-photo" src="{{ site.url }}{{ item.image }}" alt="{{ item.altText }}"/>
     </a>
     {% endif %}
