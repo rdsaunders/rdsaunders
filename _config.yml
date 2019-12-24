@@ -102,7 +102,7 @@ pagination:
   #permalink: '/page:num/' # Pages are index.html inside this folder (default)
   #permalink: '/page/:num.html' # Pages are simple html files 
   permalink: '/page/:num'
-  title: ':title - page :num'
+  title: ':title'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
@@ -129,3 +129,7 @@ webmentions:
     likes: _includes/webmentions/likes.html
     reposts: _includes/webmentions/reposts.html
     webmentions: _includes/webmentions/webmentions.html
+  collections:
+    - notes
+    - checkins
+

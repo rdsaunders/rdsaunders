@@ -1,5 +1,7 @@
 - link: /
   name: Articles
+- link: /stream/
+  name: Stream
 - link: /talks/
   name: Talks
 - link: /notes/

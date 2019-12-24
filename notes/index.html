@@ -9,7 +9,7 @@ pagination:
 ---
 
 {% for item in paginator.posts %}
-<article class="flex-ns pt3 mb3 bt b--divider | h-entry">
+<article class="flex-ns pt3 mb3 br-round b--divider | h-entry">
   
   {% if item.collection == "checkins" %}
     {% include note-types/checkin.html %}

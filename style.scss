@@ -189,6 +189,10 @@ caption {
     border-radius: 100%;
 }
 
+.br-round {
+    border-radius: 0.25em;
+}
+
 .br-pill {
     border-radius: 9999px;
 }
@@ -237,6 +241,11 @@ caption {
 
 .bw2 {
     border-width: .25rem;
+}
+
+.ba {
+    border-width: 1px;
+    border-style: solid;
 }
 
 .ba0 {

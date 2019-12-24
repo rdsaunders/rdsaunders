@@ -1,0 +1,32 @@
+---
+layout: page
+title: Stream
+pagination:
+  enabled: true
+  collection: notes, checkins, tweets, links
+  sort_reverse: true
+  per_page: 25
+---
+
+{% for item in paginator.posts %}
+<article class="pa3 mb3 ba br-round b--divider | h-entry">
+  <div class="flex-ns">
+    {% if item.collection == "checkins" %}
+      {% include note-types/checkin.html %}
+    {% elsif item.collection == "links" %}
+      {% include note-types/bookmark.html %}
+    {% elsif item.collection == "tweets" %}
+      {% include note-types/tweet.html %}
+    {% else %}
+      {% include note-types/note.html %}
+    {% endif %}
+  </div>
+
+  <footer>{% webmention_count page.url %}</footer>
+
+</article>
+{% endfor %}
+
+</section>
+
+{% include item-pagination.html %}
