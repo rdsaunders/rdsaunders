@@ -3,7 +3,7 @@ layout: page
 title: Stream
 pagination:
   enabled: true
-  collection: notes, checkins, tweets, links, photos
+  collection: notes, checkins, tweets, links, photos, posts
   sort_reverse: true
   per_page: 25
 ---
@@ -19,6 +19,8 @@ pagination:
       {% include note-types/photo.html %}
     {% elsif item.collection == "tweets" %}
       {% include note-types/tweet.html %}
+    {% elsif item.collection == "posts" %}
+      {% include note-types/post.html %}
     {% else %}
       {% include note-types/note.html %}
     {% endif %}

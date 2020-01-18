@@ -1,0 +1,26 @@
+<div class="f5 w-30-ns self-start lh-copy mid-gray">
+    <time class="mid-gray | dt-published" datetime="{{ item.date | date_to_xmlschema }}">
+        <span class="db-ns">{{ item.date | date_to_long_string }}</span>
+        <span class="db-ns">{{ item.date | date: "%I:%M %P"}} <a class="no-underline | u-url" href="{{ item.url }}" rel="bookmark">#</a></span>
+    </time>
+</div>
+
+
+<div class="content w-70-ns mt3 mt0-ns pl3-ns lh-copy cf">
+
+    <h2 class="f4 measure-wide-m measure-wide-l lh-title mt0 mb2">
+        <a href="{% if item.external %}{{ item.link }}{% else %}{{ item.url }}{% endif %}" target="{% if item.external %}_blank{% else %}_self{% endif %}" {% if item.external %}rel="noopener"{% endif %}>{% if item.external %}<span class="clip">Opens in new window</span>{% endif %}{{ item.title }}</a>
+      </h2>
+
+    {% if item.excerpt %}
+    <div class="lh-copy measure-wide-m measure-wide-l mb2">
+        {{ item.excerpt }}
+    </div>
+    {% endif %}
+
+    {% if item.tags.size > 0 %}
+    <div>
+        <b>Tagged with:</b> {{ item.tags | array_to_sentence_string }}
+    </div>
+    {% endif %}
+</div>
