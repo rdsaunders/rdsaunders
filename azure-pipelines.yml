@@ -10,5 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: bundle exec jekyll serve
+- script: 
+  gem install bundler
+  bundle exec jekyll serve
   displayName: 'Run a one-line script'
