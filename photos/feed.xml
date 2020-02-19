@@ -1,0 +1,34 @@
+---
+layout: null
+title: "Photo stream: Photos by Richard Saunders"
+---
+
+{% assign photostream = site.photos %}
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_GB">
+    <link href="{{ site.url }}/feed.xml" rel="self" type="application/atom+xml"/>
+    <link href="{{ site.url }}" rel="alternate" type="text/html" hreflang="{{ site.lang }}"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}/feed.xml</id>
+    <title type="html">{{ site.author | xml_escape }} | {{ page.title | xml_escape }}</title>
+    <icon>{{ site.url }}/assets/richard-saunders-icon.jpg</icon>
+    <subtitle>{{ site.description | xml_escape }}</subtitle>
+    {% for item in photostream %}
+    <entry>
+        <title type="html">{{ item.title | xml_escape}}</title>
+        <link href="{{ site.url }}{{ item.url }}" rel="alternate" type="text/html" title="{{ item.title | xml_escape }}"/>
+        <published>{{ item.date | date_to_xmlschema }}</published>
+        <updated>{{ item.date | date_to_xmlschema }}</updated>
+        <id>{{ item.id }}</id>
+        {% if item.categories.size > 0 %}
+        <category>{{ item.categories }}</category>
+        {% endif %}
+        <content type="html">
+        {% if item.image.size > 0 %}
+            <![CDATA[<img src="{{ site.cloudinary_url }}image/upload/w_1400,f_auto/photo_blog{{ item.image }}" alt="{{ item.altText | xml_escape }}" loading="lazy" />]]>
+        {% endif %}
+        {{ item.content | xml_escape }}
+        </content>
+    </entry>
+    {% endfor %}
+</feed>
