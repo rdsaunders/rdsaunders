@@ -15,6 +15,5 @@ tags:
 - " people"
 - girl
 - daughter
-published: false
 
 ---
