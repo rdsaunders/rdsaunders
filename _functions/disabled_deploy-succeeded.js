@@ -35,7 +35,7 @@ const status = (code, msg) => {
     }
 }
 
-// Check exisiting notes
+// Check existing notes
 const processNotes = async notes => {
     if (!notes.length) {
         return status(404, 'No notes found to process.')
