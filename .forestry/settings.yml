@@ -51,7 +51,6 @@ public_path: "/assets/uploads"
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":year:/:month:/:filename:"
-instant_preview: false
 build:
   preview_env:
   - JEKYLL_ENV=staging
@@ -61,4 +60,3 @@ build:
   mount_path: "/opt/buildhome/repo"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     --port 8080 --host 0.0.0.0 -d _site
-  preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
