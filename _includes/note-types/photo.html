@@ -10,7 +10,7 @@
 
     {% if jekyll.environment == "production" %}
     <a class="db | u-url" href="{{ item.url }}" rel="bookmark" >
-        <img loading="lazy" class="db | u-photo" src="{{ site.cloudinary_url }}image/upload/w_320,f_auto/photo_blog/{{ item.image }}" alt="{{ item.altText }}"/>
+        <img loading="lazy" class="db | u-photo" src="{{ site.cloudinary_url }}image/upload/w_480,f_auto/photo_blog/{{ item.image }}" alt="{{ item.altText }}"/>
     </a>
     {% endif %}
     {% if jekyll.environment == "development" %}
