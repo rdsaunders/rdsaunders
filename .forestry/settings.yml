@@ -21,6 +21,11 @@ sections:
   label: Talks
   create: all
   match: "**/*"
+- type: directory
+  path: _notes
+  label: Notes
+  create: documents
+  match: "**/*"
 - type: heading
   label: Photography
 - type: directory
